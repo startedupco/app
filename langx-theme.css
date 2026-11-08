@@ -4,7 +4,7 @@
    Loaded AFTER theme.css: Comfortaa display type, yellow committing
    action (once per screen), LangX dark ground + hairlines.
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* Display type carries titles, buttons, names and big numerals */
 h1, h2, h3,

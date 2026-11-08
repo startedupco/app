@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="langx-theme.css?v=9" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!-- v2 -->
     <style>
         /* === TYPE SCALE (single source of truth for portal typography) === */
@@ -696,7 +696,7 @@
             border: none;
             padding: 2px 0 0;
             font-family: inherit;
-            font-size: 13px;
+            font-size: 16px;
             color: var(--ink-soft);
             outline: none;
         }
@@ -788,7 +788,9 @@
         }
         #section-settings .set-field {
             width: 100%;
-            font-size: 14px;
+            max-width: 100%;
+            min-width: 0;
+            font-size: 16px;
         }
         #section-settings .set-primary-btn {
             width: 100%;
@@ -1029,7 +1031,7 @@
         .casky-input { display: flex; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line-soft); }
         .casky-input input {
             flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: 14px;
-            padding: 10px 12px; font-size: 13px; font-family: inherit;
+            padding: 10px 12px; font-size: 16px; font-family: inherit;
             background: var(--bg); color: var(--ink); outline: none;
         }
         .casky-input input:focus { border-color: var(--primary); }
@@ -1112,7 +1114,7 @@
             border: none;
             outline: none;
             padding: 0 14px;
-            font-size: 15px;
+            font-size: 16px;
             font-family: inherit;
             background: transparent;
             color: var(--ink);
@@ -1125,7 +1127,7 @@
             border-left: 1px solid #d5dce6;
             outline: none;
             text-align: center;
-            font-size: 15px;
+            font-size: 16px;
             font-family: inherit;
             background: transparent;
             color: var(--ink);
@@ -1134,6 +1136,40 @@
         .merged-input input::-webkit-outer-spin-button,
         .merged-input input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
         .merged-input input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+        .input { line-height: 1.2; }
+        .app-filter-row #app-status-filter { min-height: 48px; }
+        #uni-search { min-height: 48px; }
+
+        /* Phone fields: fill the parent, never smaller than 16px (iOS focus zoom) */
+        @media (max-width: 820px) {
+            input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+            select,
+            textarea {
+                font-size: 16px !important;
+                min-width: 0;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+        }
+        .app-filter-row { display: flex; gap: 8px; margin-bottom: 12px; }
+        @media (max-width: 420px) {
+            .app-filter-row { flex-wrap: wrap; }
+            .app-filter-row #app-search { flex: 1 1 100%; }
+            .app-filter-row #app-status-filter { width: 100%; max-width: none !important; }
+        }
+        #postal-manual-form input {
+            width: 100%;
+            padding: 12px 14px;
+            margin-bottom: 8px;
+            border: 1px solid #d1d5db;
+            border-radius: 14px;
+            font-size: 16px;
+            font-family: inherit;
+            background: #fff;
+            color: var(--ink);
+            outline: none;
+            box-sizing: border-box;
+        }
 
         /* === Application wizard + detail views === */
         .na-wrap { max-width: 720px; margin: 0 auto; }
@@ -1197,6 +1233,7 @@
 }
 </script>
 <script src="https://pl31799686.profitableratecpmnetwork.com/a9/60/23/a9602388cd91edfb54bb5eea73c67c7c.js"></script>
+  <link rel="stylesheet" href="rain.css" />
 </head>
 <body>
 
@@ -1355,7 +1392,7 @@ go(0);restart();
     </div>
             <div class="relative mb-6">
                 <svg class="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
-                <input type="text" id="uni-search" placeholder="Search institutions..." oninput="filterUniversityCards()" style="width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:1px solid #d1d5db;border-radius:14px;font-size:0.9rem;outline:none;font-family:inherit;" />
+                <input type="text" id="uni-search" placeholder="Search institutions..." oninput="filterUniversityCards()" style="width:100%;padding:0.6rem 1rem 0.6rem 2.5rem;border:1px solid #d1d5db;border-radius:14px;font-size:1rem;outline:none;font-family:inherit;" />
             </div>
             <div id="uni-cards-grid" class="flex flex-col divide-y divide-gray-100 rounded-xl border border-gray-200 bg-white overflow-hidden">
                 <div class="col-span-full space-y-2 py-2" aria-hidden="true"><div class="skel" style="height:96px;"></div><div class="skel" style="height:96px;"></div><div class="skel" style="height:96px;"></div></div>
@@ -1519,9 +1556,9 @@ go(0);restart();
             
         </div>
     </div>
-            <div style="display:flex;gap:8px;margin-bottom:12px;">
-                <input id="app-search" type="search" placeholder="Search applications…" autocomplete="off" oninput="debouncedAppFilter()" style="flex:1;min-width:0;background:#f4f5f7;border:2px solid transparent;border-radius:14px;padding:10px 14px;font-size:14px;font-family:inherit;color:var(--ink);outline:none;" onfocus="this.style.background='#fff';this.style.borderColor='var(--primary)';" onblur="this.style.background='#f4f5f7';this.style.borderColor='transparent';" />
-                <select id="app-status-filter" onchange="applyAppFilters()" style="background:#f4f5f7;border:2px solid transparent;border-radius:14px;padding:10px 12px;font-size:14px;font-weight:700;font-family:inherit;color:var(--ink);outline:none;cursor:pointer;max-width:150px;">
+            <div class="app-filter-row">
+                <input id="app-search" type="search" placeholder="Search applications…" autocomplete="off" oninput="debouncedAppFilter()" style="flex:1;min-width:0;background:#f4f5f7;border:2px solid transparent;border-radius:14px;padding:10px 14px;font-size:16px;font-family:inherit;color:var(--ink);outline:none;" onfocus="this.style.background='#fff';this.style.borderColor='var(--primary)';" onblur="this.style.background='#f4f5f7';this.style.borderColor='transparent';" />
+                <select id="app-status-filter" onchange="applyAppFilters()" style="background:#f4f5f7;border:2px solid transparent;border-radius:14px;padding:10px 12px;font-size:16px;font-weight:700;font-family:inherit;color:var(--ink);outline:none;cursor:pointer;max-width:150px;">
                     <option value="all">All statuses</option>
                     <option value="unpaid">Awaiting Payment</option>
                     <option value="in_progress">In Progress</option>
@@ -2219,10 +2256,10 @@ go(0);restart();
 <script src="https://js.paystack.co/v1/inline.js"></script>
 
 <!-- Fixed external scripts -->
-<script src="firebase-config.js?v=3"></script>
+<script src="firebase-config.js?v=4"></script>
     <script src="icons.js"></script>
     <script src="iconimate.js"></script>
-<script src="app.js"></script>
+<script src="app.js?v=2"></script>
 <script src="logger.js"></script>
 <script src="institution-database.js"></script>
 <script src="courses.js"></script>
@@ -2370,7 +2407,7 @@ function printApplicationReceipt(appIdx) {
     }
 
     var html = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Application Receipt</title>' +
-        '<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">' +
+        '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">' +
         '<style>@page{size:A4 portrait;margin:10mm;}body{font-family:"Comfortaa";font-size:11pt;line-height:1.5;color:#000;margin:0;padding:0;}@media print{body{margin:0;}}</style>' +
         '</head><body>' +
         '<div style="width:190mm;max-width:190mm;margin:0 auto;padding:15mm 10mm;">' +
@@ -2417,7 +2454,7 @@ function printPaymentReceipt(paymentRef) {
     if (!payment) return;
     var dateStr = payment.paidAt ? fmtDate(payment.paidAt) : '-';
     var html = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Payment Receipt</title>' +
-        '<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">' +
+        '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">' +
         '<style>@page{size:A4 portrait;margin:10mm;}body{font-family:"Comfortaa";font-size:11pt;line-height:1.5;color:#000;margin:0;padding:0;}@media print{body{margin:0;}}</style>' +
         '</head><body>' +
         '<div style="width:190mm;max-width:190mm;margin:0 auto;padding:15mm 10mm;">' +
@@ -4162,7 +4199,7 @@ function openEditApplicationForm(appIdx) {
         '<p style="font-size:12px;color:#6b7280;margin-top:4px;">Type cannot be changed on a Change of Mind.</p>' +
         '<input type="hidden" id="editAppType" value="' + (instType === 'tvet' ? 'TVET College' : 'University') + '" /></div>' +
         '<div style="margin-bottom:12px;"><label style="display:block;font-size:13px;font-weight:500;color:#374151;margin-bottom:4px;">Institution</label>' +
-        '<select id="editAppInstitution" onchange="editAppLoadCourses()" style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:14px;font-size:14px;background:#fff;color:#111827;appearance:auto;"><option value="">Select...</option>';
+        '<select id="editAppInstitution" onchange="editAppLoadCourses()" style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:14px;font-size:16px;background:#fff;color:#111827;appearance:auto;"><option value="">Select...</option>';
     instOptions.forEach(function(c) {
         var cName = c.name || c.full_name || c.id || c;
         var selected = (cName === (app.institution || app.uni || app.college || '')) ? ' selected' : '';
@@ -4190,7 +4227,7 @@ function openEditApplicationForm(appIdx) {
             }
         }
         var label = 'Choice ' + (i + 1) + (i < 2 ? ' <span style="color:#292D32;">*</span>' : '');
-        editHtml += '<div style="margin-bottom:10px;"><label style="display:block;font-size:13px;font-weight:500;color:#374151;margin-bottom:4px;">' + label + '</label><select id="editQual' + i + '" style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:14px;font-size:14px;background:#fff;color:#111827;appearance:auto;"><option value="">Select...</option></select></div>';
+        editHtml += '<div style="margin-bottom:10px;"><label style="display:block;font-size:13px;font-weight:500;color:#374151;margin-bottom:4px;">' + label + '</label><select id="editQual' + i + '" style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:14px;font-size:16px;background:#fff;color:#111827;appearance:auto;"><option value="">Select...</option></select></div>';
     }
     editHtml += '<p style="font-size:12px;color:#6b7280;margin-top:8px;">Note: Changes will be saved immediately.</p></div></div>';
     showCustomPopup({
@@ -6235,10 +6272,10 @@ function buildBursaryForm(bursary) {
     }
     var html = '<div class="text-left space-y-3">' +
         '<p class="cu-body text-gray-600">Apply for <strong>' + escapeHtml(bursary.name) + '</strong> R' + (bursary.fee || 60) + '.00 application fee (payable after completing this form).</p>' +
-        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Institution Type</label><select id="bursary-app-insttype" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:14px;background:#fff;" onchange="bursaryInstitutionOptions()">' + instTypeOptions + '</select></div>' +
-        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Institution</label><select id="bursary-app-institution" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:14px;background:#fff;"><option value="">Choose...</option></select></div>' +
-        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Funding Cycle</label><select id="bursary-app-cycle" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:14px;background:#fff;">' + cycleOptions + '</select></div>' +
-        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Academic Year</label><select id="bursary-app-year" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:14px;background:#fff;">' + yearOptions + '</select></div>' +
+        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Institution Type</label><select id="bursary-app-insttype" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:16px;background:#fff;" onchange="bursaryInstitutionOptions()">' + instTypeOptions + '</select></div>' +
+        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Institution</label><select id="bursary-app-institution" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:16px;background:#fff;"><option value="">Choose...</option></select></div>' +
+        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Funding Cycle</label><select id="bursary-app-cycle" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:16px;background:#fff;">' + cycleOptions + '</select></div>' +
+        '<div><label class="block text-xs font-medium text-gray-700 mb-1">Academic Year</label><select id="bursary-app-year" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:14px;font-size:16px;background:#fff;">' + yearOptions + '</select></div>' +
         '<p class="text-xs text-gray-400">Documents required: None. We will let you know if any are needed.</p>' +
         '</div>';
     showCustomPopup({
@@ -6561,7 +6598,7 @@ function proceedWithApply(institution, qualNames, appliedBefore, appType) {
     // Check documents from in-memory data
     var docs = userData.documents || [];
     var docsMap = {};
-    if (Array.isArray(docs)) docs.forEach(function(d) { docsMap[d.type] = d; });
+    if (Array.isArray(docs)) docs.forEach(function(d) { docsMap[canonicalDocType(d.type)] = d; });
 
     var missing = [];
 
@@ -6983,6 +7020,7 @@ var PORTAL_DOC_TYPES = [
     { id: 'docIdCertified', name: 'ID Document', req: true },
     { id: 'docNokIdCertified', name: 'Parent/Guardian ID', req: true },
     { id: 'docProofResidence', name: 'Proof of Residence', req: false },
+    { id: 'docIdPhoto', name: 'ID Photo', req: false },
     { id: 'docGrade9Report', name: 'Grade 9 Final Report', req: false },
     { id: 'docGrade10Report', name: 'Grade 10 Final Report', req: false },
     { id: 'docGrade11Report', name: 'Grade 11 Final Report', req: false },
@@ -7002,7 +7040,7 @@ function renderDocuments() {
 
     db.collection('documents').where('userId', '==', currentUserUID).get().then(function(snap) {
         var docs = [];
-        snap.forEach(function(doc) { var d = doc.data(); d.docId = doc.id; docs.push(d); });
+        snap.forEach(function(doc) { var d = doc.data(); d.docId = doc.id; d.type = canonicalDocType(d.type); docs.push(d); });
 
         var docsMap = {};
         docs.forEach(function(d) { docsMap[d.type] = d; });
@@ -7108,17 +7146,19 @@ function uploadPortalDoc(docId, input) {
                 userData.documents.push(docData);
             }
             
-            // Save to documents collection
-            db.collection('documents').where('userId', '==', currentUserUID).where('type', '==', docId).get()
+            // Save to documents collection, updating an existing row even if it
+            // was stored under an older onboarding type id.
+            db.collection('documents').where('userId', '==', currentUserUID).get()
                 .then(function(snap) {
+                    var existing = null;
+                    snap.forEach(function(doc) { if (canonicalDocType(doc.data().type) === docId) existing = doc; });
                     var docPayload = { userId: currentUserUID, type: docId, fileName: file.name, url: url, uploadedAt: Date.now() };
-                    if (!snap.empty) {
-                        return db.collection('documents').doc(snap.docs[0].id).set(docPayload, { merge: true });
+                    if (existing) {
+                        return db.collection('documents').doc(existing.id).set(docPayload, { merge: true });
                     }
                     return db.collection('documents').add(docPayload);
-                }).catch(function() {});
+                }).then(function() { renderDocuments(); }).catch(function() { renderDocuments(); });
             
-            renderDocuments();
             invalidateCache('users/' + currentUserUID);
             showCustomPopup('Document uploaded successfully.', 'Success', 'success');
             // AI notification for document upload
@@ -7141,11 +7181,13 @@ async function removePortalDoc(docId) {
     if (!confirmed) return;
     var userData = getUserData();
     if (Array.isArray(userData.documents)) {
-        userData.documents = userData.documents.filter(function(d) { return d.type !== docId; });
+        userData.documents = userData.documents.filter(function(d) { return canonicalDocType(d.type) !== docId; });
     }
     saveUserData(userData);
-    db.collection('documents').where('userId', '==', currentUserUID).where('type', '==', docId).get().then(function(snap) {
-        snap.forEach(function(doc) { db.collection('documents').doc(doc.id).delete().catch(function() {}); });
+    db.collection('documents').where('userId', '==', currentUserUID).get().then(function(snap) {
+        snap.forEach(function(doc) {
+            if (canonicalDocType(doc.data().type) === docId) db.collection('documents').doc(doc.id).delete().catch(function() {});
+        });
     }).catch(function() {});
     invalidateCache('users/' + currentUserUID);
     logActivity('document_removed', 'Removed document: ' + docId);

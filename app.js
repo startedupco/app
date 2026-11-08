@@ -253,7 +253,7 @@ function getUserApplications(uid) {
 function getUserDocuments(uid) {
     return db.collection('documents').where('userId', '==', uid).get().then(function(result) {
         var docs = [];
-        result.forEach(function(doc) { var d = doc.data(); d.docId = doc.id; docs.push(d); });
+        result.forEach(function(doc) { var d = doc.data(); d.docId = doc.id; d.type = canonicalDocType(d.type); docs.push(d); });
         return docs;
     }).catch(function(e) { 
         console.warn('getUserDocuments error:', e); 

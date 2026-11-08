@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="r-clean">
 <head>
     <meta charset="UTF-8" />
     <script>(function(){try{if(localStorage.getItem('cd_theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();</script>
@@ -12,7 +12,7 @@
     })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#3081D0" />
+    <meta name="theme-color" content="#0077C8" />
     <title>Log In CollandUni Student Portal</title>
     <meta name="description" content="Sign in to your CollandUni account to manage your university and TVET college applications.">
     <meta name="robots" content="noindex, nofollow" />
@@ -23,7 +23,7 @@
     <script>if(typeof localStorage==='undefined'||!localStorage){var _ls={};localStorage={getItem:function(k){return _ls[k]||null},setItem:function(k,v){_ls[k]=String(v)},removeItem:function(k){delete _ls[k]},get length(){return Object.keys(_ls).length},key:function(i){return Object.keys(_ls)[i]||null}};}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css?v=2" />
     <style>
         /* Auth screen - matches site.css design tokens */
@@ -67,6 +67,8 @@
   }
 }
 </script>
+  <link rel="stylesheet" href="rain.css" />
+  <link rel="stylesheet" href="rain-layout.css" />
 </head>
 <body>
 
@@ -91,7 +93,20 @@ catch(e){location.href=url;}
 })();
 </script>
 
-<main class="lx-screen">
+<main class="r-auth">
+  <aside class="r-auth-aside">
+    <p class="r-eyebrow">COLLANDUNI ACCOUNT</p>
+    <p class="r-auth-display">One profile. Every campus.</p>
+    <p class="r-auth-lede">Sign in to pick up your applications, upload documents and track every offer in one place.</p>
+    <ul class="r-auth-points">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Track every application from submitted to accepted</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Add your results and documents once, reuse everywhere</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Check where you qualify before you apply</li>
+    </ul>
+  </aside>
+
+  <div class="r-auth-main">
+    <div class="r-auth-card">
     <div class="lx-title-row">
         <button type="button" class="lx-back" aria-label="Go back" onclick="if(window.history.length>1){window.history.back();}else{window.location.href='index.html';}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
         <h1 class="lx-title">Welcome back</h1>
@@ -127,10 +142,12 @@ catch(e){location.href=url;}
     </button>
 
     <div class="lx-foot">Don't have an account? <a href="register.html">Apply</a></div>
+    </div>
+  </div>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="firebase-config.js?v=3"></script>
+<script src="firebase-config.js?v=4"></script>
 <script src="logger.js"></script>
 <script>
     var _loginHandling = false;

@@ -845,10 +845,23 @@
             });
     }
 
+    // Onboarding uploads documents under short ids; the portal reads canonical
+    // ids. Map both so one row shows up everywhere.
+    var DOC_TYPE_ALIASES = {
+        ID: 'docIdCertified',
+        results: 'docGrade12Report',
+        residence: 'docProofResidence',
+        photo: 'docIdPhoto'
+    };
+    function canonicalDocType(type) {
+        return DOC_TYPE_ALIASES[type] || type;
+    }
+
     // ========== Expose Globals ==========
     global.supabaseClient = supabaseClient;
     global.auth = auth;
     global.db = db;
+    global.canonicalDocType = canonicalDocType;
     global.saveSession = saveSession;
     global.getSession = getSession;
     global.storage = null;

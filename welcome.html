@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <script>(function(){try{if(localStorage.getItem('cd_theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#3081D0" />
+    <meta name="theme-color" content="#0077C8" />
     <title>Welcome to CollandUni</title>
     <meta name="description" content="Welcome to CollandUni, apply to South African universities and TVET colleges in one place.">
     <meta name="robots" content="noindex, nofollow" />
@@ -12,7 +12,7 @@
     <script>if(typeof localStorage==='undefined'||!localStorage){var _ls={};localStorage={getItem:function(k){return _ls[k]||null},setItem:function(k,v){_ls[k]=String(v)},removeItem:function(k){delete _ls[k]},get length(){return Object.keys(_ls).length},key:function(i){return Object.keys(_ls)[i]||null}};}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css" />
     <style>
         .wx-screen{max-width:520px;margin:0 auto;padding:28px 20px 48px;color:var(--text,#111418)}
@@ -32,12 +32,29 @@
         .wx-foot{text-align:center;margin-top:24px;font-size:.8125rem;color:var(--muted,#5b6470)}
         .wx-foot a{color:var(--accent,#2563eb);font-weight:700;text-decoration:none}
     </style>
+  <link rel="stylesheet" href="rain.css" />
+  <link rel="stylesheet" href="rain-layout.css" />
 </head>
 <body>
 
-<main class="wx-screen">
+<header class="r-header">
+    <div class="r-header-inner">
+        <a class="r-brand" href="https://collanduni.co.za/" aria-label="CollandUni home"><img src="collanduni-logo.svg" alt="CollandUni" /></a>
+        <nav class="r-nav" aria-label="Main navigation">
+            <a href="https://collanduni.co.za/">Apply</a>
+            <a href="https://collanduni.co.za/qualify.html">What We Do</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="r-header-actions">
+            <a class="r-btn r-btn-sm r-btn-ghost" href="https://collanduni.co.za/">Back to site</a>
+        </div>
+    </div>
+</header>
+
+<main class="r-page">
+  <div class="r-container">
+    <div class="r-welcome">
     <div class="wx-hero">
-        <div class="wx-badge">🎓</div>
         <h1 class="wx-title">Welcome to CollandUni</h1>
         <p class="wx-sub" id="wxGreeting"><strong>Your one place to apply</strong> to South African universities and TVET colleges.</p>
     </div>
@@ -52,6 +69,8 @@
     <a class="wx-neutral" href="index.html">Explore</a>
 
     <div class="wx-foot">Need help? <a href="contact.html">Contact us</a></div>
+    </div>
+  </div>
 </main>
 
 <script>
