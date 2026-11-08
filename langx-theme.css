@@ -1,7 +1,7 @@
 /* ============================================================
    CollandUni — LangX v3 design layer
    Tokens from langx/langx (apps/mobile/src/lib/theme/tokens.ts).
-   Loaded AFTER theme.css: Comfortaa display type, yellow committing
+   Loaded AFTER theme.css: Poppins display type, yellow committing
    action (once per screen), LangX dark ground + hairlines.
    ============================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -11,7 +11,7 @@ h1, h2, h3,
 .brand, .landing-hero h1, .auth-card h1,
 .landing-cta, .btn-hero-primary, .cta-btn, .signin-btn,
 #register-submit-btn, #login-submit-btn, #obNext, #obBack {
-    font-family: Comfortaa, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-family: Poppins, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 h1, h2, h3, .auth-card h1 { font-weight: 700; letter-spacing: -0.01em; }
 
@@ -57,7 +57,7 @@ html:not(.dark) {
 /* Display type on portal titles, tab roots and nav */
 .topbar-title, .screen-panel h1, .screen-panel h2, .screen-panel h3,
 .bottom-nav .nav-item, .sidebar-brand-word {
-    font-family: Comfortaa, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-family: Poppins, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 .topbar-title { font-weight: 700; letter-spacing: -0.01em; }
 .bottom-nav .nav-item { font-weight: 700; }
@@ -73,7 +73,7 @@ html:not(.dark) {
 #wizApplyFloat button, #bwApplyFloat button {
     background: #ffd60a !important;
     color: #201900 !important;
-    font-family: Comfortaa, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-family: Poppins, -apple-system, 'Segoe UI', Roboto, sans-serif;
     font-weight: 700;
     border: 0 !important;
     box-shadow: 0 4px 0 #e6b800 !important;
@@ -88,7 +88,7 @@ html:not(.dark) {
 .content-inner { max-width: 720px !important; }
 /* Tab-root titles run big and heavy */
 .topbar-title {
-    font-family: Comfortaa, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+    font-family: Poppins, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
     font-weight: 700 !important;
     font-size: 18px !important;
     letter-spacing: -0.01em;

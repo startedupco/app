@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="site.css?v=2" />
     <style>
         .q-wrap{max-width:720px;margin:0 auto;padding:24px 16px 120px}
-        .q-wrap, .q-wrap *{font-family:Comfortaa}
+        .q-wrap, .q-wrap *{font-family:Poppins}
         .lx-title{font-weight: 700;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.01em;margin:8px 0;color:var(--text,#111418)}
         .lx-sub{color:var(--muted,#5b6470);font-size:1rem;margin:0 auto 16px;max-width:44ch;text-align:center;line-height:1.5}
         .lx-sub strong{color:var(--text,#111418);font-weight:700}
@@ -78,14 +78,11 @@
         <button type="button" class="lx-back" aria-label="Go back" onclick="if(window.history.length>1){window.history.back();}else{window.location.href='index.html';}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
         <a class="lx-skip" id="qSkipBtn" href="register.html">Skip</a>
       </div>
-      <p class="r-eyebrow">FREE APS CHECK</p>
       <h1 class="lx-title">Check where you qualify</h1>
       <p class="lx-sub" id="qSub"><strong>Snap your Grade 12 report or certificate.</strong> We read your marks and show your course matches.</p>
     </div>
 
     <div class="r-tool">
-    <img id="qArt" src="illustrations/complete-steps.svg" alt="Checking off steps" class="r-tool-art" />
-
     <p id="qErr" class="lx-err"></p>
 
     <div id="qPick" class="lx-pick" style="display:none">
@@ -163,7 +160,6 @@ function qErr(msg) {
 function qBar(show) { document.getElementById('qBar').style.display = show ? 'flex' : 'none'; }
 function qIntro(show) {
     document.getElementById('qSub').style.display = show ? 'block' : 'none';
-    document.getElementById('qArt').style.display = show ? 'block' : 'none';
 }
 function qTitle(t) { document.querySelector('.lx-title').textContent = t; }
 function qReset() {

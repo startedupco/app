@@ -101,17 +101,13 @@ h1, h2, h3, h4, h5, h6,
     letter-spacing: -.02em;
 }
 
-[style*="Comfortaa"],
-[style*="comfortaa"] {
-    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif !important;
-}
-
 /* Old yellow primaries become Rain blue everywhere, including inline styles */
 [style*="#ffd60a"],
 [style*="#FFD60A"] {
     background-color: #0077C8 !important;
     border-color: #0077C8 !important;
     color: #ffffff !important;
+    border-radius: 999px !important;
     box-shadow: none !important;
 }
 
@@ -125,6 +121,13 @@ h1, h2, h3, h4, h5, h6,
 
 :focus-visible {
     outline-color: #0077C8;
+}
+
+/* Fields signal focus with the border alone - no UA ring, no glow. */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
 }
 
 /* ---------- Shared actions ---------- */
@@ -480,7 +483,8 @@ h1, h2, h3, h4, h5, h6,
 .field select:focus,
 .field textarea:focus {
     border-color: var(--rain-blue);
-    box-shadow: 0 0 0 3px rgba(0, 119, 200, .15);
+    outline: none;
+    box-shadow: none;
 }
 
 /* ---------- Auth screens (lx-*) ---------- */
@@ -517,7 +521,8 @@ h1, h2, h3, h4, h5, h6,
 .lx-input:focus {
     background: #ffffff;
     border-color: var(--rain-blue);
-    box-shadow: 0 0 0 3px rgba(0, 119, 200, .15);
+    outline: none;
+    box-shadow: none;
 }
 
 .lx-rowlink a,
@@ -572,7 +577,8 @@ input.input {
 select.input:focus,
 input.input:focus {
     border-color: var(--rain-blue) !important;
-    box-shadow: 0 0 0 3px rgba(0, 119, 200, .15);
+    outline: none;
+    box-shadow: none;
 }
 
 .lx-in::placeholder,
@@ -614,7 +620,6 @@ input.input:focus {
     color: var(--rain-blue);
 }
 
-.ob-hint,
 .lx-sub {
     color: var(--rain-muted);
 }
@@ -681,9 +686,19 @@ input.input:focus {
 }
 
 .icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
     color: var(--rain-ink);
     background: transparent !important;
     border: 0 !important;
+}
+
+.icon-btn > svg,
+.icon-btn > [data-icon] svg {
+    width: 20px;
+    height: 20px;
+    flex: none;
 }
 
 .icon-btn:hover {
@@ -917,7 +932,7 @@ input.input:focus {
 .merged-input select:focus,
 #postal-manual-form input:focus {
     border-color: var(--rain-blue) !important;
-    box-shadow: 0 0 0 3px rgba(0, 119, 200, .15) !important;
+    box-shadow: none !important;
     outline: none !important;
 }
 
@@ -1264,4 +1279,177 @@ html.dark body:has(.icon-wrap) .card {
     .video-grid {
         gap: 16px;
     }
+}
+
+/* ============================================================
+   Portal app frame
+   One sticky Rain header for the whole portal, section titles as
+   in-flow page heads, desktop tabs above 900px, bottom tab bar
+   only on small screens.
+   ============================================================ */
+.r-app-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255, 255, 255, .94);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.4);
+    border-bottom: 1px solid var(--rain-line);
+}
+
+.r-app-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 64px;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.r-app-brand {
+    display: inline-flex;
+    align-items: center;
+    flex: none;
+    margin-right: 8px;
+}
+
+.r-app-brand img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
+.r-app-tabs {
+    display: none;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
+@media (min-width: 900px) {
+    .r-app-tabs { display: flex; }
+}
+
+.r-app-tab {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 999px;
+    background: none;
+    color: var(--rain-muted);
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.r-app-tab:hover { background: var(--rain-wash); color: var(--rain-ink); }
+.r-app-tab:focus-visible { outline: 2px solid var(--rain-blue); outline-offset: 2px; }
+.r-app-tab.active { background: var(--rain-blue-wash); color: var(--rain-blue); font-weight: 600; }
+
+.r-app-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.r-app-settings {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 999px;
+    background: none;
+    color: var(--rain-muted);
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.r-app-settings:hover { background: var(--rain-wash); color: var(--rain-ink); }
+.r-app-settings.active { background: var(--rain-blue-wash); color: var(--rain-blue); }
+
+@media (max-width: 900px) {
+    .r-app-header-inner { padding: 0 16px; }
+    .r-app-brand { margin-right: auto; }
+}
+
+/* Section headers become in-flow page heads under the app header */
+.r-app-header ~ .main-content .topbar {
+    position: static !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 0 18px !important;
+    background: transparent !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    border: 0 !important;
+    transform: none !important;
+}
+
+.r-app-header ~ .main-content .topbar-title {
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    letter-spacing: -.02em !important;
+    line-height: 1.2 !important;
+    color: var(--rain-ink) !important;
+}
+
+.r-app-header ~ .main-content .topbar-eyebrow {
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: .1em !important;
+    text-transform: uppercase;
+    color: var(--rain-blue) !important;
+}
+
+/* Content column */
+.r-app-header ~ .main-content .content-inner {
+    max-width: 1080px !important;
+    padding: 24px 24px 96px !important;
+}
+
+@media (max-width: 899px) {
+    .r-app-header ~ .main-content .content-inner {
+        padding: 16px 16px 96px !important;
+    }
+    .r-app-header ~ .main-content .topbar-title { font-size: 22px !important; }
+}
+
+/* Bottom tab bar: phones only */
+.r-app-header ~ .main-content {
+    padding-bottom: 0 !important;
+}
+
+@media (min-width: 900px) {
+    body .bottom-nav { display: none !important; }
+}
+
+body .bottom-nav {
+    border-top-color: var(--rain-line);
+}
+
+body .bottom-nav .nav-item {
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif !important;
+    font-weight: 500 !important;
+}
+
+body .bottom-nav .nav-item.active {
+    color: var(--rain-blue) !important;
+    font-weight: 600 !important;
+}
+
+/* Wizard mode keeps its own bottom spacing for the floating apply bar */
+body.applying .r-app-header ~ .main-content .content-inner {
+    padding-bottom: 150px !important;
 }

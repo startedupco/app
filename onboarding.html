@@ -17,9 +17,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 /* LangX v3 onboarding: screen title 30, segmented progress, grey-pill fields, ink chips */
-body{font-family:Comfortaa;line-height:1.55}
+body{font-family:Poppins;line-height:1.55}
 .lx-screen{max-width:720px;margin:0 auto;padding:28px 20px 48px;background:#fff;color:#17191c;min-height:100vh}
-.lx-title{font-family:Comfortaa;font-weight: 700;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.01em;line-height:1.15;margin:8px 0}
+.lx-title{font-family:Poppins;font-weight: 700;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.01em;line-height:1.15;margin:8px 0}
 .lx-sub{color:#62676d;font-size:1rem;text-align:center;max-width:44ch;margin:0 auto 16px;line-height:1.5}
 .lx-sub strong{color:#17191c;font-weight:700}
 .ob-steps{display:flex;gap:6px;margin:20px 0 8px}
@@ -27,8 +27,7 @@ body{font-family:Comfortaa;line-height:1.55}
 .ob-step.done{background:#ffd60a}
 .ob-pane{display:none;padding:16px 0 4px}
 .ob-pane.active{display:block}
-.ob-pane h3{font-family:Comfortaa;font-weight: 600;font-size:1.25rem;margin-bottom:8px}
-.ob-hint{font-size:.875rem;color:#62676d;margin-bottom:16px}
+.ob-pane h3{font-family:Poppins;font-weight: 600;font-size:1.25rem;margin-bottom:8px}
 .lx-label{display:block;font-size:.875rem;font-weight:600;color:#17191c;margin:12px 0 8px}
 .lx-in,.ob-sub .s-name,.ob-sub .s-mark,select.input,input.input{width:100%;max-width:100%;min-width:0;background:#f4f5f7;border:2px solid transparent;border-radius:14px;padding:13px 16px;font-size:1rem;line-height:1.2;color:#17191c;outline:none;font-family:inherit;min-height:48px;box-sizing:border-box}
 select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
@@ -50,12 +49,12 @@ select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
 /* second action = plain accent text (v3 retires the second button face) */
 #obScanBtn{background:none;border:0;color:#3b6cf6;font-weight:700;font-size:1rem;cursor:pointer;padding:12px;width:100%;font-family:inherit;min-height:44px}
 #obAddSubject{width:100%;margin-top:8px;background:#f4f5f7;border:0;border-radius:16px;padding:13px;font-weight:600;font-size:1rem;color:#62676d;cursor:pointer;font-family:inherit;min-height:48px}
-.ob-aps{margin-top:16px;font-family:Comfortaa;font-weight: 700;font-size:1.0625rem}
+.ob-aps{margin-top:16px;font-family:Poppins;font-weight: 700;font-size:1.0625rem}
 .ob-aps span{color:#3b6cf6}
 #obScanBox{background:#f4f5f7;border:0;border-radius:16px;padding:14px;margin-bottom:12px}
 /* committing action: yellow face, hard shadow, press collapses */
 .lx-shell{padding-bottom:4px}
-#obNext{flex:2;background:#ffd60a;color:#111418;border:0;border-radius:14px;padding:14px 24px;font-family:Comfortaa;font-weight: 700;font-size:1rem;cursor:pointer;box-shadow:0 4px 0 #e6b800;min-height:48px}
+#obNext{flex:2;background:#ffd60a;color:#111418;border:0;border-radius:14px;padding:14px 24px;font-family:Poppins;font-weight: 700;font-size:1rem;cursor:pointer;box-shadow:0 4px 0 #e6b800;min-height:48px}
 #obNext:active{transform:translateY(4px);box-shadow:none}
 #obNext:disabled{opacity:.6}
 #obBack{flex:1;background:#fff;border:2px solid #e8eaec;border-radius:14px;padding:14px 24px;font-weight:600;font-size:1rem;color:#17191c;cursor:pointer;font-family:inherit;min-height:48px}
@@ -67,46 +66,21 @@ select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
 </head>
 <body>
 
-<header class="r-header">
-  <div class="r-header-inner">
-    <a class="r-brand" href="https://collanduni.co.za/" aria-label="CollandUni home"><img src="collanduni-logo.svg" alt="CollandUni" /></a>
-    <nav class="r-nav" aria-label="Main navigation">
-      <a href="https://collanduni.co.za/">Apply</a>
-      <a href="https://collanduni.co.za/qualify.html">What We Do</a>
-      <a href="https://collanduni.co.za/contact.html">Contact</a>
-    </nav>
-    <div class="r-header-actions">
-      <a class="r-btn r-btn-sm r-btn-ghost" href="contact.html">Need help?</a>
-    </div>
-  </div>
-</header>
-
 <main class="r-setup">
   <div class="r-container">
     <div class="r-setup-grid">
       <aside class="r-setup-aside">
-        <p class="r-eyebrow">GET SET UP</p>
         <p class="r-auth-display">Five quick steps to apply.</p>
-        <p class="r-auth-lede">We only ask for what institutions need, so you can apply once and reuse everything.</p>
-        <ol class="r-setup-steps">
-          <li><span class="n">1</span><span><b>Personal information</b><br />Exactly as it appears on your ID.</span></li>
-          <li><span class="n">2</span><span><b>Contact details</b><br />How institutions reach you.</span></li>
-          <li><span class="n">3</span><span><b>Education</b><br />Where you are right now.</span></li>
-          <li><span class="n">4</span><span><b>Marks</b><br />Type them in or snap your report.</span></li>
-          <li><span class="n">5</span><span><b>Documents</b><br />Upload once, reuse everywhere.</span></li>
-        </ol>
       </aside>
 
       <div class="r-setup-main">
       <div class="lx-screen">
 <h1 class="lx-title" id="obTitle">Welcome! Let's set you up</h1>
-<img src="illustrations/back-to-school.svg" alt="Students heading to campus" class="r-tool-art" />
 <div class="ob-steps" id="obSteps"><div class="ob-step"></div><div class="ob-step"></div><div class="ob-step"></div><div class="ob-step"></div><div class="ob-step"></div></div>
 
 <!-- 1 Personal Information (mirrors Profile → Personal Information) -->
 <div class="ob-pane active" data-pane="0">
 <h3>1. Personal information</h3>
-<p class="ob-hint">Exactly as it appears on your ID.</p>
 <div class="ob-2col">
 <div><label class="lx-label" for="ob-firstname">Name/s</label><input class="lx-in" id="ob-firstname" placeholder="Thandi" autocomplete="given-name" /></div>
 <div><label class="lx-label" for="ob-surname">Surname</label><input class="lx-in" id="ob-surname" placeholder="Mokoena" autocomplete="family-name" /></div>
@@ -124,7 +98,6 @@ select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
 <!-- 2 Address (mirrors Profile → Address) -->
 <div class="ob-pane" data-pane="1">
 <h3>2. Address</h3>
-<p class="ob-hint">Where can institutions reach you?</p>
 <label class="lx-label" for="ob-address">Street name &amp; number</label><input class="lx-in" id="ob-address" placeholder="Street and township" />
 <div class="ob-2col">
 <div><label class="lx-label" for="ob-suburb">Suburb</label><input class="lx-in" id="ob-suburb" placeholder="Suburb" /></div>
@@ -135,7 +108,6 @@ select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
 <div><label class="lx-label" for="ob-postal">Postal code</label><input class="lx-in" id="ob-postal" inputmode="numeric" maxlength="4" placeholder="4001" /></div>
 </div>
 <h3 style="font-size:1rem;margin:16px 0 8px;">Parent / Guardian</h3>
-<p class="ob-hint">Who institutions can contact in your family.</p>
 <div class="ob-2col">
 <div><label class="lx-label" for="ob-nok-first">First name</label><input class="lx-in" id="ob-nok-first" placeholder="Parent name" autocomplete="off" /></div>
 <div><label class="lx-label" for="ob-nok-last">Surname</label><input class="lx-in" id="ob-nok-last" placeholder="Parent surname" autocomplete="off" /></div>
@@ -153,7 +125,6 @@ select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
 <!-- 3 Education (mirrors Profile → Education) -->
 <div class="ob-pane" data-pane="2">
 <h3>3. Education</h3>
-<p class="ob-hint">Where you stand right now.</p>
 <label class="lx-label" for="ob-grade">Highest grade / NQF level</label>
 <select class="input" id="ob-grade"><option value="">Select…</option><option value="9">Grade 9 / NQF 1</option><option value="10">Grade 10 / NQF 2</option><option value="11">Grade 11 / NQF 3</option><option value="12" selected>Grade 12 (Matric) / NQF 4</option><option value="13">Higher Certificate / NQF 5</option><option value="14">Diploma / NQF 6</option><option value="15">Bachelor's Degree / NQF 7</option><option value="16">Honours / NQF 8</option><option value="17">Master's / NQF 9</option><option value="18">Doctorate / NQF 10</option></select>
 <div class="ob-2col" style="margin-top:4px;">
@@ -169,7 +140,6 @@ select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
 <!-- 4 Marks -->
 <div class="ob-pane" data-pane="3">
 <h3>4. Your marks</h3>
-<p class="ob-hint">Type them in or snap your report.</p>
 <div class="chip-grid" style="margin-bottom:12px;">
 <button type="button" class="chip sel" id="obModeManual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> Type manually</button>
 <button type="button" class="chip" id="obModeScan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg> Scan report photo</button>
@@ -197,7 +167,6 @@ select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
 <!-- 5 Documents -->
 <div class="ob-pane" data-pane="4">
 <h3>5. Documents</h3>
-<p class="ob-hint">Tick what you have ready or upload a file.</p>
 <div class="chip-grid" id="obDocs" style="display:grid;gap:10px;">
 <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;"><div class="chip" data-doc="ID"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>SA ID / Passport</div><button type="button" class="ob-upbtn" data-doc="ID" style="font-size:1rem;padding:8px 14px;border-radius:99px;border:1px solid var(--border,#e6e8ec);background:#fff;cursor:pointer;font-weight:700;color:#62676d;min-height:44px;">Upload</button><input type="file" accept="image/*,application/pdf,.heic,.heif" style="display:none" data-doc="ID"></div>
 <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;"><div class="chip" data-doc="results"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Matric results</div><button type="button" class="ob-upbtn" data-doc="results" style="font-size:1rem;padding:8px 14px;border-radius:99px;border:1px solid var(--border,#e6e8ec);background:#fff;cursor:pointer;font-weight:700;color:#62676d;min-height:44px;">Upload</button><input type="file" accept="image/*,application/pdf,.heic,.heif" style="display:none" data-doc="results"></div>
@@ -399,7 +368,15 @@ db.collection('users').doc(uid).get().then(function(doc){
 if(!doc.exists)return;
 var p=doc.data()||{};
 // Profile already complete (this or another device)? Go straight to the portal.
-if(p.idNumber&&p.dob&&p.gender&&p.school&&p.currentStatus&&p.marks&&p.marks.length){location.replace('portal.html');return;}
+// Use the SAME predicate as portal.html fullOnboardingProfile() - requiring
+// name + surname and rejecting the email-username stub. A weaker check here
+// (marks/ID only) looped users between onboarding and the portal gate.
+var _n=String(p.name||'').trim(),_s=String(p.surname||'').trim();
+var _e=String(p.email||((typeof getSession==='function'&&getSession()&&getSession().email)||'')).toLowerCase();
+var _pre=_e.indexOf('@')>-1?_e.split('@')[0]:'';
+var _complete=!!(_n&&_s&&p.idNumber&&p.dob&&p.gender&&p.school&&p.currentStatus&&p.marks&&p.marks.length);
+if(_complete&&_pre&&_n.toLowerCase()===_pre&&!_s)_complete=false;
+if(_complete){location.replace('portal.html');return;}
 prefill(p);
 }).catch(function(){calcAps();});
 }else{

@@ -9,7 +9,7 @@
     if (document.getElementById('cuOfflineOverlay')) return;
 
     var css = '' +
-        '.cu-offline-overlay{position:fixed;inset:0;z-index:2147483647;display:none;align-items:center;justify-content:center;flex-direction:column;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:24px;text-align:center;font-family:Comfortaa,-apple-system,"Segoe UI",Roboto,sans-serif}' +
+        '.cu-offline-overlay{position:fixed;inset:0;z-index:2147483647;display:none;align-items:center;justify-content:center;flex-direction:column;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:24px;text-align:center;font-family:Poppins,-apple-system,"Segoe UI",Roboto,sans-serif}' +
         '.cu-offline-overlay.show{display:flex}' +
         'html.dark .cu-offline-overlay{background:rgba(14,16,19,.95)}' +
         '.cu-offline-box{display:flex;flex-direction:column;align-items:center;max-width:340px}' +
