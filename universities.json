@@ -1,0 +1,501 @@
+{
+  "institution_type": "university",
+  "country": "South Africa",
+  "total_institutions": 26,
+  "institutions": [
+    {
+      "id": "cput",
+      "name": "Cape Peninsula University of Technology",
+      "short_name": "CPUT",
+      "logo": "https://www.universityinfo.co.za/img/logo/cput.png",
+      "province": "Western Cape",
+      "city": "Cape Town",
+      "application_fee": "R100",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-05-11",
+        "end": "2026-09-30"
+      },
+      "phone": "021 506 3911",
+      "email": "info@cput.ac.za",
+      "website": "https://www.cput.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/cput-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/cput.html"
+    },
+    {
+      "id": "cut",
+      "name": "Central University of Technology",
+      "short_name": "CUT",
+      "logo": "https://www.universityinfo.co.za/img/logo/cut.png",
+      "province": "Free State",
+      "city": "Bloemfontein",
+      "application_fee": "Contact CUT",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "051 507 3986",
+      "email": "ssepeng@cut.ac.za",
+      "website": "https://www.cut.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/cut-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/cut.html"
+    },
+    {
+      "id": "dut",
+      "name": "Durban University of Technology",
+      "short_name": "DUT",
+      "logo": "https://www.universityinfo.co.za/img/logo/dut.jpg",
+      "province": "KwaZulu-Natal",
+      "city": "Durban",
+      "application_fee": "As Per CAO",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-03-01",
+        "end": "2026-09-30"
+      },
+      "phone": "031 373 2000",
+      "email": "info@dut.ac.za",
+      "website": "https://www.dut.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/dut-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/dut.html"
+    },
+    {
+      "id": "mut",
+      "name": "Mangosuthu University of Technology",
+      "short_name": "MUT",
+      "logo": "https://www.universityinfo.co.za/img/logo/mut.jpg",
+      "province": "KwaZulu-Natal",
+      "city": "Umlazi",
+      "application_fee": "As per CAO",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-03-01",
+        "end": "2026-09-30"
+      },
+      "phone": "031 819 9280",
+      "email": "info@mut.ac.za",
+      "website": "https://www.mut.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/mut-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/mut.html"
+    },
+    {
+      "id": "nmu",
+      "name": "Nelson Mandela University",
+      "short_name": "NMU",
+      "logo": "https://www.universityinfo.co.za/img/logo/nmu.jpg",
+      "province": "Eastern Cape",
+      "city": "Gqeberha",
+      "application_fee": "Free",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "041 504 1111",
+      "email": "info@mandela.ac.za",
+      "website": "https://www.mandela.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/nmu-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/nmu.html"
+    },
+    {
+      "id": "nwu",
+      "name": "North-West University",
+      "short_name": "NWU",
+      "logo": "https://www.universityinfo.co.za/img/logo/nwu.png",
+      "province": "North West",
+      "city": "Potchefstroom",
+      "application_fee": "R150",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-06-01",
+        "end": "2026-09-30"
+      },
+      "phone": "018 299 1111",
+      "email": "nwu-serviceline@nwu.ac.za",
+      "website": "https://www.nwu.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/nwu-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/nwu.html"
+    },
+    {
+      "id": "ru",
+      "name": "Rhodes University",
+      "short_name": "RU",
+      "logo": "https://www.universityinfo.co.za/img/logo/ru.jpg",
+      "province": "Eastern Cape",
+      "city": "Makhanda",
+      "application_fee": "R100",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "046 603 8111",
+      "email": "registrar@ru.ac.za",
+      "website": "https://www.ru.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/ru-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/ru.html"
+    },
+    {
+      "id": "smu",
+      "name": "Sefako Makgatho Health Sciences University",
+      "short_name": "SMU",
+      "logo": "https://www.universityinfo.co.za/img/logo/smu.png",
+      "province": "Gauteng",
+      "city": "Pretoria",
+      "application_fee": "R300",
+      "status": "CLOSED",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-07-31"
+      },
+      "phone": "012 521 5057",
+      "email": "apply@smu.ac.za",
+      "website": "https://www.smu.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/smu-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/smu.html"
+    },
+    {
+      "id": "spu",
+      "name": "Sol Plaatje University",
+      "short_name": "SPU",
+      "logo": "https://www.universityinfo.co.za/img/logo/spu.png",
+      "province": "Northern Cape",
+      "city": "Kimberley",
+      "application_fee": "Free",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-06-01",
+        "end": "2026-09-30"
+      },
+      "phone": "053 491 0000",
+      "email": "applications@spu.ac.za",
+      "website": "https://www.spu.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/spu-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/spu.html"
+    },
+    {
+      "id": "sun",
+      "name": "Stellenbosch University",
+      "short_name": "SUN",
+      "logo": "https://www.universityinfo.co.za/img/logo/sun.jpg",
+      "province": "Western Cape",
+      "city": "Stellenbosch",
+      "application_fee": "R100",
+      "status": "CLOSED",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-07-31"
+      },
+      "phone": "021 808 9111",
+      "email": "info@sun.ac.za",
+      "website": "https://www.sun.ac.za/",
+      "prospectus": null,
+      "more_info": "https://www.universityinfo.co.za/institutions/sun.html"
+    },
+    {
+      "id": "tut",
+      "name": "Tshwane University of Technology",
+      "short_name": "TUT",
+      "logo": "https://www.universityinfo.co.za/img/logo/tut.jpg",
+      "province": "Gauteng",
+      "city": "Pretoria",
+      "application_fee": "R240",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "086 110 2421",
+      "email": "general@tut.ac.za",
+      "website": "https://www.tut.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/tut-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/tut.html"
+    },
+    {
+      "id": "uct",
+      "name": "University of Cape Town",
+      "short_name": "UCT",
+      "logo": "https://www.universityinfo.co.za/img/logo/uct.jpg",
+      "province": "Western Cape",
+      "city": "Cape Town",
+      "application_fee": "R200",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-25",
+        "end": "2026-09-30"
+      },
+      "phone": "021 650 9111",
+      "email": "admission@uct.ac.za",
+      "website": "https://www.uct.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/uct-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/uct.html"
+    },
+    {
+      "id": "ufh",
+      "name": "University of Fort Hare",
+      "short_name": "UFH",
+      "logo": "https://www.universityinfo.co.za/img/logo/ufh.jpg",
+      "province": "Eastern Cape",
+      "city": "Alice",
+      "application_fee": "R120",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-05-12",
+        "end": "2026-09-30"
+      },
+      "phone": "040 602 2011",
+      "email": "admissions@ufh.ac.za",
+      "website": "https://www.ufh.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/ufh-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/ufh.html"
+    },
+    {
+      "id": "ufs",
+      "name": "University of the Free State",
+      "short_name": "UFS",
+      "logo": "https://www.universityinfo.co.za/img/logo/ufs.png",
+      "province": "Free State",
+      "city": "Bloemfontein",
+      "application_fee": "Free",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "051 401 9111",
+      "email": "info@ufs.ac.za",
+      "website": "https://www.ufs.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/ufs-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/ufs.html"
+    },
+    {
+      "id": "uj",
+      "name": "University of Johannesburg",
+      "short_name": "UJ",
+      "logo": "https://www.universityinfo.co.za/img/logo/uj.png",
+      "province": "Gauteng",
+      "city": "Johannesburg",
+      "application_fee": "Free",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-10-30"
+      },
+      "phone": "011 559 3129",
+      "email": "mylife@uj.ac.za",
+      "website": "https://www.uj.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/uj-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/uj.html"
+    },
+    {
+      "id": "ukzn",
+      "name": "University of KwaZulu-Natal",
+      "short_name": "UKZN",
+      "logo": "https://www.universityinfo.co.za/img/logo/ukzn.png",
+      "province": "KwaZulu-Natal",
+      "city": "Durban",
+      "application_fee": "As per CAO",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-03-01",
+        "end": "2026-09-30"
+      },
+      "phone": "031 260 1111",
+      "email": "enquiries@ukzn.ac.za",
+      "website": "https://www.ukzn.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/ukzn-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/ukzn.html"
+    },
+    {
+      "id": "ul",
+      "name": "University of Limpopo",
+      "short_name": "UL",
+      "logo": "https://www.universityinfo.co.za/img/logo/ul.png",
+      "province": "Limpopo",
+      "city": "Sovenga",
+      "application_fee": "R200",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "015 268 8111",
+      "email": "enrolment@ul.ac.za",
+      "website": "https://www.ul.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/ul-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/ul.html"
+    },
+    {
+      "id": "ump",
+      "name": "University of Mpumalanga",
+      "short_name": "UMP",
+      "logo": "https://www.universityinfo.co.za/img/logo/ump.jpg",
+      "province": "Mpumalanga",
+      "city": "Nelspruit",
+      "application_fee": "R200",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-06-01",
+        "end": "2026-11-30"
+      },
+      "phone": "013 002 0001",
+      "email": "info@ump.ac.za",
+      "website": "https://www.ump.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/ump-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/ump.html"
+    },
+    {
+      "id": "up",
+      "name": "University of Pretoria",
+      "short_name": "UP",
+      "logo": "https://www.universityinfo.co.za/img/logo/up.gif",
+      "province": "Gauteng",
+      "city": "Pretoria",
+      "application_fee": "R300",
+      "status": "CLOSED",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-06-30"
+      },
+      "phone": "012 420 3111",
+      "email": "ssc@up.ac.za",
+      "website": "https://www.up.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/up-prospectus.zip",
+      "more_info": "https://www.universityinfo.co.za/institutions/up.html"
+    },
+    {
+      "id": "unisa",
+      "name": "University of South Africa",
+      "short_name": "UNISA",
+      "logo": "https://www.universityinfo.co.za/img/logo/unisa.jpg",
+      "province": "National",
+      "city": "Distance Learning",
+      "application_fee": "R135",
+      "status": "CLOSED",
+      "application_dates": {
+        "start": "2026-11-03",
+        "end": "2026-12-19"
+      },
+      "phone": "012 429 3111",
+      "email": "info@unisa.ac.za",
+      "website": "https://www.unisa.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/unisa-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/unisa.html"
+    },
+    {
+      "id": "univen",
+      "name": "University of Venda",
+      "short_name": "UNIVEN",
+      "logo": "https://www.universityinfo.co.za/img/logo/univen.jpg",
+      "province": "Limpopo",
+      "city": "Thohoyandou",
+      "application_fee": "R100",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "015 962 8000",
+      "email": "info@univen.ac.za",
+      "website": "https://www.univen.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/univen-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/univen.html"
+    },
+    {
+      "id": "unizulu",
+      "name": "University of Zululand",
+      "short_name": "UNIZULU",
+      "logo": "https://www.universityinfo.co.za/img/logo/unizulu.jpg",
+      "province": "KwaZulu-Natal",
+      "city": "KwaDlangezwa",
+      "application_fee": "As per CAO",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-03-01",
+        "end": "2026-09-30"
+      },
+      "phone": "035 902 6950",
+      "email": "admissions@unizulu.ac.za",
+      "website": "https://www.unizulu.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/unizulu-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/unizulu.html"
+    },
+    {
+      "id": "uwc",
+      "name": "University of the Western Cape",
+      "short_name": "UWC",
+      "logo": "https://www.universityinfo.co.za/img/logo/uwc.png",
+      "province": "Western Cape",
+      "city": "Bellville",
+      "application_fee": "Free",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "021 959 2911",
+      "email": "helpdesk@uwc.ac.za",
+      "website": "https://www.uwc.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/uwc-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/uwc.html"
+    },
+    {
+      "id": "vut",
+      "name": "Vaal University of Technology",
+      "short_name": "VUT",
+      "logo": "https://www.universityinfo.co.za/img/logo/vut.png",
+      "province": "Gauteng",
+      "city": "Vanderbijlpark",
+      "application_fee": "R100",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "016 950 9924",
+      "email": "reception@vut.ac.za",
+      "website": "https://www.vut.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/vut-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/vut.html"
+    },
+    {
+      "id": "wits",
+      "name": "University of the Witwatersrand",
+      "short_name": "Wits",
+      "logo": "https://www.universityinfo.co.za/img/logo/wits.jpg",
+      "province": "Gauteng",
+      "city": "Braamfontein",
+      "application_fee": "R100",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-03-01",
+        "end": "2026-09-30"
+      },
+      "phone": "011 717 1888",
+      "email": "itstudenthelp@wits.ac.za",
+      "website": "https://www.wits.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/wits-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/wits.html"
+    },
+    {
+      "id": "wsu",
+      "name": "Walter Sisulu University",
+      "short_name": "WSU",
+      "logo": "https://www.universityinfo.co.za/img/logo/wsu.png",
+      "province": "Eastern Cape",
+      "city": "Mthatha",
+      "application_fee": "Free",
+      "status": "OPEN",
+      "application_dates": {
+        "start": "2026-04-01",
+        "end": "2026-09-30"
+      },
+      "phone": "047 502 2843",
+      "email": "info@wsu.ac.za",
+      "website": "https://www.wsu.ac.za/",
+      "prospectus": "https://www.universityinfo.co.za/prospectus/wsu-prospectus.pdf",
+      "more_info": "https://www.universityinfo.co.za/institutions/wsu.html"
+    }
+  ]
+}

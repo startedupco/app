@@ -1,0 +1,22 @@
+# CollandUni
+
+> CollandUni is a South African online application platform. Students create one free profile and apply to universities and TVET colleges, track application status, upload documents, and pay application fees online.
+
+## Pages
+
+- [Home](https://collanduni.co.za/): Marketing site — how CollandUni works, available institutions, and calls to action.
+- [Register](https://app.collanduni.co.za/register.html): Create a free applicant account (Grade 9–12 learners and gap-year students).
+- [Sign In](https://app.collanduni.co.za/login.html): Sign in to an existing CollandUni account.
+- [Applicant Portal](https://app.collanduni.co.za/portal.html): Dashboard for applications, document uploads, payments, and institution login credentials.
+- [Terms of Service](https://app.collanduni.co.za/terms.html): Terms and conditions for using the platform.
+- [Privacy Policy](https://app.collanduni.co.za/privacy.html): How personal information is collected, used, and protected (POPIA).
+
+## Contact
+
+- Phone: +27 63 024 2558
+- Email: info@collanduni.co.za
+
+## Notes
+
+- Application fee payments are processed securely via Paystack.
+- The platform serves all South African provinces.

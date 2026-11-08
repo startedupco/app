@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script>(function(){try{if(localStorage.getItem('cd_theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3081D0" />
+    <title>Welcome to CollandUni</title>
+    <meta name="description" content="Welcome to CollandUni, apply to South African universities and TVET colleges in one place.">
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>if(typeof localStorage==='undefined'||!localStorage){var _ls={};localStorage={getItem:function(k){return _ls[k]||null},setItem:function(k,v){_ls[k]=String(v)},removeItem:function(k){delete _ls[k]},get length(){return Object.keys(_ls).length},key:function(i){return Object.keys(_ls)[i]||null}};}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+    <style>
+        .wx-screen{max-width:520px;margin:0 auto;padding:28px 20px 48px;color:var(--text,#111418)}
+        .wx-hero{display:flex;flex-direction:column;align-items:center;text-align:center;margin:12px 0 8px}
+        .wx-badge{width:64px;height:64px;border-radius:20px;background:var(--primary,#ffd60a);display:flex;align-items:center;justify-content:center;font-size:2rem;margin-bottom:16px;box-shadow:0 4px 0 var(--primary-shade,#e6b800)}
+        .wx-title{font-weight:700;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.01em;line-height:1.15;margin:8px 0}
+        .wx-sub{color:var(--muted,#5b6470);font-size:1rem;max-width:44ch;margin:0 auto 16px;line-height:1.5}
+        .wx-sub strong{color:var(--text,#111418);font-weight:700}
+        .wx-steps{display:flex;flex-direction:column;gap:12px;margin:24px 0 24px;text-align:left}
+        .wx-step{display:flex;gap:12px;align-items:flex-start;background:var(--surface,#f6f7f9);border:1px solid var(--border,#e6e8ec);border-radius:14px;padding:14px 16px}
+        .wx-step-num{flex:none;width:26px;height:26px;border-radius:999px;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8125rem;font-weight:700;margin-top:1px}
+        .wx-step b{display:block;font-size:.9375rem}
+        .wx-step span{color:var(--muted,#5b6470);font-size:.8125rem}
+        .wx-commit{width:100%;background:var(--primary,#ffd60a);color:var(--primary-text,#111418);border:0;border-radius:14px;padding:14px 24px;font-weight:700;font-size:1rem;cursor:pointer;box-shadow:0 4px 0 var(--primary-shade,#e6b800);min-height:48px}
+        .wx-commit:active{transform:translateY(3px);box-shadow:none}
+        .wx-neutral{width:100%;margin-top:12px;padding:14px 24px;background:var(--surface,#f6f7f9);color:var(--text,#111418);border:1px solid var(--border,#e6e8ec);border-radius:14px;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;cursor:pointer;font-family:inherit;min-height:48px;text-decoration:none}
+        .wx-foot{text-align:center;margin-top:24px;font-size:.8125rem;color:var(--muted,#5b6470)}
+        .wx-foot a{color:var(--accent,#2563eb);font-weight:700;text-decoration:none}
+    </style>
+</head>
+<body>
+
+<main class="wx-screen">
+    <div class="wx-hero">
+        <div class="wx-badge">🎓</div>
+        <h1 class="wx-title">Welcome to CollandUni</h1>
+        <p class="wx-sub" id="wxGreeting"><strong>Your one place to apply</strong> to South African universities and TVET colleges.</p>
+    </div>
+
+    <div class="wx-steps">
+        <div class="wx-step"><span class="wx-step-num">1</span><div><b>Finish your profile</b><span>Your marks and where you want to study.</span></div></div>
+        <div class="wx-step"><span class="wx-step-num">2</span><div><b>Choose your institutions</b><span>Pick your top colleges and courses.</span></div></div>
+        <div class="wx-step"><span class="wx-step-num">3</span><div><b>Pay once, we do the rest</b><span>We submit and track every application.</span></div></div>
+    </div>
+
+    <button type="button" class="wx-commit" id="wxContinue">Continue</button>
+    <a class="wx-neutral" href="index.html">Explore</a>
+
+    <div class="wx-foot">Need help? <a href="contact.html">Contact us</a></div>
+</main>
+
+<script>
+(function () {
+    var next = new URLSearchParams(location.search).get('next');
+    var session = null;
+    try { session = (typeof getSession === 'function') ? getSession() : null; } catch (e) {}
+    var greet = document.getElementById('wxGreeting');
+    if (greet && session && session.email) {
+        var name = String(session.email).split('@')[0].replace(/[<>&"]/g, '');
+        greet.innerHTML = '<strong>Welcome back, ' + name + '.</strong> Pick up right where you left off.';
+    }
+    document.getElementById('wxContinue').addEventListener('click', function () {
+        window.location.replace(next || (session ? 'portal.html' : 'login.html'));
+    });
+})();
+</script>
+<script src="offline-loader.js" defer></script>
+</body>
+</html>

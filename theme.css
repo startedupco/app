@@ -1,0 +1,228 @@
+/* ============================================================
+   Collanduni — Global Dark Theme
+   Loaded after dist/output.css on every page. Toggled by adding
+   the `dark` class to <html> (see boot snippet in each page's
+   <head>, persisted in localStorage as `cd_theme`).
+   ============================================================ */
+
+html.dark {
+    color-scheme: dark;
+
+    /* Design-system variables (override output.css :root) */
+    --bg: #0e1013;
+    --card: #16181d;
+    --ink: #e8eaed;
+    --ink-soft: #9aa1ab;
+    --ink-faint: #6b7280;
+    --primary-light: #16222f;
+    --primary-soft: #16222f;
+    --banner: rgba(84, 160, 255, 0.12);
+    --gold-soft: #16222f;
+    --red-soft: #2a1416;
+    --success-soft: #16222f;
+    --warning-soft: #22252a;
+    --line: #26303c;
+    --line-soft: #1d2127;
+    --border: #262b33;
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.45);
+    --shadow-3: 0 12px 32px rgba(0, 0, 0, 0.55);
+}
+
+html.dark body {
+    background: var(--bg);
+    color: var(--ink);
+}
+
+html.dark ::placeholder { color: #565c66; opacity: 1; }
+html.dark ::-moz-selection { background: rgba(48, 129, 208, 0.35); }
+html.dark ::selection { background: rgba(48, 129, 208, 0.35); }
+
+/* ---- Native dropdown popups (select option lists) ---- */
+select,
+input,
+textarea {
+    color-scheme: light;
+}
+
+html.dark select,
+html.dark input,
+html.dark textarea {
+    color-scheme: dark;
+}
+
+select option,
+select optgroup {
+    background-color: #ffffff;
+    color: #17181a;
+}
+
+html.dark select option,
+html.dark select optgroup {
+    background-color: #1d2127;
+    color: #e8eaed;
+}
+
+/* ---- Tailwind utility overrides (hardcoded light colors in markup) ---- */
+html.dark .bg-white { background-color: #16181d; }
+html.dark .bg-gray-50 { background-color: #121417; }
+html.dark .bg-gray-100 { background-color: #1c2026; }
+html.dark .bg-gray-200 { background-color: #23272e; }
+html.dark .hover\:bg-gray-50:hover { background-color: #181b20; }
+html.dark .hover\:bg-gray-100:hover { background-color: #1c2026; }
+html.dark .hover\:bg-gray-200:hover { background-color: #23272e; }
+
+html.dark .text-gray-900 { color: #f0f2f5; }
+html.dark .text-gray-800 { color: #e2e5ea; }
+html.dark .text-gray-700 { color: #c6cad1; }
+html.dark .text-gray-600 { color: #a8adb6; }
+html.dark .text-gray-500 { color: #9aa1ab; }
+html.dark .text-gray-400 { color: #7d838d; }
+html.dark .text-gray-300 { color: #565c66; }
+html.dark .text-black { color: #f0f2f5; }
+
+html.dark .border-gray-100,
+html.dark .border-gray-200,
+html.dark .border-gray-300 { border-color: #262b33; }
+html.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]),
+html.dark .divide-gray-200 > :not([hidden]) ~ :not([hidden]) { border-color: #262b33; }
+
+/* Colored tints / chips */
+html.dark .bg-blue-50 { background-color: #16222f; }
+html.dark .bg-blue-100 { background-color: #1a2a3a; }
+html.dark .text-blue-600, html.dark .text-blue-700 { color: #6ea8e8; }
+
+html.dark .bg-green-50 { background-color: #12241a; }
+html.dark .bg-green-100 { background-color: #17301f; }
+html.dark .text-green-600, html.dark .text-green-700 { color: #4ade80; }
+html.dark .border-green-200 { border-color: #24512f; }
+
+html.dark .bg-red-50 { background-color: #251214; }
+html.dark .bg-red-100 { background-color: #301719; }
+html.dark .text-red-500 { color: #f3797d; }
+html.dark .text-red-600, html.dark .text-red-700 { color: #f26d72; }
+html.dark .border-red-200, html.dark .border-red-300 { border-color: #57262a; }
+
+html.dark .bg-amber-50 { background-color: #241d10; }
+html.dark .bg-amber-100 { background-color: #2c2414; }
+html.dark .text-amber-600, html.dark .text-amber-700 { color: #fbbf24; }
+html.dark .bg-yellow-50 { background-color: #241f0d; }
+html.dark .bg-yellow-100 { background-color: #2c260f; }
+html.dark .border-yellow-200, html.dark .border-yellow-300 { border-color: #584c1a; }
+html.dark .text-yellow-800 { color: #e3c567; }
+
+/* ---- Shared components ---- */
+/* Portal topbar + bottom nav (hardcoded translucent white) */
+html.dark .topbar {
+    background: rgba(14, 16, 19, 0.92);
+    border-color: #20242b;
+}
+html.dark .bottom-nav {
+    background: rgba(14, 16, 19, 0.94);
+    border-top-color: #20242b;
+}
+html.dark .icon-btn { background: #16181d; border-color: #262b33; color: #e8eaed; }
+html.dark .icon-btn:hover { background: #1c2026; border-color: #3a4350; }
+html.dark .dot, html.dark .notification-dot { background: #e8eaed; }
+
+/* Boot gate (inline white background needs !important) */
+html.dark #boot-gate { background: #0e1013 !important; }
+html.dark #boot-gate > div > div:last-child { color: #9aa1ab !important; }
+
+/* Payment modal (hardcoded whites need !important) */
+html.dark .payment-modal { background: #16181d !important; }
+html.dark .payment-header h3 { color: #f0f2f5 !important; }
+html.dark .payment-header button { color: #9aa1ab !important; }
+html.dark .payment-amount, html.dark .payment-details { background: #1c2026 !important; }
+html.dark .payment-amount .value { color: #f0f2f5 !important; }
+html.dark .payment-amount .label,
+html.dark .payment-details .row .label,
+html.dark .payment-footer { color: #9aa1ab !important; }
+html.dark .payment-details .row .value { color: #e2e5ea !important; }
+
+/* Custom popup overlay (slightly darker scrim) */
+html.dark .custom-popup-overlay { background: rgba(0, 0, 0, 0.62) !important; }
+
+/* ---- Settings page component variables ---- */
+html.dark .main-content:has(#section-settings.active) { background: #0e1013; }
+html.dark #section-settings,
+html.dark #panel-settings {
+    --sp-card: #16181d;
+    --sp-text: #e8eaed;
+    --sp-sub: #9aa1ab;
+    --sp-line: rgba(255, 255, 255, 0.08);
+    --sp-border: #262b33;
+    --sp-icon: #e4e6ea;
+    --sw-off: #3a3a3d;
+}
+html.dark #section-settings .set-avatar,
+html.dark #panel-settings .set-avatar { background: #1c2a39; color: #7eb0e8; }
+
+/* ============================================================
+   Global type scale
+   ============================================================ */
+body {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+label,
+input,
+select,
+textarea,
+button {
+    font-size: 16px;
+}
+
+small,
+.help-text {
+    font-size: 14px;
+}
+
+/* ============================================================
+   Full-viewport layout — content always fills the screen
+   ============================================================ */
+html,
+body {
+    width: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+main,
+.main,
+.app-shell,
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+.section-content.active {
+    width: 100%;
+}

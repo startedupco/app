@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script>(function(){try{if(localStorage.getItem('cd_theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3081D0" />
+    <title>Register Create Your Free CollandUni Profile</title>
+    <meta name="description" content="Create your CollandUni account and start applying to South African universities and TVET colleges. Free to register.">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:image" content="https://collanduni.co.za/og-image.png"/>
+    <link rel="canonical" href="https://collanduni.co.za/register.html"/>
+    <meta property="og:description" content="Create your free CollandUni profile and start applying to South African universities and TVET colleges online.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>if(typeof localStorage==='undefined'||!localStorage){var _ls={};localStorage={getItem:function(k){return _ls[k]||null},setItem:function(k,v){_ls[k]=String(v)},removeItem:function(k){delete _ls[k]},get length(){return Object.keys(_ls).length},key:function(i){return Object.keys(_ls)[i]||null}};}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css?v=2" />
+    <style>
+        /* Auth screen - matches site.css design tokens */
+        .lx-screen{max-width:520px;margin:0 auto;padding:28px 20px 48px;color:var(--text,#111418)}
+        .lx-title{font-weight: 700;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.01em;line-height:1.15;margin:8px 0}
+        .lx-sub{color:var(--muted,#5b6470);font-size:1rem;line-height:1.5;margin-bottom:16px}
+        .lx-sub strong{color:var(--text,#111418);font-weight:700}
+        .lx-field{margin-bottom:16px}
+        .lx-label{display:block;font-size:.875rem;font-weight: 600;color:var(--text,#111418);margin-bottom:8px}
+        .lx-input{width:100%;background:var(--surface,#f6f7f9);border:1px solid var(--border,#e6e8ec);border-radius:14px;padding:13px 16px;font-size:1rem;color:var(--text,#111418);outline:none;font-family:inherit;min-height:48px}
+        .lx-input::placeholder{color:var(--faint,#8b939e)}
+        .lx-input:focus{background:#fff;border-color:var(--accent,#2563eb);box-shadow:0 0 0 3px var(--accent-soft,#dbeafe)}
+        .lx-input.err{border-color:var(--danger,#dc2626);background:#fff}
+        .lx-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+        .lx-pw{position:relative}
+        .lx-pw .lx-input{padding-right:52px}
+        .lx-pw button{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--muted,#5b6470);cursor:pointer;padding:8px}
+        .lx-pw button svg{width:20px;height:20px;display:block}
+        .lx-chips{display:flex;gap:10px}
+        .lx-chip{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:#fff;border:1.5px solid var(--border,#e6e8ec);border-radius:999px;padding:12px;font-size:.875rem;font-weight:700;color:var(--text,#111418);cursor:pointer;min-height:44px}
+        .lx-chip.sel{background:var(--text,#111418);border-color:var(--text,#111418);color:#fff}
+        .lx-chip svg{width:14px;height:14px;display:none}
+        .lx-chip.sel svg{display:block}
+        .lx-terms{display:flex;align-items:flex-start;gap:8px;margin:16px 0 24px;font-size:.8125rem;color:var(--muted,#5b6470)}
+        .lx-terms a{color:var(--accent,#2563eb);font-weight:700}
+        .lx-err{background:#fdecec;color:var(--danger,#dc2626);font-size:.9375rem;padding:12px 16px;border-radius:12px;margin-bottom:16px;display:none}
+        .lx-ok{background:#dcfce7;color:#15803d;font-size:.9375rem;padding:12px 16px;border-radius:12px;margin-bottom:16px;display:none}
+        .lx-commit{width:100%;background:var(--primary,#ffd60a);color:var(--primary-text,#111418);border:0;border-radius:14px;padding:14px 24px;font-weight: 700;font-size:1rem;cursor:pointer;box-shadow:0 4px 0 var(--primary-shade,#e6b800);min-height:48px}
+        .lx-commit:active{transform:translateY(3px);box-shadow:none}
+        .lx-commit:disabled{opacity:.6}
+        .lx-div{display:flex;align-items:center;gap:12px;margin:20px 0}
+        .lx-div:before,.lx-div:after{content:"";flex:1;height:1px;background:var(--border,#e6e8ec)}
+        .lx-div span{font-size:.75rem;color:var(--faint,#8b939e);white-space:nowrap}
+        .lx-neutral{width:100%;padding:14px 24px;background:var(--surface,#f6f7f9);color:var(--text,#111418);border:1px solid var(--border,#e6e8ec);border-radius:14px;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;cursor:pointer;font-family:inherit;min-height:48px}
+        .lx-foot{text-align:center;margin-top:24px;font-size:.8125rem;color:var(--muted,#5b6470)}
+        .lx-foot a{color:var(--accent,#2563eb);font-weight: 700;text-decoration:none}
+        @media (max-width:350px){.lx-2col{grid-template-columns:1fr}}
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Register Create Your Free CollandUni Profile",
+  "description": "Create your free CollandUni profile and start applying to South African universities and TVET colleges online.",
+  "url": "https://collanduni.co.za/register.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CollandUni",
+    "url": "https://collanduni.co.za/"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- In-app browser (Instagram/Facebook) keyboard fix: offer real Chrome -->
+<style>
+#iabBanner{position:fixed;top:0;left:0;right:0;z-index:9999;background:#3081D0;color:#fff;font-family:'Comfortaa';display:none;align-items:center;gap:10px;padding:10px 14px;font-size:.8125rem;}
+#iabBanner button{background:#fff;color:#3081D0;border:none;border-radius:999px;padding:7px 14px;font-weight:700;font-size:.75rem;cursor:pointer;flex:none;}
+#iabBanner .ib-x{background:none;color:#fff;border:none;font-size:1.125rem;padding:2px 6px;flex:none;}
+</style>
+<div id="iabBanner"><span>Keyboard issues here? Open CollandUni in Chrome for the full experience.</span><button id="iabOpen">Open</button><button class="ib-x" id="iabClose">&times;</button></div>
+<script>
+(function(){
+if(!/Android/i.test(navigator.userAgent))return;
+if(!/FBAN|FBAV|FB_IAB|Instagram|Line\/|Twitter/i.test(navigator.userAgent))return;
+var b=document.getElementById('iabBanner');b.style.display='flex';
+document.getElementById('iabClose').onclick=function(){b.style.display='none';};
+document.getElementById('iabOpen').onclick=function(){
+var url='https://collanduni.co.za' + location.pathname + location.search;
+try{location.href='intent://'+url.replace(/^https?:\/\//,'')+'#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(url)+';end';}
+catch(e){location.href=url;}
+};
+})();
+</script>
+
+<main class="lx-screen">
+    <div class="lx-title-row">
+        <button type="button" class="lx-back" aria-label="Go back" onclick="if(window.history.length>1){window.history.back();}else{window.location.href='login.html';}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+        <h1 class="lx-title">Create your account</h1>
+    </div>
+    <p class="lx-sub"><strong>Apply to universities, TVET colleges &amp; bursaries</strong> all in one place.</p>
+
+    <form id="registerForm" onsubmit="return false;" novalidate>
+        <div class="lx-field">
+            <label class="lx-label" for="registerEmail">Email</label>
+            <input class="lx-input" type="email" id="registerEmail" required autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false" />
+        </div>
+        <input type="hidden" id="userRole" value="applicant" />
+        <div class="lx-field">
+            <label class="lx-label" for="registerPassword">Password</label>
+            <div class="lx-pw">
+                <input class="lx-input" type="password" id="registerPassword" required autocomplete="new-password" autocapitalize="none" autocorrect="off" spellcheck="false" />
+                <button type="button" data-target="registerPassword" aria-label="Show password" onclick="togglePw(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="lx-field">
+            <label class="lx-label" for="confirmPassword">Confirm password</label>
+            <div class="lx-pw">
+                <input class="lx-input" type="password" id="confirmPassword" required autocomplete="new-password" autocapitalize="none" autocorrect="off" spellcheck="false" />
+                <button type="button" data-target="confirmPassword" aria-label="Show password" onclick="togglePw(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="lx-field">
+            <span class="lx-label">I am a</span>
+            <div class="lx-chips">
+                <div class="lx-chip sel" onclick="selectRole(this,'applicant')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Applicant</div>
+                <div class="lx-chip" onclick="selectRole(this,'student')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Student</div>
+            </div>
+        </div>
+        <div class="lx-terms">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I agree to the <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a></label>
+        </div>
+        <p id="register-error" class="lx-err"></p>
+        <p id="register-success" class="lx-ok"></p>
+        <div class="lx-shell"><button type="submit" id="register-submit-btn" class="lx-commit">Continue</button></div>
+    </form>
+
+    <div class="lx-div"><span>or continue with</span></div>
+
+    <button type="button" onclick="signInWithGoogle()" id="google-signin-btn" class="lx-neutral">
+        <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        Google
+    </button>
+
+    <div class="lx-foot">Already have an account? <a href="login.html">Sign in</a></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="firebase-config.js?v=3"></script>
+<script src="logger.js"></script>
+<script>
+    function selectRole(el, role) { document.querySelectorAll('.lx-chip').forEach(function(o) { o.classList.remove('sel'); }); el.classList.add('sel'); document.getElementById('userRole').value = role; }
+    function togglePw(btn) { var input = document.getElementById(btn.getAttribute('data-target')); var show = input.type === 'password'; input.type = show ? 'text' : 'password'; btn.setAttribute('aria-label', show ? 'Hide password' : 'Show password'); btn.style.opacity = show ? '1' : '0.55'; }
+    // Staff consoles live on Helpdesk Central - they are not part of this bundle.
+    var STAFF_CONSOLE = 'https://console.helpdeskcentral.co.za';
+    function goForRole(role) {
+        window.location.replace('onboarding.html');
+    }
+    var _registerHandling = false;
+    auth.onAuthStateChanged(function(user) {
+        if (user && !_registerHandling) {
+            var uid = user.id || user.uid;
+            var session = getSession();
+            if (session && session.role) {
+                goForRole(session.role);
+            } else {
+                db.collection('users').doc(uid).get().then(function(doc) {
+                    var profile = doc.exists ? doc.data() : {};
+                    var role = profile.role || 'applicant';
+                    try { saveSession({ role: role, email: user.email, uid: uid }); } catch(e) {}
+                    goForRole(role);
+                }).catch(function() { window.location.replace('onboarding.html'); });
+            }
+        }
+    });
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = document.getElementById('registerEmail').value.trim();
+        var password = document.getElementById('registerPassword').value;
+        var confirm = document.getElementById('confirmPassword').value;
+        var userRole = document.getElementById('userRole').value;
+        var terms = document.getElementById('terms').checked;
+        var errEl = document.getElementById('register-error');
+        var sucEl = document.getElementById('register-success');
+        errEl.style.display = 'none'; sucEl.style.display = 'none';
+        if (!email || !password || !confirm) { errEl.textContent = 'Fill in all fields.'; errEl.style.display = 'block'; return; }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { errEl.textContent = 'Enter a valid email address.'; errEl.style.display = 'block'; return; }
+        if (password.length < 6) { errEl.textContent = 'Password must be at least 6 characters.'; errEl.style.display = 'block'; return; }
+        if (password.length > 128) { errEl.textContent = 'Password must be under 128 characters.'; errEl.style.display = 'block'; return; }
+        if (password !== confirm) { errEl.textContent = 'Passwords do not match.'; errEl.style.display = 'block'; return; }
+        if (!terms) { errEl.textContent = 'Accept the Terms and Privacy Policy.'; errEl.style.display = 'block'; return; }
+        var btn = document.getElementById('register-submit-btn'); btn.disabled = true; btn.textContent = 'Creating...'; btn.classList.add('btn-shimmer');
+        _registerHandling = true;
+        var regTimeout = setTimeout(function() { _registerHandling = false; btn.disabled = false; btn.textContent = 'Continue'; btn.classList.remove('btn-shimmer'); errEl.textContent = 'Timed out. Try again.'; errEl.style.display = 'block'; }, 20000);
+        auth.createUserWithEmailAndPassword(email, password, {
+                role: userRole || 'applicant'
+            })
+            .then(function(result) {
+                clearTimeout(regTimeout);
+                var user = result.user; var role = userRole || 'applicant';
+                // Persist the session BEFORE redirecting. The onAuthStateChanged
+                // handler above is suppressed while _registerHandling is true, so
+                // without this the session (and its uid) would never be written and
+                // onboarding would load with no uid - silently saving to the device
+                // only and leaving the profile empty.
+                if (user && user.id) {
+                    try { saveSession({ role: role, email: email, uid: user.id }); } catch(e) {}
+                }
+                // Save minimal profile — names are collected in onboarding.
+                // When email confirmation is on there is no session yet, so RLS
+                // (auth.uid() = id) rejects this insert and the row is created
+                // from auth.user_metadata on first sign-in instead - that write
+                // is now awaited in firebase-config.js before redirecting.
+                if (user && user.id) {
+                    db.collection('users').doc(user.id).set({
+                        email: email,
+                        role: role,
+                        status: 'active',
+                        onboardingComplete: false
+                    }, { merge: true }).catch(function(e) {
+                        console.warn('[Register] users row not written yet (expected before first sign-in):', (e && (e.message || e.error_description)) || e);
+                    });
+                }
+                if (typeof logAuth === 'function') logAuth('signup_success', { email: email, role: role }, { userId: user.id });
+                if (user && user.id) { db.collection('notifications').add({ userId: user.id, title: 'Welcome!', message: 'Account created. Complete your profile and start applying.', type: 'system', read: false, createdAt: Date.now() }).catch(function() {}); }
+                if (user && user.id && typeof sendAINotification === 'function') {
+                    sendAINotification(user.id, 'info', 'New student ' + email + ' just registered. Welcome them warmly and guide them to complete their profile and upload documents.');
+                }
+                sucEl.textContent = 'Account created! Redirecting...'; sucEl.style.display = 'block';
+                setTimeout(function() { goForRole(role); }, 1500);
+            })
+            .catch(function(error) {
+                clearTimeout(regTimeout); _registerHandling = false; btn.disabled = false; btn.textContent = 'Continue'; btn.classList.remove('btn-shimmer');
+                var msg = 'Registration failed. Try again.';
+                var raw = (error.message || error.error_description || error.error || String(error) || '').toLowerCase();
+                if (raw.includes('already') || raw.includes('exists') || raw.includes('registered')) msg = 'Email already registered. Sign in instead.';
+                else if (raw.includes('invalid email')) msg = 'Invalid email address.';
+                else if (raw.includes('password')) msg = 'Password too weak. Use 8+ characters with a number.';
+                else if (raw.includes('network') || raw.includes('fetch') || raw.includes('timeout')) msg = 'Network error. Check your connection and retry.';
+                else if (raw.includes('rate') || raw.includes('too many')) msg = 'Too many attempts. Wait a minute and try again.';
+                else if (raw.includes('database error')) msg = 'Server error. Wait 30 seconds and retry. Still stuck? Contact support.';
+                else if (raw.includes('email not confirmed') || raw.includes('confirm')) msg = 'Check your inbox for a confirmation link, then sign in.';
+                else { msg = 'Registration failed: ' + (error.message || error.error_description || 'unknown error'); }
+                errEl.textContent = msg; errEl.style.display = 'block';
+            });
+    });
+    function signInWithGoogle() {
+        var btn = document.getElementById('google-signin-btn');
+        btn.disabled = true; btn.textContent = 'Connecting to Google...'; btn.classList.add('btn-shimmer');
+        // Stay on this origin when it can receive the OAuth callback; file://
+        // cannot, so fall back to the deployed site.
+        var siteUrl = /^https?:$/.test(location.protocol) ? location.origin : 'https://app.collanduni.co.za';
+        supabaseClient.auth.signInWithOAuth({
+            provider: 'google',
+            options: { redirectTo: siteUrl + '/onboarding.html' }
+        }).catch(function(e) {
+            btn.disabled = false; btn.classList.remove('btn-shimmer'); btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> Google';
+            document.getElementById('register-error').textContent = 'Google sign-in failed. Try again.'; document.getElementById('register-error').style.display = 'block';
+        });
+    }
+</script>
+<script>
+    /* password reveal lives on the toggle button (see togglePw above) */
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"1b8c47c38d024055b93c8f2b4a1c22b9","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script src="offline-loader.js" defer></script>
+</body>
+</html>

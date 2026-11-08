@@ -1,0 +1,5794 @@
+{
+  "Waterberg TVET College": [
+    {
+      "id": "occupational-chef",
+      "name": "Occupational Certificate: Chef",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "max_grade": 12,
+        "subjects": [
+          {
+            "subject": [
+              "Hospitality",
+              "Consumer Studies"
+            ],
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Mathematics",
+              "Mathematical Literacy"
+            ],
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 50
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "occupational-ecd-practitioner",
+      "name": "Occupational Certificate: Early Childhood Development Practitioner",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "max_grade": 11,
+        "subjects": [
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Mathematics",
+              "Mathematical Literacy"
+            ],
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "No NCV Level 4 students allowed to apply."
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-primary-health-l2",
+      "name": "National Certificate Vocational: Primary Health Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Life Sciences"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-safety-in-society-l2",
+      "name": "National Certificate Vocational: Safety in Society Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Physical Sciences",
+              "Natural Science"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-civil-engineering-building-construction-masonry-l2",
+      "name": "National Certificate Vocational: Civil Engineering and Building Construction Level 2 (Masonry)",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-civil-engineering-building-construction-plumbing-l2",
+      "name": "National Certificate Vocational: Civil Engineering and Building Construction Level 2 (Plumbing)",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-electrical-infrastructure-construction-l2",
+      "name": "National Certificate Vocational: Electrical Infrastructure Construction Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-it-computer-science-robotics-l2",
+      "name": "National Certificate Vocational: Information Technology and Computer Science (Robotics) Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science",
+              "CAT"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-it-computer-science-software-development-design-l2",
+      "name": "National Certificate Vocational: Information Technology and Computer Science (Software Development and Design) Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science",
+              "CAT"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-primary-agriculture-mathlit-l2",
+      "name": "National Certificate Vocational: Primary Agriculture Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematical Literacy"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-primary-agriculture-maths-l2",
+      "name": "National Certificate Vocational: Primary Agriculture Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-tourism-l2",
+      "name": "National Certificate Vocational: Tourism Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Tourism",
+              "Geography"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-electrical-infrastructure-construction-l2-thabazimbi",
+      "name": "National Certificate Vocational: Electrical Infrastructure Construction Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "ncv-engineering-related-design-fitting-turning-l2",
+      "name": "National Certificate Vocational: Engineering and Related Design (Fitting and Turning) Level 2",
+      "institution": "Waterberg TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ]
+      },
+      "province": "Limpopo"
+    }
+  ],
+  "Boland TVET College": [
+    {
+      "id": "boland-ncv-safety-in-society",
+      "name": "NCV Safety in Society",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "subjects": [
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Mathematics",
+              "Mathematical Literacy"
+            ],
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Life Skills"
+            ],
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Grade 10 pass."
+        ]
+      },
+      "campuses": [
+        "Caledon"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-ncv-civil-engineering",
+      "name": "NCV Civil Engineering Construction",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Life Skills"
+            ],
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Grade 9 pass with a pass in Mathematics."
+        ]
+      },
+      "campuses": [
+        "Paarl"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-ncv-it-computer-science",
+      "name": "NCV Information Technology & Computer Science",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 11,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics",
+              "Mathematical Literacy"
+            ],
+            "minimum_percent": 55
+          }
+        ],
+        "notes": [
+          "Grade 11 with 55% in Mathematics or Mathematical Literacy."
+        ]
+      },
+      "campuses": [
+        "Stellenbosch"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-ncv-electrical-infrastructure",
+      "name": "NCV Electrical Infrastructure Construction",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Life Skills"
+            ],
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Grade 9 pass with a pass in Mathematics."
+        ]
+      },
+      "campuses": [
+        "Strand"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-ncv-engineering-auto",
+      "name": "NCV Engineering and Related Design (Auto)",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Life Skills"
+            ],
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Grade 9 pass with a pass in Mathematics."
+        ]
+      },
+      "campuses": [
+        "Worcester"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-ncv-engineering-welding",
+      "name": "NCV Engineering and Related Design (Welding)",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "minimum_percent": 50
+          },
+          {
+            "subject": [
+              "Life Skills"
+            ],
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Grade 9 pass with a pass in Mathematics."
+        ]
+      },
+      "campuses": [
+        "Worcester"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-ecd-practitioner",
+      "name": "QCTO ECD Practitioner",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 11,
+        "notes": [
+          "Passed Grade 11."
+        ]
+      },
+      "campuses": [
+        "Caledon",
+        "Paarl",
+        "Worcester"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-bookkeeper",
+      "name": "QCTO Bookkeeper",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 12,
+        "notes": [
+          "Passed Matric (Grade 12)."
+        ]
+      },
+      "campuses": [
+        "Caledon",
+        "Paarl",
+        "Worcester"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-management-assistant",
+      "name": "QCTO Management Assistant",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 12,
+        "notes": [
+          "Passed Matric (Grade 12)."
+        ]
+      },
+      "campuses": [
+        "Caledon",
+        "Paarl",
+        "Worcester"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-office-administrator",
+      "name": "QCTO Office Administrator",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 12,
+        "notes": [
+          "Passed Matric (Grade 12)."
+        ]
+      },
+      "campuses": [
+        "Caledon",
+        "Paarl",
+        "Strand",
+        "Stellenbosch"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-tourism-info-officer",
+      "name": "QCTO Tourism Information Officer",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 12,
+        "notes": [
+          "Passed Matric (Grade 12)."
+        ]
+      },
+      "campuses": [
+        "Caledon"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-cook",
+      "name": "QCTO Cook",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "notes": [
+          "Passed NQF Level 1 or at least 16 years old."
+        ]
+      },
+      "campuses": [
+        "Paarl"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-welder",
+      "name": "QCTO Welder",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Mathematics and Science. Must be 16+ years old."
+        ]
+      },
+      "campuses": [
+        "Worcester"
+      ],
+      "province": "Western Cape"
+    },
+    {
+      "id": "boland-qcto-automotive-mechanic",
+      "name": "QCTO Automotive Mechanic",
+      "institution": "Boland TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Mathematics and Science. Must be 16+ years old."
+        ]
+      },
+      "campuses": [
+        "Worcester"
+      ],
+      "province": "Western Cape"
+    }
+  ],
+  "Mopani TVET College": [
+    {
+      "id": "mopani-ncv-hospitality",
+      "name": "NCV Hospitality",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "notes": [
+          "Grade 10, 11 or 12 with admission to Higher Certificate"
+        ]
+      },
+      "campuses": [
+        "Phalaborwa"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-tourism",
+      "name": "NCV Tourism",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "notes": [
+          "Grade 10, 11 or 12 with admission to Higher Certificate"
+        ]
+      },
+      "campuses": [
+        "Phalaborwa"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-generic-management",
+      "name": "NCV Generic Management",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "notes": [
+          "Requires prior NCV Level 2 from elsewhere. No L2 entry at Phalaborwa."
+        ]
+      },
+      "campuses": [
+        "Phalaborwa"
+      ],
+      "levels": {
+        "L2": false,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-finance-accounting",
+      "name": "NCV Finance, Economics & Accounting",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "notes": [
+          "Requires prior NCV Level 2 from elsewhere. No L2 entry at Phalaborwa."
+        ]
+      },
+      "campuses": [
+        "Phalaborwa"
+      ],
+      "levels": {
+        "L2": false,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-marketing",
+      "name": "NCV Marketing",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "notes": [
+          "Requires prior NCV Level 2 from elsewhere. No L2 entry at Phalaborwa."
+        ]
+      },
+      "campuses": [
+        "Phalaborwa"
+      ],
+      "levels": {
+        "L2": false,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-office-admin",
+      "name": "NCV Office Administration",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 10,
+        "notes": [
+          "Requires prior NCV Level 2 from elsewhere. No L2 entry at Phalaborwa."
+        ]
+      },
+      "campuses": [
+        "Phalaborwa"
+      ],
+      "levels": {
+        "L2": false,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-engineering-automotive",
+      "name": "NCV Engineering Related & Design (Automotive)",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-carpentry",
+      "name": "NCV Civil Engineering & Building Construction (Carpentry)",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-electrical",
+      "name": "NCV Electrical Infrastructure Construction",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-fabrication",
+      "name": "NCV Engineering Related & Design (Fabrication)",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-fitting-turning",
+      "name": "NCV Engineering Related & Design (Fitting and Turning)",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-it-computer-science",
+      "name": "NCV Information Technology & Computer Science",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-masonry",
+      "name": "NCV Civil Engineering & Building Construction (Masonry)",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-plumbing",
+      "name": "NCV Civil Engineering & Building Construction (Plumbing)",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English"
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-renewable-technologies",
+      "name": "NCV Electrical Renewable Technologies",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "Physical Science",
+              "Natural Science"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths, Physical Science & English. Specialization within Electrical Infrastructure Construction."
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    },
+    {
+      "id": "mopani-ncv-robotics",
+      "name": "NCV IT & Computer Science (Programming & Robotics)",
+      "institution": "Mopani TVET College",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "required": true,
+            "minimum_percent": 40
+          }
+        ],
+        "notes": [
+          "Passed Grade 9 with Maths and English. Physical Science NOT required."
+        ]
+      },
+      "campuses": [
+        "Sir Val Duncan"
+      ],
+      "levels": {
+        "L2": true,
+        "L3": true,
+        "L4": true
+      },
+      "province": "Limpopo"
+    }
+  ],
+  "Eastcape Midlands TVET College": [
+    {
+      "id": "em-engineering-and-related-design-automotive-charles-goodyear-cam",
+      "name": "Engineering and Related Design - Automotive",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Engineering Studies",
+      "campus": "Charles Goodyear CAM",
+      "campuses": [
+        "Charles Goodyear CAM"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 30,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9, 10 or 11 with Life Orientation and English 40%, Mathematics 30%, Rest of subject 50%"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11 with Life Orientation and English 40%, Mathematics 30%, Rest of subject 50%"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Life Orientation",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          },
+          {
+            "subject": "Mathematics",
+            "min_mark": 30
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-engineering-and-related-design-fitting-charles-goodyear-cam",
+      "name": "Engineering and Related Design - Fitting",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Engineering Studies",
+      "campus": "Charles Goodyear CAM",
+      "campuses": [
+        "Charles Goodyear CAM"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 30,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9, 10 or 11 with Life Orientation and English 40%, Mathematics 30%, Rest of subject 50%"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11 with Life Orientation and English 40%, Mathematics 30%, Rest of subject 50%"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Life Orientation",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          },
+          {
+            "subject": "Mathematics",
+            "min_mark": 30
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-engineering-and-related-design-welding-charles-goodyear-cam",
+      "name": "Engineering and Related Design - Welding",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Engineering Studies",
+      "campus": "Charles Goodyear CAM",
+      "campuses": [
+        "Charles Goodyear CAM"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 30,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9, 10 or 11 with Life Orientation and English 40%, Mathematics 30%, Rest of subject 50%"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11 with Life Orientation and English 40%, Mathematics 30%, Rest of subject 50%"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Life Orientation",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          },
+          {
+            "subject": "Mathematics",
+            "min_mark": 30
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-safety-in-society-graaff-reinet-campus",
+      "name": "Safety in Society",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Safety in Society",
+      "campus": "Graaff-Reinet Campus",
+      "campuses": [
+        "Graaff-Reinet Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-hospitality-grahamstown-campus",
+      "name": "Hospitality",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Hospitality",
+      "campus": "Grahamstown Campus",
+      "campuses": [
+        "Grahamstown Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-tourism-grahamstown-campus",
+      "name": "Tourism",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Tourism",
+      "campus": "Grahamstown Campus",
+      "campuses": [
+        "Grahamstown Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-tourism-high-street-campus",
+      "name": "Tourism",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Tourism",
+      "campus": "High Street Campus",
+      "campuses": [
+        "High Street Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-electrical-infrastructure-construction-electrical-systems-and-construction-park-avenue-campus",
+      "name": "Electrical Infrastructure Construction - Electrical Systems and Construction",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Engineering Studies",
+      "campus": "Park Avenue Campus",
+      "campuses": [
+        "Park Avenue Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-electrical-infrastructure-construction-renewable-energy-technology-park-avenue-campus",
+      "name": "Electrical Infrastructure Construction - Renewable Energy Technology",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Engineering Studies",
+      "campus": "Park Avenue Campus",
+      "campuses": [
+        "Park Avenue Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-information-technology-and-computer-science-park-avenue-campus",
+      "name": "Information Technology and Computer Science",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Information Technology",
+      "campus": "Park Avenue Campus",
+      "campuses": [
+        "Park Avenue Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "em-information-technology-and-computer-science-programming-and-robotics-park-avenue-campus",
+      "name": "Information Technology and Computer Science - Programming and Robotics",
+      "institution": "Eastcape Midlands TVET College",
+      "category": "Information Technology",
+      "campus": "Park Avenue Campus",
+      "campuses": [
+        "Park Avenue Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9, 10 or 11"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9, 10 or 11",
+        "requirement_text": "Grade 9, 10 or 11"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    }
+  ],
+  "Ikhala TVET College": [
+    {
+      "id": "ikhala-engineering-and-related-design-aliwal-north-campus",
+      "name": "Engineering and Related Design",
+      "institution": "Ikhala TVET College",
+      "category": "Engineering Studies",
+      "campus": "Aliwal North Campus",
+      "campuses": [
+        "Aliwal North Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher with Mathematics (40%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or higher",
+        "requirement_text": "Grade 9 or higher with Mathematics (40%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-hospitality-aliwal-north-campus",
+      "name": "Hospitality",
+      "institution": "Ikhala TVET College",
+      "category": "Hospitality",
+      "campus": "Aliwal North Campus",
+      "campuses": [
+        "Aliwal North Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 09 or NQF Level 1 Qualification or higher"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9",
+        "requirement_text": "Grade 09 or NQF Level 1 Qualification or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-tourism-aliwal-north-campus",
+      "name": "Tourism",
+      "institution": "Ikhala TVET College",
+      "category": "Tourism",
+      "campus": "Aliwal North Campus",
+      "campuses": [
+        "Aliwal North Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 09 or NQF Level 1 Qualification or higher"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9",
+        "requirement_text": "Grade 09 or NQF Level 1 Qualification or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-civil-engineering-and-building-construction-bricklaying-ezibeleni-campus",
+      "name": "Civil Engineering and Building Construction - Bricklaying",
+      "institution": "Ikhala TVET College",
+      "category": "Civil Engineering and Building Construction",
+      "campus": "Ezibeleni Campus",
+      "campuses": [
+        "Ezibeleni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher with Mathematics (40%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or higher",
+        "requirement_text": "Grade 9 or higher with Mathematics (40%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-civil-engineering-and-building-construction-carpentry-ezibeleni-campus",
+      "name": "Civil Engineering and Building Construction - Carpentry",
+      "institution": "Ikhala TVET College",
+      "category": "Civil Engineering and Building Construction",
+      "campus": "Ezibeleni Campus",
+      "campuses": [
+        "Ezibeleni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher with Mathematics (40%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or higher",
+        "requirement_text": "Grade 9 or higher with Mathematics (40%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-electrical-infrastructure-construction-ezibeleni-campus",
+      "name": "Electrical Infrastructure Construction",
+      "institution": "Ikhala TVET College",
+      "category": "Engineering Studies",
+      "campus": "Ezibeleni Campus",
+      "campuses": [
+        "Ezibeleni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher with Mathematics (40%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or higher",
+        "requirement_text": "Grade 9 or higher with Mathematics (40%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-electrical-infrastructure-construction-renewable-energy-technologies-ezibeleni-campus",
+      "name": "Electrical Infrastructure Construction - Renewable Energy Technologies",
+      "institution": "Ikhala TVET College",
+      "category": "Engineering Studies",
+      "campus": "Ezibeleni Campus",
+      "campuses": [
+        "Ezibeleni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or Higher with 40% pass in Mathematics and a 40% pass in English"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or Higher",
+        "requirement_text": "Grade 9 or Higher with 40% pass in Mathematics and a 40% pass in English"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-engineering-and-related-design-ezibeleni-campus",
+      "name": "Engineering and Related Design",
+      "institution": "Ikhala TVET College",
+      "category": "Engineering Studies",
+      "campus": "Ezibeleni Campus",
+      "campuses": [
+        "Ezibeleni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher with Mathematics (40%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or higher",
+        "requirement_text": "Grade 9 or higher with Mathematics (40%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-information-technology-and-computer-science-queenstown-campus",
+      "name": "Information Technology and Computer Science",
+      "institution": "Ikhala TVET College",
+      "category": "Information Technology",
+      "campus": "Queenstown Campus",
+      "campuses": [
+        "Queenstown Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 11,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 30,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 11 with Mathematics (30%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 11",
+        "requirement_text": "Grade 11 with Mathematics (30%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 30
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-civil-engineering-and-building-construction-carpentry-sterkspruit-campus",
+      "name": "Civil Engineering and Building Construction - Carpentry",
+      "institution": "Ikhala TVET College",
+      "category": "Civil Engineering and Building Construction",
+      "campus": "Sterkspruit Campus",
+      "campuses": [
+        "Sterkspruit Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher with Mathematics (40%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or higher",
+        "requirement_text": "Grade 9 or higher with Mathematics (40%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    },
+    {
+      "id": "ikhala-civil-engineering-and-building-construction-plumbing-sterkspruit-campus",
+      "name": "Civil Engineering and Building Construction - Plumbing",
+      "institution": "Ikhala TVET College",
+      "category": "Civil Engineering and Building Construction",
+      "campus": "Sterkspruit Campus",
+      "campuses": [
+        "Sterkspruit Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          },
+          {
+            "subject": [
+              "English"
+            ],
+            "minimum_percent": 40,
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher with Mathematics (40%) and English (40%)"
+        ]
+      },
+      "entry": {
+        "grade_required": "Grade 9 or higher",
+        "requirement_text": "Grade 9 or higher with Mathematics (40%) and English (40%)"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 40
+          },
+          {
+            "subject": "English",
+            "min_mark": 40
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Eastern Cape"
+    }
+  ],
+  "Goldfields TVET College": [
+    {
+      "id": "gold-plumbing-tosa-campus",
+      "name": "Plumbing",
+      "institution": "Goldfields TVET College",
+      "category": "Civil Engineering and Building Construction",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-electrical-systems-construction-tosa-campus",
+      "name": "Electrical Systems & Construction",
+      "institution": "Goldfields TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-renewable-energy-technologies-tosa-campus",
+      "name": "Renewable Energy Technologies",
+      "institution": "Goldfields TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-automotive-repair-maintenance-tosa-campus",
+      "name": "Automotive Repair & Maintenance",
+      "institution": "Goldfields TVET College",
+      "category": "Engineering Studies",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-engineering-fabrication-boilermaking-tosa-campus",
+      "name": "Engineering Fabrication Boilermaking",
+      "institution": "Goldfields TVET College",
+      "category": "Engineering Studies",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-information-technology-and-computer-science-tosa-campus",
+      "name": "Information Technology and Computer Science",
+      "institution": "Goldfields TVET College",
+      "category": "Information Technology",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-hospitality-welkom-campus",
+      "name": "Hospitality",
+      "institution": "Goldfields TVET College",
+      "category": "Hospitality",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Passed Grade 9/10/11. Documents: Certified copy of ID and school report. Note: ONLY applicants who have ALREADY APPLIED FOR NSFAS will be considered."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Passed Grade 9/10/11. Documents: Certified copy of ID and school report. Note: ONLY applicants who have ALREADY APPLIED FOR NSFAS will be considered."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-tourism-welkom-campus",
+      "name": "Tourism",
+      "institution": "Goldfields TVET College",
+      "category": "Tourism",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Passed Grade 9/10/11. Documents: Certified copy of ID and school report. Note: ONLY applicants who have ALREADY APPLIED FOR NSFAS will be considered."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Passed Grade 9/10/11. Documents: Certified copy of ID and school report. Note: ONLY applicants who have ALREADY APPLIED FOR NSFAS will be considered."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-transport-and-logistics-welkom-campus",
+      "name": "Transport and Logistics",
+      "institution": "Goldfields TVET College",
+      "category": "Transport and Logistics",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "NCV",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Passed Grade 9/10/11. Documents: Certified copy of ID and school report. Note: ONLY applicants who have ALREADY APPLIED FOR NSFAS will be considered."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Passed Grade 9/10/11. Documents: Certified copy of ID and school report. Note: ONLY applicants who have ALREADY APPLIED FOR NSFAS will be considered."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-early-childhood-development-practitioner-skills-academy",
+      "name": "Early Childhood Development Practitioner",
+      "institution": "Goldfields TVET College",
+      "category": "Education and Training",
+      "campus": "Skills Academy",
+      "campuses": [
+        "Skills Academy"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-boilermaker-tosa-campus",
+      "name": "Boilermaker",
+      "institution": "Goldfields TVET College",
+      "category": "Engineering",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-electrician-tosa-campus",
+      "name": "Electrician",
+      "institution": "Goldfields TVET College",
+      "category": "Electrical",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-plumber-tosa-campus",
+      "name": "Plumber",
+      "institution": "Goldfields TVET College",
+      "category": "Plumbing",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 11,
+        "subjects": [
+          {
+            "subject": [
+              "Engineering Maths"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Science"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Building Drawings"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 3 qualification (Grade 11), equivalent to N2 knowledge areas of Engineering Maths, Science and Building Drawings"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 3,
+        "grade_required": "Grade 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 3 qualification (Grade 11), equivalent to N2 knowledge areas of Engineering Maths, Science and Building Drawings"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Engineering Maths",
+            "min_mark": null
+          },
+          {
+            "subject": "Science",
+            "min_mark": null
+          },
+          {
+            "subject": "Building Drawings",
+            "min_mark": null
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-solar-photovoltaic-service-technician-tosa-campus",
+      "name": "Solar Photovoltaic Service Technician",
+      "institution": "Goldfields TVET College",
+      "category": "Renewable Energy",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-welder-tosa-campus",
+      "name": "Welder",
+      "institution": "Goldfields TVET College",
+      "category": "Welding",
+      "campus": "Tosa Campus",
+      "campuses": [
+        "Tosa Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Science"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1 qualification (Grade 9), with mathematics and science"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1 qualification (Grade 9), with mathematics and science"
+      },
+      "entry_subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": null
+          },
+          {
+            "subject": "Science",
+            "min_mark": null
+          }
+        ],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-bookkeeper-welkom-campus",
+      "name": "Bookkeeper",
+      "institution": "Goldfields TVET College",
+      "category": "Finance",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [],
+        "notes": [
+          "Passed FEA L4 NC(V) with Math’s/Lit 40% or Grade 12 with Accounting, English and Math’/Lit 40%"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 12",
+        "ncv_level_required": "NC(V) Level 4",
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Passed FEA L4 NC(V) with Math’s/Lit 40% or Grade 12 with Accounting, English and Math’/Lit 40%"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": [
+          {
+            "group": [
+              {
+                "subject": "Mathematics / Mathematical Literacy",
+                "min_mark": 40
+              }
+            ],
+            "qualification": "FEA L4 NC(V)"
+          },
+          {
+            "group": [
+              {
+                "subject": "Accounting",
+                "min_mark": 40
+              },
+              {
+                "subject": "English",
+                "min_mark": 40
+              },
+              {
+                "subject": "Mathematics / Mathematical Literacy",
+                "min_mark": 40
+              }
+            ],
+            "qualification": "Grade 12"
+          }
+        ]
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-chef-welkom-campus",
+      "name": "Chef",
+      "institution": "Goldfields TVET College",
+      "category": "Hospitality and Culinary",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [],
+        "notes": [
+          "Passed L4 NC(V) or Grade 12 with 40% English and 50% Consumer Studies or Hospitality Services"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 12",
+        "ncv_level_required": "NC(V) Level 4",
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Passed L4 NC(V) or Grade 12 with 40% English and 50% Consumer Studies or Hospitality Services"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": [
+          {
+            "group": [
+              {
+                "subject": "English",
+                "min_mark": 40
+              },
+              {
+                "subject": "Consumer Studies",
+                "min_mark": 50
+              }
+            ],
+            "qualification": "Grade 12"
+          },
+          {
+            "group": [
+              {
+                "subject": "English",
+                "min_mark": 40
+              },
+              {
+                "subject": "Hospitality Services",
+                "min_mark": 50
+              }
+            ],
+            "qualification": "Grade 12"
+          }
+        ]
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-community-development-practitioner-welkom-campus",
+      "name": "Community Development Practitioner",
+      "institution": "Goldfields TVET College",
+      "category": "Community Development",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-community-development-worker-welkom-campus",
+      "name": "Community Development Worker",
+      "institution": "Goldfields TVET College",
+      "category": "Community Development",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-hairdresser-welkom-campus",
+      "name": "Hairdresser",
+      "institution": "Goldfields TVET College",
+      "category": "Beauty",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Must have completed Hairdresser Year 2 (this is Year 3 of the programme)"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Must have completed Hairdresser Year 2 (this is Year 3 of the programme)"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-office-administrator-welkom-campus",
+      "name": "Office Administrator",
+      "institution": "Goldfields TVET College",
+      "category": "Office Administration",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "province": "Free State"
+    },
+    {
+      "id": "gold-tourist-information-officer-welkom-campus",
+      "name": "Tourist Information Officer",
+      "institution": "Goldfields TVET College",
+      "category": "Tourism",
+      "campus": "Welkom Campus",
+      "campuses": [
+        "Welkom Campus"
+      ],
+      "type": "Occupational Certificate",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [],
+        "notes": [
+          "Passed L4 NC(V) or Grade 12 with English 40% and 50% Geography or Tourism"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 12",
+        "ncv_level_required": "NC(V) Level 4",
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Passed L4 NC(V) or Grade 12 with English 40% and 50% Geography or Tourism"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": [
+          {
+            "group": [
+              {
+                "subject": "English",
+                "min_mark": 40
+              },
+              {
+                "subject": "Geography",
+                "min_mark": 50
+              }
+            ],
+            "qualification": "Grade 12"
+          },
+          {
+            "group": [
+              {
+                "subject": "English",
+                "min_mark": 40
+              },
+              {
+                "subject": "Tourism",
+                "min_mark": 50
+              }
+            ],
+            "qualification": "Grade 12"
+          }
+        ]
+      },
+      "province": "Free State"
+    }
+  ],
+  "Motheo TVET College": [
+    {
+      "id": "motheo-safety-in-society-bloemfontein-campus",
+      "name": "Safety in Society",
+      "institution": "Motheo TVET College",
+      "category": "Safety in Society",
+      "campus": "Bloemfontein Campus",
+      "campuses": [
+        "Bloemfontein Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-transport-and-logistics-bloemfontein-campus",
+      "name": "Transport and Logistics",
+      "institution": "Motheo TVET College",
+      "category": "Transport and Logistics",
+      "campus": "Bloemfontein Campus",
+      "campuses": [
+        "Bloemfontein Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-hospitality-bloemfontein-campus",
+      "name": "Hospitality",
+      "institution": "Motheo TVET College",
+      "category": "Hospitality",
+      "campus": "Bloemfontein Campus",
+      "campuses": [
+        "Bloemfontein Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-tourism-bloemfontein-campus",
+      "name": "Tourism",
+      "institution": "Motheo TVET College",
+      "category": "Tourism",
+      "campus": "Bloemfontein Campus",
+      "campuses": [
+        "Bloemfontein Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-electrical-infrastructure-construction-electrical-systems-construction-hillside-view-campus",
+      "name": "Electrical Infrastructure Construction - Electrical Systems & Construction",
+      "institution": "Motheo TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Hillside View Campus",
+      "campuses": [
+        "Hillside View Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-electrical-infrastructure-construction-renewable-energy-hillside-view-campus",
+      "name": "Electrical Infrastructure Construction - Renewable Energy",
+      "institution": "Motheo TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Hillside View Campus",
+      "campuses": [
+        "Hillside View Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-information-technology-and-computer-science-software-hillside-view-campus",
+      "name": "Information Technology and Computer Science - Software",
+      "institution": "Motheo TVET College",
+      "category": "Information Technology",
+      "campus": "Hillside View Campus",
+      "campuses": [
+        "Hillside View Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-information-technology-and-computer-science-robotics-hillside-view-campus",
+      "name": "Information Technology and Computer Science - Robotics",
+      "institution": "Motheo TVET College",
+      "category": "Information Technology",
+      "campus": "Hillside View Campus",
+      "campuses": [
+        "Hillside View Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-engineering-and-related-design-fitting-hillside-view-campus",
+      "name": "Engineering and Related Design - Fitting",
+      "institution": "Motheo TVET College",
+      "category": "Engineering Studies",
+      "campus": "Hillside View Campus",
+      "campuses": [
+        "Hillside View Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-engineering-and-related-design-welding-hillside-view-campus",
+      "name": "Engineering and Related Design - Welding",
+      "institution": "Motheo TVET College",
+      "category": "Engineering Studies",
+      "campus": "Hillside View Campus",
+      "campuses": [
+        "Hillside View Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-engineering-and-related-design-automotive-hillside-view-campus",
+      "name": "Engineering and Related Design - Automotive",
+      "institution": "Motheo TVET College",
+      "category": "Engineering Studies",
+      "campus": "Hillside View Campus",
+      "campuses": [
+        "Hillside View Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-primary-agriculture-plot-32",
+      "name": "Primary Agriculture",
+      "institution": "Motheo TVET College",
+      "category": "Agriculture",
+      "campus": "Plot 32",
+      "campuses": [
+        "Plot 32"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-civil-engineering-and-building-construction-thaba-nchu-campus",
+      "name": "Civil Engineering and Building Construction",
+      "institution": "Motheo TVET College",
+      "category": "Civil Engineering and Building Construction",
+      "campus": "Thaba'nchu Campus",
+      "campuses": [
+        "Thaba'nchu Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-electrical-infrastructure-construction-thaba-nchu-campus",
+      "name": "Electrical Infrastructure Construction",
+      "institution": "Motheo TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Thaba'nchu Campus",
+      "campuses": [
+        "Thaba'nchu Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    },
+    {
+      "id": "motheo-education-and-development-thaba-nchu-campus",
+      "name": "Education and Development",
+      "institution": "Motheo TVET College",
+      "category": "Education and Development",
+      "campus": "Thaba'nchu Campus",
+      "campuses": [
+        "Thaba'nchu Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed."
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "Free State"
+    }
+  ],
+  "Thekwini TVET College": [
+    {
+      "id": "thekwini-education-and-development-asherville-campus-part-time",
+      "name": "Education and Development",
+      "institution": "Thekwini TVET College",
+      "category": "Education and Development",
+      "campus": "Asherville Campus",
+      "campuses": [
+        "Asherville Campus"
+      ],
+      "study_mode": "Part Time",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Taking less than 7 subjects on Level 2"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Taking less than 7 subjects on Level 2"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "thekwini-tourism-centec-campus-full-time",
+      "name": "Tourism",
+      "institution": "Thekwini TVET College",
+      "category": "Tourism",
+      "campus": "Centec Campus",
+      "campuses": [
+        "Centec Campus"
+      ],
+      "study_mode": "Full Time",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "All 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+        ],
+        "max_grade": 11
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "All 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "thekwini-office-administration-centec-campus-part-time",
+      "name": "Office Administration",
+      "institution": "Thekwini TVET College",
+      "category": "Office Administration",
+      "campus": "Centec Campus",
+      "campuses": [
+        "Centec Campus"
+      ],
+      "study_mode": "Part Time",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+        ],
+        "max_grade": 11
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "thekwini-tourism-centec-campus-part-time",
+      "name": "Tourism",
+      "institution": "Thekwini TVET College",
+      "category": "Tourism",
+      "campus": "Centec Campus",
+      "campuses": [
+        "Centec Campus"
+      ],
+      "study_mode": "Part Time",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+        ],
+        "max_grade": 11
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "thekwini-information-technology-and-computer-science-programming-and-robotics-melbourne-campus-full-time",
+      "name": "Information Technology and Computer Science - Programming and Robotics",
+      "institution": "Thekwini TVET College",
+      "category": "Information Technology",
+      "campus": "Melbourne Campus",
+      "campuses": [
+        "Melbourne Campus"
+      ],
+      "study_mode": "Full Time",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Learners who completed Grade 12 would NOT be accepted for this programme."
+        ],
+        "max_grade": 11
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Learners who completed Grade 12 would NOT be accepted for this programme."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "thekwini-information-technology-and-computer-science-programming-and-robotics-melbourne-campus-part-time",
+      "name": "Information Technology and Computer Science - Programming and Robotics",
+      "institution": "Thekwini TVET College",
+      "category": "Information Technology",
+      "campus": "Melbourne Campus",
+      "campuses": [
+        "Melbourne Campus"
+      ],
+      "study_mode": "Part Time",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+        ],
+        "max_grade": 11
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "thekwini-information-technology-and-computer-science-software-development-melbourne-campus-part-time",
+      "name": "Information Technology and Computer Science - Software Development",
+      "institution": "Thekwini TVET College",
+      "category": "Information Technology",
+      "campus": "Melbourne Campus",
+      "campuses": [
+        "Melbourne Campus"
+      ],
+      "study_mode": "Part Time",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+        ],
+        "max_grade": 11
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9, 10 or 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "Taking less than 7 subjects on Level 2. Learners who completed Grade 12 would NOT be accepted for this programme."
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    }
+  ],
+  "Umfolozi TVET College": [
+    {
+      "id": "umfolozi-engineering-and-related-design-chief-albert-luthuli-campus",
+      "name": "Engineering and Related Design",
+      "institution": "Umfolozi TVET College",
+      "category": "Engineering Studies",
+      "campus": "Chief Albert Luthuli Campus",
+      "campuses": [
+        "Chief Albert Luthuli Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-electrical-infrastructure-and-construction-eshowe-campus",
+      "name": "Electrical Infrastructure and Construction",
+      "institution": "Umfolozi TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Eshowe Campus",
+      "campuses": [
+        "Eshowe Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-hospitality-services-eshowe-campus",
+      "name": "Hospitality Services",
+      "institution": "Umfolozi TVET College",
+      "category": "Hospitality",
+      "campus": "Eshowe Campus",
+      "campuses": [
+        "Eshowe Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-primary-agriculture-with-mathematics-eshowe-campus",
+      "name": "Primary Agriculture (with Mathematics)",
+      "institution": "Umfolozi TVET College",
+      "category": "Agriculture",
+      "campus": "Eshowe Campus",
+      "campuses": [
+        "Eshowe Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-primary-agriculture-eshowe-campus",
+      "name": "Primary Agriculture",
+      "institution": "Umfolozi TVET College",
+      "category": "Agriculture",
+      "campus": "Eshowe Campus",
+      "campuses": [
+        "Eshowe Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-primary-agriculture-with-maths-literacy-eshowe-campus",
+      "name": "Primary Agriculture (with Maths Literacy)",
+      "institution": "Umfolozi TVET College",
+      "category": "Agriculture",
+      "campus": "Eshowe Campus",
+      "campuses": [
+        "Eshowe Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-electrical-infrastructure-construction-esc-electrical-systems-construction-mandeni-campus",
+      "name": "Electrical Infrastructure Construction (ESC - Electrical Systems & Construction)",
+      "institution": "Umfolozi TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Mandeni Campus",
+      "campuses": [
+        "Mandeni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-electrical-infrastructure-construction-ret-renewable-energy-technologies-mandeni-campus",
+      "name": "Electrical Infrastructure Construction (RET - Renewable Energy Technologies)",
+      "institution": "Umfolozi TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Mandeni Campus",
+      "campuses": [
+        "Mandeni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-engineering-and-related-design-fitting-turning-mandeni-campus",
+      "name": "Engineering and Related Design (Fitting & Turning)",
+      "institution": "Umfolozi TVET College",
+      "category": "Engineering Studies",
+      "campus": "Mandeni Campus",
+      "campuses": [
+        "Mandeni Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-civil-engineering-and-building-construction-nkandla-campus",
+      "name": "Civil Engineering and Building Construction",
+      "institution": "Umfolozi TVET College",
+      "category": "Civil Engineering and Building Construction",
+      "campus": "Nkandla Campus",
+      "campuses": [
+        "Nkandla Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-electrical-infrastructure-and-construction-nkandla-campus",
+      "name": "Electrical Infrastructure and Construction",
+      "institution": "Umfolozi TVET College",
+      "category": "Electrical Infrastructure Construction",
+      "campus": "Nkandla Campus",
+      "campuses": [
+        "Nkandla Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-primary-agriculture-nkandla-campus",
+      "name": "Primary Agriculture",
+      "institution": "Umfolozi TVET College",
+      "category": "Agriculture",
+      "campus": "Nkandla Campus",
+      "campuses": [
+        "Nkandla Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    },
+    {
+      "id": "umfolozi-engineering-and-related-design-sundumbili-campus",
+      "name": "Engineering and Related Design",
+      "institution": "Umfolozi TVET College",
+      "category": "Engineering Studies",
+      "campus": "Sundumbili Campus",
+      "campuses": [
+        "Sundumbili Campus"
+      ],
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "No specific entry requirements listed"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9 or higher",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "No specific entry requirements listed"
+      },
+      "entry_subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "NCV",
+      "province": "KwaZulu-Natal"
+    }
+  ],
+  "Coastal KZN TVET College": [
+    {
+      "id": "coastal-boilermaker-swinton-campus",
+      "name": "Boilermaker",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "93626"
+    },
+    {
+      "id": "coastal-diesel-mechanic-swinton-campus",
+      "name": "Diesel Mechanic",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "97592"
+    },
+    {
+      "id": "coastal-fitter-turner-swinton-campus",
+      "name": "Fitter & Turner",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Science"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1 with Mathematics and Science"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": null,
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1 with Mathematics and Science"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          },
+          {
+            "subject": "Science",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "94020"
+    },
+    {
+      "id": "coastal-mechanical-fitter-swinton-campus",
+      "name": "Mechanical Fitter",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "94021"
+    },
+    {
+      "id": "coastal-welder-swinton-campus",
+      "name": "Welder",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "94100"
+    },
+    {
+      "id": "coastal-early-childhood-development-practitioner-swinton-and-durban-campuses",
+      "name": "Early Childhood Development Practitioner",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton and Durban Campuses",
+      "campuses": [
+        "Swinton and Durban Campuses"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "National Certificate Vocational (NCV) at NQF Level 3, OR any other NQF Level 3 qualification"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 3,
+        "grade_required": null,
+        "ncv_level_required": 3,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "National Certificate Vocational (NCV) at NQF Level 3, OR any other NQF Level 3 qualification"
+      },
+      "subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "97542"
+    },
+    {
+      "id": "coastal-chef-swinton-campus",
+      "name": "Chef",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 10,
+        "subjects": [],
+        "notes": [
+          "NQF Level 2, Grade 10"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 2,
+        "grade_required": "Grade 10",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 2, Grade 10"
+      },
+      "subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "94941"
+    },
+    {
+      "id": "coastal-computer-technician-durban-campus",
+      "name": "Computer Technician",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Durban Campus",
+      "campuses": [
+        "Durban Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 4 NQF, Grade 12 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 4,
+        "grade_required": "Grade 12",
+        "ncv_level_required": null,
+        "matric_required": true,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 4 NQF, Grade 12 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 5,
+      "type": "Occupational Certificate",
+      "code": "101408"
+    },
+    {
+      "id": "coastal-cook-swinton-campus",
+      "name": "Cook",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "102296"
+    },
+    {
+      "id": "coastal-tourist-information-officer-swinton-campus-appelsbosch-campus",
+      "name": "Tourist Information Officer",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus & Appelsbosch Campus",
+      "campuses": [
+        "Swinton Campus & Appelsbosch Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 5,
+      "type": "Occupational Certificate",
+      "code": "101865"
+    },
+    {
+      "id": "coastal-office-administrator-as-salaam-campus-appelsbosch-campus",
+      "name": "Office Administrator",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "As-Salaam Campus & Appelsbosch Campus",
+      "campuses": [
+        "As-Salaam Campus & Appelsbosch Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [
+          {
+            "subject": [
+              "Communication"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 4, Grade 12 or equivalent, with Communication"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 4,
+        "grade_required": "Grade 12",
+        "ncv_level_required": null,
+        "matric_required": true,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 4, Grade 12 or equivalent, with Communication"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 5,
+      "type": "Occupational Certificate",
+      "code": "102161"
+    },
+    {
+      "id": "coastal-bricklayer-umlazi-v-campus",
+      "name": "Bricklayer",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Umlazi-V Campus",
+      "campuses": [
+        "Umlazi-V Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 11,
+        "subjects": [],
+        "notes": [
+          "NQF Level 3, Grade 11 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 3,
+        "grade_required": "Grade 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 3, Grade 11 or equivalent"
+      },
+      "subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "93627"
+    },
+    {
+      "id": "coastal-carpenter-umlazi-v-campus",
+      "name": "Carpenter",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Umlazi-V Campus",
+      "campuses": [
+        "Umlazi-V Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 11,
+        "subjects": [],
+        "notes": [
+          "NQF Level 3, Grade 11 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 3,
+        "grade_required": "Grade 11",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 3, Grade 11 or equivalent"
+      },
+      "subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "94022"
+    },
+    {
+      "id": "coastal-plumber-umlazi-v-campus",
+      "name": "Plumber",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Umlazi-V Campus",
+      "campuses": [
+        "Umlazi-V Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [],
+        "notes": [
+          "NQF Level 3 qualification, equivalent to N2/NCV L3 knowledge areas of Engineering Maths, Science and Building Drawings"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 3,
+        "grade_required": null,
+        "ncv_level_required": 3,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 3 qualification, equivalent to N2/NCV L3 knowledge areas of Engineering Maths, Science and Building Drawings"
+      },
+      "subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "91782"
+    },
+    {
+      "id": "coastal-hairdresser-durban-campus",
+      "name": "Hairdresser",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Durban Campus",
+      "campuses": [
+        "Durban Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 4,
+      "type": "Occupational Certificate",
+      "code": "102497"
+    },
+    {
+      "id": "coastal-poultry-farmer-umlazi-v-campus",
+      "name": "Poultry Farmer",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Umlazi-V Campus",
+      "campuses": [
+        "Umlazi-V Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematical Literacy"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 4, Grade 12 or equivalent, with Mathematical Literacy"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 4,
+        "grade_required": "Grade 12",
+        "ncv_level_required": null,
+        "matric_required": true,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 4, Grade 12 or equivalent, with Mathematical Literacy"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematical Literacy",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 5,
+      "type": "Occupational Certificate",
+      "code": "99027"
+    },
+    {
+      "id": "coastal-marketing-coordinator-umlazi-bb-campus",
+      "name": "Marketing Coordinator",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Umlazi-BB Campus",
+      "campuses": [
+        "Umlazi-BB Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [],
+        "notes": [
+          "NQF Level 4 qualification (Grade 12 or equivalent)"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 4,
+        "grade_required": "Grade 12",
+        "ncv_level_required": null,
+        "matric_required": true,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "NQF Level 4 qualification (Grade 12 or equivalent)"
+      },
+      "subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 5,
+      "type": "Occupational Certificate",
+      "code": "118706"
+    },
+    {
+      "id": "coastal-management-assistant-umlazi-bb-campus",
+      "name": "Management Assistant",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Umlazi-BB Campus",
+      "campuses": [
+        "Umlazi-BB Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 12,
+        "subjects": [],
+        "notes": [
+          "NQF Level 4 qualification (Grade 12 or equivalent)"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 4,
+        "grade_required": "Grade 12",
+        "ncv_level_required": null,
+        "matric_required": true,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "NQF Level 4 qualification (Grade 12 or equivalent)"
+      },
+      "subjects": {
+        "must_have": [],
+        "or_groups": []
+      },
+      "nqf_level": 5,
+      "type": "Occupational Certificate",
+      "code": "101876"
+    },
+    {
+      "id": "coastal-food-handler-swinton-campus",
+      "name": "Food Handler",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 2,
+      "type": "Occupational Certificate",
+      "code": "110644"
+    },
+    {
+      "id": "coastal-kitchen-hand-swinton-campus",
+      "name": "Kitchen Hand",
+      "institution": "Coastal KZN TVET College",
+      "category": "Occupational Certificate",
+      "campus": "Swinton Campus",
+      "campuses": [
+        "Swinton Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": 1,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": true,
+        "requirement_text": "NQF Level 1, Grade 09 or equivalent, with Mathematics"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": 3,
+      "type": "Occupational Certificate",
+      "code": "110354"
+    },
+    {
+      "id": "coastal-finance-economics-and-accounting-umlazi-bb-campus",
+      "name": "Finance, Economics and Accounting",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Umlazi-BB Campus",
+      "campuses": [
+        "Umlazi-BB Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-marketing-umbumbulu-campus",
+      "name": "Marketing",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Umbumbulu Campus",
+      "campuses": [
+        "Umbumbulu Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-management-durban-campus",
+      "name": "Management",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Durban Campus",
+      "campuses": [
+        "Durban Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-office-administration-as-salaam-l2-l4-umlazi-bb-appelsbosch-ubuhle-bogu-l2-l4",
+      "name": "Office Administration",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "As-Salaam (L2-L4), Umlazi-BB, Appelsbosch & UBuhle-Bogu (L2-L4)",
+      "campuses": [
+        "As-Salaam (L2-L4), Umlazi-BB, Appelsbosch & UBuhle-Bogu (L2-L4)"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-information-technology-and-computer-science-durban-campus",
+      "name": "Information Technology and Computer Science",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Durban Campus",
+      "campuses": [
+        "Durban Campus"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-civil-engineering-building-construction-appelsbosch-umlazi-v",
+      "name": "Civil Engineering & Building Construction",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Appelsbosch, Umlazi-V",
+      "campuses": [
+        "Appelsbosch, Umlazi-V"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-electrical-infrastructure-construction-as-salaam-l2-l4-appelsbosch-swinton",
+      "name": "Electrical Infrastructure Construction",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "As-Salaam (L2-L4), Appelsbosch, Swinton",
+      "campuses": [
+        "As-Salaam (L2-L4), Appelsbosch, Swinton"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-engineering-and-related-design-main",
+      "name": "Engineering and Related Design",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "",
+      "campuses": [],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-education-and-development-swinton-durban",
+      "name": "Education and Development",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Swinton, Durban",
+      "campuses": [
+        "Swinton, Durban"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-hospitality-appelsbosch-swinton-umbumbulu",
+      "name": "Hospitality",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Appelsbosch, Swinton, Umbumbulu",
+      "campuses": [
+        "Appelsbosch, Swinton, Umbumbulu"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-primary-agriculture-umlazi-v-appelsbosch",
+      "name": "Primary Agriculture",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Umlazi-V, Appelsbosch",
+      "campuses": [
+        "Umlazi-V, Appelsbosch"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Level 2: Grade 9 or equivalent qualification; Level 3: Level 2 or equivalent; Level 4: Level 3 or equivalent"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    },
+    {
+      "id": "coastal-tourism-swinton-umbumbulu",
+      "name": "Tourism",
+      "institution": "Coastal KZN TVET College",
+      "category": "NCV",
+      "campus": "Swinton, Umbumbulu",
+      "campuses": [
+        "Swinton, Umbumbulu"
+      ],
+      "province": "KwaZulu-Natal",
+      "entry_requirement": {
+        "min_grade": 9,
+        "subjects": [
+          {
+            "subject": [
+              "Communication (Language)"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Mathematics or Mathematical Literacy"
+            ],
+            "required": true
+          },
+          {
+            "subject": [
+              "Life Orientation"
+            ],
+            "required": true
+          }
+        ],
+        "notes": [
+          "Grade 9 or higher"
+        ]
+      },
+      "entry": {
+        "nqf_level_required": null,
+        "grade_required": "Grade 9",
+        "ncv_level_required": null,
+        "matric_required": false,
+        "aps_required": null,
+        "rpl_allowed": false,
+        "requirement_text": "Grade 9 or higher"
+      },
+      "subjects": {
+        "must_have": [
+          {
+            "subject": "Communication (Language)",
+            "min_mark": 0
+          },
+          {
+            "subject": "Mathematics or Mathematical Literacy",
+            "min_mark": 0
+          },
+          {
+            "subject": "Life Orientation",
+            "min_mark": 0
+          }
+        ],
+        "or_groups": []
+      },
+      "nqf_level": "2-4",
+      "type": "National Certificate Vocational (NCV)",
+      "code": null
+    }
+  ]
+}

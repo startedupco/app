@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script>(function(){try{if(localStorage.getItem('cd_theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3081D0" />
+    <title>Check Where You Qualify CollandUni</title>
+<meta name="description" content="Snap your school report and instantly see the university and TVET courses you qualify for free APS and subject-level matching." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://collanduni.co.za/qualify.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="CollandUni" />
+<meta property="og:title" content="Check Where You Qualify CollandUni" />
+<meta property="og:description" content="Snap your school report and instantly see the university and TVET courses you qualify for." />
+<meta property="og:url" content="https://collanduni.co.za/qualify.html" />
+<meta property="og:image" content="https://collanduni.co.za/og-image.png" />
+<meta property="og:locale" content="en_ZA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Check Where You Qualify CollandUni" />
+<meta name="twitter:description" content="Snap your school report and instantly see the university and TVET courses you qualify for." />
+<meta name="twitter:image" content="https://collanduni.co.za/og-image.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css?v=2" />
+    <style>
+        .q-wrap{max-width:720px;margin:0 auto;padding:24px 16px 120px}
+        .q-wrap, .q-wrap *{font-family:Comfortaa}
+        .lx-title{font-weight: 700;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.01em;margin:8px 0;color:var(--text,#111418)}
+        .lx-sub{color:var(--muted,#5b6470);font-size:1rem;margin:0 auto 16px;max-width:44ch;text-align:center;line-height:1.5}
+        .lx-sub strong{color:var(--text,#111418);font-weight:700}
+        .lx-commit{display:inline-flex;align-items:center;justify-content:center;width:100%;background:var(--primary,#ffd60a);color:var(--primary-text,#111418);border:0;border-radius:14px;padding:14px 26px;font-weight: 700;font-size:1rem;cursor:pointer;box-shadow:0 4px 0 var(--primary-shade,#e6b800);text-align:center;text-decoration:none;min-height:48px;transition:transform .15s ease,box-shadow .15s ease}
+        .lx-commit:active{transform:translateY(3px);box-shadow:none}
+        .lx-commit:disabled{opacity:.6}
+        .lx-ghost{display:inline-flex;align-items:center;justify-content:center;width:100%;background:#fff;color:var(--accent,#2563eb);border:2px solid var(--accent-border,#bfdbfe);border-radius:14px;padding:12px 26px;font-weight: 700;font-size:1rem;cursor:pointer;font-family:inherit;text-align:center;text-decoration:none;margin-top:12px;min-height:48px;box-shadow:0 4px 0 var(--accent-border,#bfdbfe)}
+        .lx-ghost:active{transform:translateY(3px);box-shadow:none}
+        .lx-err{background:#fdecec;color:var(--danger,#dc2626);font-size:.9375rem;padding:12px 16px;border-radius:12px;margin-bottom:16px;display:none;text-align:center}
+        .lx-pick{border:2px dashed var(--border,#e6e8ec);border-radius:16px;padding:16px;text-align:center;margin-bottom:16px;background:var(--surface,#f6f7f9)}
+        .lx-pick p{color:var(--muted,#5b6470);font-size:.8125rem;margin:8px 0 12px}
+        .lx-thumb{max-width:100%;max-height:220px;border-radius:12px;margin:0 auto 12px;display:none}
+        .lx-spin{display:none;text-align:center;padding:24px 0;color:var(--muted,#5b6470);font-size:.9375rem;font-weight:700}
+        .lx-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent,#2563eb);margin:0 3px;animation:lxp 1s infinite ease-in-out}
+        .lx-dot:nth-child(2){animation-delay:.15s}.lx-dot:nth-child(3){animation-delay:.3s}
+        @keyframes lxp{0%,80%,100%{transform:scale(.6);opacity:.4}40%{transform:scale(1);opacity:1}}
+        .lx-aps{display:flex;align-items:center;gap:16px;background:var(--surface,#f6f7f9);border:1px solid var(--border,#e6e8ec);border-radius:16px;padding:16px;margin-bottom:16px}
+        .lx-aps b{font-size:1.875rem;font-weight: 700;line-height:1}
+        .lx-aps small{color:var(--muted,#5b6470);font-size:.8125rem;display:block}
+        .lx-marks{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+        .lx-marks span{background:var(--surface,#f6f7f9);border:1px solid var(--border,#e6e8ec);border-radius:999px;padding:6px 12px;font-size:.8125rem;font-weight:700;color:var(--text,#111418)}
+        .lx-res{border-top:1px solid var(--border,#e6e8ec);padding:12px 2px;display:flex;gap:12px;align-items:center}
+        .lx-res b{font-size:1.0625rem;display:block}
+        .lx-res small{color:var(--muted,#5b6470);font-size:.9375rem}
+        .lx-pill{margin-left:auto;flex:none;font-size:.75rem;font-weight: 700;border-radius:999px;padding:5px 10px;letter-spacing:.03em}
+        .lx-yes{background:#dcfce7;color:#15803d}
+        .lx-maybe{background:#fef9c3;color:#854d0e}
+        .lx-h{font-weight: 700;font-size:.9375rem;margin:16px 0 8px}
+        .lx-inst-head{width:100%;display:flex;gap:12px;align-items:center;background:none;border:0;border-top:1px solid var(--border,#e6e8ec);padding:12px 2px;min-height:48px;cursor:pointer;text-align:left;font-family:inherit;color:inherit}
+        .lx-inst-head b{font-size:1.0625rem;display:block}
+        .lx-inst-head small{color:var(--muted,#5b6470);font-size:.8125rem}
+        .lx-inst-head .lx-chev{margin-left:auto;flex:none;font-size:1.375rem;font-weight: 700;color:#9aa1a7;line-height:1}
+        .lx-inst-courses{padding-left:12px}
+        .lx-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg,#fff);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center}
+        .lx-bar .lx-commit{width:auto}
+        .lx-skip{margin-left:auto;flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 8px;font-size:1rem;font-weight:700;color:var(--accent,#2563eb);text-decoration:none}
+        .lx-skip:active{opacity:.6}
+    </style>
+</head>
+<body>
+
+<main class="q-wrap">
+    <div class="lx-title-row">
+        <button type="button" class="lx-back" aria-label="Go back" onclick="if(window.history.length>1){window.history.back();}else{window.location.href='index.html';}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+        <h1 class="lx-title">Check where you qualify</h1>
+        <a class="lx-skip" id="qSkipBtn" href="register.html">Skip</a>
+    </div>
+    <img id="qArt" src="illustrations/complete-steps.svg" alt="Checking off steps" style="width:150px;height:auto;display:block;margin:24px auto 8px;" />
+    <p class="lx-sub" id="qSub"><strong>Snap your Grade 12 report or certificate.</strong> We read your marks and show your course matches.</p>
+
+    <p id="qErr" class="lx-err"></p>
+
+    <div id="qPick" class="lx-pick" style="display:none">
+        <img id="qThumb" class="lx-thumb" alt="" />
+    </div>
+
+    <div id="qSpin" class="lx-spin" style="display:none;text-align:left;">
+        <div style="display:flex;align-items:center;gap:16px;background:var(--surface,#f6f7f9);border:1px solid var(--border,#e6e8ec);border-radius:16px;padding:16px;margin-bottom:16px;">
+            <div class="skel" style="width:48px;height:48px;border-radius:12px;flex:none;"></div>
+            <div style="flex:1;">
+                <div class="skel skel-title" style="width:140px;margin-bottom:6px;"></div>
+                <div class="skel skel-text" style="width:90px;margin-bottom:0;"></div>
+            </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;">
+            <div class="skel skel-pill" style="width:95px;height:32px;"></div>
+            <div class="skel skel-pill" style="width:115px;height:32px;"></div>
+            <div class="skel skel-pill" style="width:85px;height:32px;"></div>
+            <div class="skel skel-pill" style="width:105px;height:32px;"></div>
+            <div class="skel skel-pill" style="width:90px;height:32px;"></div>
+            <div class="skel skel-pill" style="width:100px;height:32px;"></div>
+        </div>
+        <div class="skel-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                <div class="skel skel-title" style="width:180px;margin-bottom:0;"></div>
+                <div class="skel skel-pill" style="width:50px;height:24px;"></div>
+            </div>
+            <div class="skel skel-text" style="width:85%;"></div>
+            <div class="skel skel-text" style="width:65%;"></div>
+        </div>
+        <div class="skel-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                <div class="skel skel-title" style="width:160px;margin-bottom:0;"></div>
+                <div class="skel skel-pill" style="width:50px;height:24px;"></div>
+            </div>
+            <div class="skel skel-text" style="width:80%;"></div>
+            <div class="skel skel-text" style="width:50%;"></div>
+        </div>
+        <p style="text-align:center;font-size:.875rem;color:var(--muted,#5b6470);margin-top:16px;">
+            Reading your report &amp; matching programmes…
+        </p>
+    </div>
+
+    <div id="qOut" style="display:none;">
+        <div class="lx-aps">
+            <b id="qAps">-</b>
+            <div><small>Your APS (best 6, excl. LO)</small><small id="qCount"></small></div>
+        </div>
+        <div id="qMarks" class="lx-marks"></div>
+        <div id="qMatches"></div>
+        <a class="lx-commit" id="qNextBtn" href="register.html" style="margin-top:24px;">Create free profile</a>
+        <button class="lx-ghost" type="button" onclick="qReset()">Check another report</button>
+    </div>
+</main>
+
+<div id="qBar" class="lx-bar">
+    <label class="lx-commit" style="cursor:pointer;">
+        Add report photo
+            <input id="qFile" type="file" accept="image/*" style="display:none" />
+    </label>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="firebase-config.js?v=3"></script>
+<script>
+// Scan results live only in this page's memory. They are pushed to the user's
+// Supabase row (users.qualify*) and are never written to the device.
+var qState = { marks: [], aps: 0, courses: [] };
+function qErr(msg) {
+    var el = document.getElementById('qErr');
+    el.textContent = msg; el.style.display = msg ? 'block' : 'none';
+}
+function qBar(show) { document.getElementById('qBar').style.display = show ? 'flex' : 'none'; }
+function qIntro(show) {
+    document.getElementById('qSub').style.display = show ? 'block' : 'none';
+    document.getElementById('qArt').style.display = show ? 'block' : 'none';
+}
+function qTitle(t) { document.querySelector('.lx-title').textContent = t; }
+function qReset() {
+    document.getElementById('qOut').style.display = 'none';
+    document.getElementById('qSpin').style.display = 'none';
+    document.getElementById('qPick').style.display = 'none';
+    qBar(true);
+    qIntro(true);
+    qTitle('Check where you qualify');
+    document.getElementById('qThumb').style.display = 'none';
+    document.getElementById('qThumb').removeAttribute('src');
+    document.getElementById('qFile').value = '';
+    qErr('');
+}
+
+/* ---- APS (same scale as the portal) ---- */
+function qApsFromPercent(p) { return p >= 80 ? 7 : p >= 70 ? 6 : p >= 60 ? 5 : p >= 50 ? 4 : p >= 40 ? 3 : p >= 30 ? 2 : 1; }
+function qCalcAps(marks) {
+    var vals = marks.filter(function(m) { return !/life orientation/i.test(m.name) && (+m.percent > 0); })
+        .map(function(m) { return qApsFromPercent(m.percent); })
+        .sort(function(a, b) { return b - a; });
+    return vals.slice(0, 6).reduce(function(s, v) { return s + v; }, 0);
+}
+function qNorm(s) { return String(s || '').toLowerCase().replace(/[^a-z]/g, ''); }
+function qFindMark(marks, name) {
+    var n = qNorm(name);
+    if (!n) return null;
+    for (var i = 0; i < marks.length; i++) {
+        var m = qNorm(marks[i].name);
+        if (m === n || m.indexOf(n) !== -1 || n.indexOf(m) !== -1) return marks[i];
+    }
+    return null;
+}
+
+/* ---- photo to base64 ---- */
+function qResize(file, cb) {
+    var img = new Image();
+    var url = URL.createObjectURL(file);
+    img.onload = function() {
+        var max = 1400, w = img.width, h = img.height;
+        if (w > max || h > max) { var r = Math.min(max / w, max / h); w = Math.round(w * r); h = Math.round(h * r); }
+        var c = document.createElement('canvas'); c.width = w; c.height = h;
+        c.getContext('2d').drawImage(img, 0, 0, w, h);
+        URL.revokeObjectURL(url);
+        cb(c.toDataURL('image/jpeg', 0.7));
+    };
+    img.onerror = function() { URL.revokeObjectURL(url); cb(null); };
+    img.src = url;
+}
+
+/* ---- Gemini vision: read the report (proxied, key stays server-side) ---- */
+function qReadReport(b64, cb, _tries) {
+    var body = {
+        contents: [{ parts: [
+            { text: 'This is a South African school report (June mid-year, November/final Grade 12, or a qualification certificate). Extract every school subject and its percentage or symbol. Ignore totals, averages, rankings, teacher comments, headers and dates. If symbols only, use A=85 B=75 C=65 D=55 E=45 F=30. If more than one year is shown, use the most recent year. Return ONLY valid JSON, no markdown fence: {"subjects":[{"name":"Mathematics","percent":78}]}' },
+            { inline_data: { mime_type: 'image/jpeg', data: b64.replace(/^data:image\/jpeg;base64,/, '') } }
+        ]}],
+        generationConfig: { maxOutputTokens: 2048, temperature: 0.1 }
+    };
+    fetch('/api/ai', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ model: 'gemini-3.5-flash', payload: body })
+    }).then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(function(j) {
+        var t = j && j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts && j.candidates[0].content.parts[0] && j.candidates[0].content.parts[0].text;
+        if (!t) throw new Error('empty');
+        var m = t.match(/\{[\s\S]*\}/);
+        if (!m) throw new Error('no json');
+        var data = JSON.parse(m[0]);
+        var subjects = (data.subjects || []).filter(function(s) { return s && s.name && s.percent > 0 && s.percent <= 100; });
+        if (!subjects.length) throw new Error('no subjects');
+        cb(null, subjects);
+    }).catch(function(e) {
+        var emsg = ((e && e.message) || '');
+        var quota = /HTTP 429/.test(emsg);
+        // Quota never recovers in 2s - don't waste the retry on it.
+        if (!_tries && !quota) { setTimeout(function() { qReadReport(b64, cb, 1); }, 2000); return; }
+        var err = e || new Error('failed');
+        err.busy = /HTTP 5\d\d/.test(emsg) || !/HTTP/.test(emsg);
+        err.quota = quota;
+        cb(err);
+    });
+}
+
+/* ---- course data (real prospectuses + TVET list) ---- */
+var Q_BASE = '/api/prospectus';
+var Q_ALIAS = { ru: 'rhodes', sun: 'stellenbosch', ump: 'um' };
+
+function qFetch(url) {
+    return fetch(url).then(function(r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+}
+
+function qLoadCourses() {
+    return qFetch('universities.json').then(function(data) {
+        var insts = (data && data.institutions) || [];
+        return Promise.all(insts.map(function(u) {
+            if (!u.id || !u.name) return null;
+            var slug = Q_ALIAS[u.id] || u.id;
+            return qFetch(Q_BASE + '/' + encodeURIComponent(slug) + '-prospectus.json').then(function(list) {
+                if (!Array.isArray(list)) return null;
+                return list.filter(function(p) { return p && (p.name || p.programme) && p.aps > 0; }).map(function(p) {
+                    return { name: p.name || p.programme, aps: p.aps || 0, faculty: p.faculty || '', duration: p.duration || '', requirements: p.requirements || [], institution: u.name };
+                });
+            }).catch(function() { return null; });
+        }));
+    }).then(function(perInst) {
+        var all = [];
+        perInst.forEach(function(list) { if (list) all = all.concat(list); });
+        return qFetch('tvet-courses.json').then(function(tvet) {
+            Object.keys(tvet || {}).forEach(function(col) {
+                (tvet[col] || []).forEach(function(c) {
+                    if (c && c.name) all.push({ name: c.name, aps: 0, tvet: true, entry: c.entry_requirement || null, institution: c.institution || col, requirements: [] });
+                });
+            });
+            return all;
+        }).catch(function() { return all; });
+    });
+}
+
+function qTvetOk(c, marks) {
+    var reqs = [];
+    (function flatten(x) {
+        if (!x) return;
+        if (Array.isArray(x)) { x.forEach(flatten); return; }
+        if (typeof x === 'object') {
+            if (x.subject && (x.minimum_percent || x.minimumPercent !== undefined)) {
+                reqs.push({ subject: typeof x.subject === 'string' ? x.subject : '', pct: x.minimum_percent || x.minimumPercent || 0 });
+                if (!reqs[reqs.length - 1].subject && Array.isArray(x.subject)) flatten(x.subject);
+            }
+            Object.keys(x).forEach(function(k) { if (k !== 'subject') flatten(x[k]); });
+        }
+    })(c.entry);
+    if (!reqs.length) return true;
+    return reqs.every(function(r) {
+        if (!r.subject) return true;
+        var m = qFindMark(marks, r.subject);
+        return m && m.percent >= r.pct;
+    });
+}
+
+function qToggleInst(btn, id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var open = el.style.display === 'none';
+    el.style.display = open ? '' : 'none';
+    var ch = btn.querySelector('.lx-chev');
+    if (ch) ch.textContent = open ? '⌄' : '›';
+}
+function qGroupByInst(list) {
+    var groups = [], idx = {};
+    list.forEach(function(c) {
+        var name = c.institution || 'Other institutions';
+        if (!idx[name]) { idx[name] = { name: name, courses: [] }; groups.push(idx[name]); }
+        idx[name].courses.push(c);
+    });
+    groups.sort(function(a, b) { return a.name < b.name ? -1 : a.name > b.name ? 1 : 0; });
+    return groups;
+}
+function qInstGroups(groups, kind, gid) {
+    return groups.slice(0, 15).map(function(g, i) {
+        var id = gid + '-' + i;
+        var rows = g.courses.slice(0, 8).map(function(c) {
+            var meta = [];
+            if (kind === 'uni') {
+                meta.push('APS ' + c.aps);
+                if (c.faculty) meta.push(c.faculty);
+                if (c.duration) meta.push(String(c.duration).indexOf('year') === -1 ? c.duration + ' years' : c.duration);
+            }
+            return '<div class="lx-res"><div><b>' + c.name + '</b>' + (meta.length ? '<small>' + meta.join(' · ') + '</small>' : '') + '</div><span class="lx-pill ' + (kind === 'uni' ? 'lx-yes">YES' : 'lx-maybe">LIKELY') + '</span></div>';
+        }).join('') + (g.courses.length > 8 ? '<p style="font-size:.8125rem;color:#9aa1a7;padding:6px 2px;">+' + (g.courses.length - 8) + ' more at ' + g.name + '</p>' : '');
+        return '<div><button type="button" class="lx-inst-head" onclick="qToggleInst(this,\'' + id + '\')">' +
+            '<span><b>' + g.name + '</b><small>' + g.courses.length + (g.courses.length === 1 ? ' course matches' : ' courses match') + '</small></span>' +
+            '<span class="lx-chev">›</span></button>' +
+            '<div class="lx-inst-courses" id="' + id + '" style="display:none;">' + rows + '</div></div>';
+    }).join('');
+}
+/* Push the scan result onto the Supabase users row. This is the only place the
+   result is persisted; the page keeps it in memory just for this view. */
+function qSyncToProfile(marks, aps, courses) {
+    try {
+        if (!window.db || !db.collection) return;
+        var uid = null;
+        try { var s = (typeof getSession === 'function') ? getSession() : null; uid = s && (s.uid || s.id); } catch (e) {}
+        function push(id) {
+            if (!id) return;
+            db.collection('users').doc(id).set({
+                qualifyMarks: marks || [],
+                qualifyAps: aps || 0,
+                qualifyCourses: courses || [],
+                updatedAt: Date.now()
+            }, { merge: true }).catch(function(e) {
+                console.warn('[Qualify] Profile sync skipped:', (e && (e.message || e.error_description)) || e);
+            });
+        }
+        if (uid) { push(uid); return; }
+        if (window.supabaseClient && supabaseClient.auth && supabaseClient.auth.getSession) {
+            supabaseClient.auth.getSession().then(function(r) {
+                var sess = r && r.data && r.data.session;
+                if (sess && sess.user) push(sess.user.id);
+            }).catch(function() {});
+        }
+    } catch (e) {}
+}
+
+function qRenderMatches(courses, marks, aps) {
+    var box = document.getElementById('qMatches');
+    var uni = [], tvet = [];
+    courses.forEach(function(c) {
+        if (c.tvet) { if (qTvetOk(c, marks)) tvet.push(c); }
+        else if (c.aps && c.aps <= aps) uni.push(c);
+    });
+    uni.sort(function(a, b) { return b.aps - a.aps; });
+    var saveList = [];
+    try {
+        saveList = uni.slice(0, 25).concat(tvet.slice(0, 10)).map(function(c) {
+            return { name: c.name, institution: c.institution, aps: c.aps || 0, faculty: c.faculty || '', duration: c.duration || '', tvet: !!c.tvet };
+        });
+        qState.courses = saveList;
+    } catch (e) {}
+    qState.marks = marks || [];
+    qState.aps = aps || 0;
+    qSyncToProfile(marks, aps, saveList);
+    var html = '<div class="lx-h">Universities (' + qGroupByInst(uni).length + ')</div>';
+    if (!uni.length) html += '<p style="color:#62676d;font-size:.9375rem;">No matches yet. Add more subjects in your profile.</p>';
+    else html += qInstGroups(qGroupByInst(uni), 'uni', 'qgu');
+    html += '<div class="lx-h">TVET colleges (' + qGroupByInst(tvet).length + ')</div>';
+    if (!tvet.length) html += '<p style="color:#62676d;font-size:.9375rem;">No TVET matches yet.</p>';
+    else html += qInstGroups(qGroupByInst(tvet), 'tvet', 'qgt');
+    html += '<p style="font-size:.75rem;color:#9aa1a7;margin-top:12px;">From real prospectuses. Institutions confirm admission.</p>';
+    box.innerHTML = html;
+}
+
+function qGo(file) {
+    document.getElementById('qPick').style.display = 'none';
+    document.getElementById('qOut').style.display = 'none';
+    document.getElementById('qSpin').style.display = 'block';
+    qBar(false);
+    qIntro(false);
+    qErr('');
+    qResize(file, function(b64) {
+        if (!b64) {
+            document.getElementById('qSpin').style.display = 'none';
+            document.getElementById('qPick').style.display = 'block';
+            qBar(true);
+            qIntro(true);
+            qErr('Couldn\u2019t read that photo. Try a clearer, well-lit one.');
+            return;
+        }
+        qReadReport(b64, function(err, subjects) {
+        if (err || !subjects) {
+            document.getElementById('qSpin').style.display = 'none';
+            document.getElementById('qPick').style.display = 'block';
+            qBar(true);
+            qIntro(true);
+            qErr(err && err.quota
+                ? 'Daily AI limit reached. Try again tomorrow.'
+                : (err && err.busy
+                ? 'AI reader busy. Try again shortly.'
+                : 'Couldn\u2019t read that photo. Try a clearer, well-lit one.'));
+            return;
+        }
+        var aps = qCalcAps(subjects);
+        qTitle('You qualify for');
+        qState.marks = subjects;
+        qState.aps = aps;
+        document.getElementById('qAps').textContent = aps;
+        document.getElementById('qCount').textContent = subjects.length + ' subjects read';
+        document.getElementById('qMarks').innerHTML = subjects.map(function(s) { return '<span>' + s.name + ' ' + s.percent + '%</span>'; }).join('');
+        qLoadCourses().then(function(courses) {
+            qRenderMatches(courses, subjects, aps);
+            document.getElementById('qSpin').style.display = 'none';
+            document.getElementById('qOut').style.display = 'block';
+        }).catch(function() {
+            document.getElementById('qMatches').innerHTML = '<p style="color:#e5484d;font-size:.9375rem;">Course data failed to load. Check your connection.</p>';
+            document.getElementById('qSpin').style.display = 'none';
+            document.getElementById('qOut').style.display = 'block';
+        });
+        });
+    });
+}
+
+document.getElementById('qFile').addEventListener('change', function() {
+    var f = this.files && this.files[0];
+    if (!f) return;
+    var thumb = document.getElementById('qThumb');
+    thumb.src = URL.createObjectURL(f);
+    thumb.style.display = 'block';
+    qGo(f);
+});
+
+(function updateNextLinks() {
+    function setLinks(hasSession) {
+        var target = hasSession ? 'onboarding.html' : 'register.html';
+        var skip = document.getElementById('qSkipBtn');
+        var next = document.getElementById('qNextBtn');
+        if (skip) skip.href = target;
+        if (next) next.href = target;
+    }
+    var s = null;
+    try { s = (typeof getSession === 'function') ? getSession() : null; } catch(e) {}
+    setLinks(!!(s && (s.uid || s.id)));
+    try {
+        if (window.supabaseClient && supabaseClient.auth && supabaseClient.auth.getSession) {
+            supabaseClient.auth.getSession().then(function(r){
+                var sess = r && r.data && r.data.session;
+                setLinks(!!(sess && sess.user));
+            }).catch(function(){});
+        }
+    } catch(e) {}
+})();
+</script>
+
+<script src="offline-loader.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+  (function () {
+    var auth = (location.search || '') + (location.hash || '');
+    if (/(^|[?&#])type=recovery($|[&#])/.test(auth)) {
+      location.replace('/reset-password.html' + (location.search || '') + (location.hash || ''));
+    } else if (location.hostname === 'app.collanduni.co.za') {
+      location.replace('/portal.html');
+    }
+  })();
+  </script>
+  <meta name="theme-color" content="#2563eb" />
+
+  <title>Apply to Universities & TVET Colleges 2027 | CollandUni</title>
+  <meta
+    name="description"
+    content="Apply to South African universities, TVET colleges and bursaries online with one free profile. NSFAS-ready support for Grade 9–12 and gap-year students."
+  />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://collanduni.co.za/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CollandUni" />
+  <meta property="og:title" content="Apply to Universities & TVET Colleges 2027 | CollandUni" />
+  <meta
+    property="og:description"
+    content="One free profile apply to South African universities, TVET colleges and bursaries online."
+  />
+  <meta property="og:url" content="https://collanduni.co.za/" />
+  <meta property="og:image" content="https://collanduni.co.za/og-image.png" />
+  <meta property="og:image:alt" content="CollandUni South African university and TVET college application platform" />
+  <meta property="og:locale" content="en_ZA" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CollandUni | Apply to Universities & TVET Colleges in South Africa" />
+  <meta name="twitter:description" content="Apply to South African universities and TVET colleges in one place." />
+  <meta name="twitter:image" content="https://collanduni.co.za/og-image.png" />
+  <meta name="twitter:site" content="@collanduni" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://collanduni.co.za/#organization",
+        "name": "CollandUni",
+        "url": "https://collanduni.co.za/",
+        "logo": "https://collanduni.co.za/logo.png",
+        "telephone": "+27630242558",
+        "email": "info@collanduni.co.za",
+        "areaServed": "ZA",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2041 Msizi Dube Road",
+          "addressLocality": "Lamontville",
+          "addressRegion": "KwaZulu-Natal",
+          "postalCode": "4027",
+          "addressCountry": "ZA"
+        },
+        "sameAs": [
+          "https://www.facebook.com/collanduni",
+          "https://x.com/collanduni",
+          "https://www.youtube.com/@collanduni"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://collanduni.co.za/#website",
+        "url": "https://collanduni.co.za/",
+        "name": "CollandUni",
+        "inLanguage": "en-ZA",
+        "publisher": { "@id": "https://collanduni.co.za/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://collanduni.co.za/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "When do university applications open for 2027 in South Africa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most South African universities open applications between March and May 2026 for the 2027 academic year. Closing dates vary by institution and programme."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I apply to multiple universities with one application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. With a free CollandUni profile, you can apply to participating universities, TVET colleges and bursaries from one dashboard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I apply to a university in South Africa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Create a free CollandUni account, add your results and documents once, then apply to participating universities from your dashboard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I apply to a TVET college in South Africa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Search participating TVET colleges, check entry requirements for your chosen programme, and submit your application online."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is CollandUni free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Creating a CollandUni account and browsing institutions is free. Individual institutions may charge their own application fees."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="site.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="https://collanduni.co.za/" aria-label="Collanduni home"><img src="collanduni-logo.svg" alt="Collanduni college and university applications" style="height:36px;width:auto;display:block;" /></a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="qualify.html">What We Do</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:10px;" data-lang-slot>
+        <a class="btn btn-dark" href="https://app.collanduni.co.za/login.html">Log in</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="badge">2027 intake open</span>
+
+        <h1>One profile. Every campus.</h1>
+
+        <p>
+          <strong>Apply to universities, TVET colleges and bursaries</strong>, all in one place.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="qualify.html">Apply now</a>
+          <a class="btn btn-outline" href="https://app.collanduni.co.za/login.html">
+            Log in
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Platform statistics">
+      <div class="container">
+      <h2 style="font-family:'Comfortaa';font-weight: 700;font-size:1.375rem;margin:0 0 8px;text-align:center;">CollandUni in numbers</h2>
+      <p style="color:#62676d;font-size:.875rem;margin:0 0 16px;text-align:center;">Applications and offers from real students.</p>
+      <div class="stats-grid">
+        <div class="stat">
+          <b id="s1">1,400+</b>
+          <small>Applications sent</small>
+        </div>
+
+        <div class="stat">
+          <b id="s2">380+</b>
+          <small>Offers accepted</small>
+        </div>
+
+        <div class="stat">
+          <b>26</b>
+          <small>Universities</small>
+        </div>
+
+        <div class="stat">
+          <b>50+</b>
+          <small>TVET colleges</small>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section aria-label="Video guides" style="padding:8px 0 0;">
+      <div class="container">
+        <h2 style="font-family:'Comfortaa';font-weight: 700;font-size:1.375rem;margin:0 0 8px;text-align:center;">Apply with confidence</h2>
+        <p style="color:#62676d;font-size:.875rem;margin:0 0 16px;text-align:center;">Step-by-step guides from our YouTube channel.</p>
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-frame"><iframe src="https://www.youtube.com/embed/hqJv_Ko3lQw" title="CAO Application Step-by-step Guide 2027" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <p class="video-title">CAO Application Step-by-step Guide 2027</p>
+          </div>
+          <div class="video-card">
+            <div class="video-frame"><iframe src="https://www.youtube.com/embed/jB2MUubqyqM" title="TVET Colleges' Application Step-by-step Guide | 2027" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <p class="video-title">TVET Colleges' Application Step-by-step Guide | 2027</p>
+          </div>
+          <div class="video-card">
+            <div class="video-frame"><iframe src="https://www.youtube.com/embed/7ZCYuc2hJQ0" title="How to check for COURSES you qualify for on the CAO Handbook 2026/2027" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <p class="video-title">How to check for COURSES you qualify for on the CAO Handbook 2026/2027</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-heading">
+      <div class="container faq-inner">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+
+        <details>
+          <summary>When do university applications open for 2027 in South Africa?</summary>
+          <p>
+            Most universities open between March and May 2026. Closing dates vary by institution and programme.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I apply to multiple universities with one application?</summary>
+          <p>
+            Yes. One free profile covers universities, TVET colleges and bursaries.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I apply to a university in South Africa?</summary>
+          <p>
+            Create a free account, add your results and documents once, then apply from your dashboard.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I apply to a TVET college in South Africa?</summary>
+          <p>
+            Search colleges, check entry requirements, and apply online.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is CollandUni free to use?</summary>
+          <p>
+            Signing up and browsing is free. Some institutions charge their own application fees.
+          </p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="collanduni-logo.svg" alt="Collanduni college and university applications" style="height:42px;width:auto;margin-bottom:10px;" />
+        <p>
+          We help students and parents make decisions that improve their lives through technology that enables the
+          journey from education to economic opportunity.
+        </p>
+
+        <div class="social-row">
+          <a href="https://facebook.com/collanduni" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.3-.04-1.3-.13-2.45-.13-2.43 0-4.1 1.48-4.1 4.2v2.34H7.5V14h2.65v8h3.35z"/>
+            </svg>
+          </a>
+
+          <a href="https://x.com/collanduni" aria-label="X" target="_blank" rel="noopener noreferrer">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.5 3h3l-6.6 7.5L21.7 21h-6l-4.7-6-5.4 6H2.6l7-8L2 3h6.2l4.2 5.5L17.5 3zm-1 16h1.7L7.6 4.8H5.8L16.5 19z"/>
+            </svg>
+          </a>
+
+          <a href="https://youtube.com/@collanduni" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23 12s0-3.4-.4-5c-.2-.9-.9-1.6-1.8-1.8C19.2 4.8 12 4.8 12 4.8s-7.2 0-8.8.4c-.9.2-1.6.9-1.8 1.8C1 8.6 1 12 1 12s0 3.4.4 5c.2.9.9 1.6 1.8 1.8 1.6.4 8.8.4 8.8.4s7.2 0 8.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-5 .4-5zM9.8 15.5v-7l6 3.5-6 3.5z"/>
+            </svg>
+          </a>
+
+          <a href="https://tiktok.com/@collanduni" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v2.7c-1.4 0-2.7-.4-3.9-1.2v5.6c0 3.4-2.7 5.7-5.7 5.3-2.6-.3-4.5-2.5-4.5-5.1 0-3 2.6-5.4 5.6-5.1v2.8c-1.5-.3-2.8.7-2.8 2.2 0 1.3 1 2.4 2.3 2.5 1.4.1 2.6-1 2.6-2.4V3h2.5z"/>
+            </svg>
+          </a>
+
+          <a href="https://instagram.com/collanduni" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h2>Company</h2>
+        <a href="about.html">About Us</a>
+      <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="qualify.html">What We Do</a>
+      </nav>
+    </div>
+
+    <div class="container footer-base">
+      <span>&copy; 2026 CollandUni. Helpdesk Central (Pty) Ltd.</span>
+      <span>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').catch(function (error) {
+          console.warn('[SW] registration failed:', error);
+        });
+      });
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    (function () {
+      if (!window.supabase) {
+        console.warn('[Stats] Supabase CDN unavailable; static fallback values remain visible.');
+        return;
+      }
+
+      var supabase = window.supabase.createClient(
+        'https://dcuphubxkycrreyitnyq.supabase.co',
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRjdXBodWJ4a3ljcnJleWl0bnlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU5NzUzOTgsImV4cCI6MjEwMTU1MTM5OH0.nPwH9SWGGvfl4CXofLS4yMNxHuFogjpf0MvcDcNUQdg'
+      );
+
+      var applicationsElement = document.getElementById('s1');
+      var offersElement = document.getElementById('s2');
+
+      function formatNumber(value) {
+        return new Intl.NumberFormat('en-ZA').format(value);
+      }
+
+      function animateCount(element, target, duration) {
+        if (!element || typeof target !== 'number') return;
+
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (reduceMotion) {
+          element.textContent = formatNumber(target);
+          return;
+        }
+
+        var startTime = null;
+
+        function update(timestamp) {
+          if (startTime === null) startTime = timestamp;
+
+          var progress = Math.min((timestamp - startTime) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var currentValue = Math.floor(eased * target);
+
+          element.textContent = formatNumber(currentValue);
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          }
+        }
+
+        requestAnimationFrame(update);
+      }
+
+      async function loadStats() {
+        try {
+          var results = await Promise.all([
+            supabase.from('applications').select('id', {
+              count: 'exact',
+              head: true
+            }),
+            supabase.from('applications').select('id', {
+              count: 'exact',
+              head: true
+            }).eq('status', 'offer_accepted')
+          ]);
+
+          var applicationCount = results[0].count;
+          var offerCount = results[1].count;
+
+          if (typeof applicationCount === 'number') {
+            animateCount(applicationsElement, applicationCount, 1500);
+          }
+
+          if (typeof offerCount === 'number') {
+            animateCount(offersElement, offerCount, 1500);
+          }
+        } catch (error) {
+          console.warn('[Stats] Failed to load counts:', error);
+        }
+      }
+
+      supabase.auth.onAuthStateChange(function (event, session) {
+        if (session && session.user) {
+          window.location.replace('https://app.collanduni.co.za/portal.html');
+        }
+      });
+
+      loadStats();
+    })();
+  </script>
+
+  <script
+    type="module"
+    src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
+    integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA=="
+    data-cf-beacon='{"version":"2024.11.0","token":"1b8c47c38d024055b93c8f2b4a1c22b9","r":1,"spa":2}'
+    crossorigin="anonymous"
+  ></script>
+
+  </body>
+</html>

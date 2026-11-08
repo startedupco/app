@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href="https://app.collanduni.co.za/onboarding.html" />
+<title>Welcome Set up your profile | CollandUni</title>
+<meta name="description" content="Set up your CollandUni profile in 5 quick steps personal details, address, education, marks and preferences." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="dist/output.css" />
+<link rel="stylesheet" href="theme.css" />
+<link rel="stylesheet" href="supabase-theme.css" />
+<link rel="stylesheet" href="langx-theme.css?v=4" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* LangX v3 onboarding: screen title 30, segmented progress, grey-pill fields, ink chips */
+body{font-family:Comfortaa;line-height:1.55}
+.lx-screen{max-width:720px;margin:0 auto;padding:28px 20px 48px;background:#fff;color:#17191c;min-height:100vh}
+.lx-title{font-family:Comfortaa;font-weight: 700;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.01em;line-height:1.15;margin:8px 0}
+.lx-sub{color:#62676d;font-size:1rem;text-align:center;max-width:44ch;margin:0 auto 16px;line-height:1.5}
+.lx-sub strong{color:#17191c;font-weight:700}
+.ob-steps{display:flex;gap:6px;margin:20px 0 8px}
+.ob-step{flex:1;height:6px;border-radius:99px;background:#f4f5f7}
+.ob-step.done{background:#ffd60a}
+.ob-pane{display:none;padding:16px 0 4px}
+.ob-pane.active{display:block}
+.ob-pane h3{font-family:Comfortaa;font-weight: 600;font-size:1.25rem;margin-bottom:8px}
+.ob-hint{font-size:.875rem;color:#62676d;margin-bottom:16px}
+.lx-label{display:block;font-size:.875rem;font-weight:600;color:#17191c;margin:12px 0 8px}
+.lx-in,.ob-sub .s-name,.ob-sub .s-mark,select.input,input.input{width:100%;background:#f4f5f7;border:2px solid transparent;border-radius:14px;padding:13px 16px;font-size:1rem;color:#17191c;outline:none;font-family:inherit;min-height:48px}
+select.input{appearance:none;-webkit-appearance:none;border-radius:14px}
+.lx-in:focus,.ob-sub .s-name:focus,.ob-sub .s-mark:focus,select.input:focus,input.input:focus{background:#fff;border-color:#3b6cf6}
+.lx-in::placeholder,.ob-sub input::placeholder{color:#9aa1a7}
+.ob-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:480px){.ob-2col{grid-template-columns:1fr}}
+/* chips: unselected outline, selected ink fill + tick */
+.chip-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chip{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#f4f5f7;border:0;border-radius:999px;padding:12px 10px;font-weight:600;font-size:.875rem;color:#17191c;cursor:pointer;min-height:44px}
+.chip.sel{background:#17191c;border-color:#17191c;color:#fff}
+.chip svg{width:16px;height:16px;flex:none}
+.chip .tick{display:none}
+.chip.sel .tick{display:block}
+#ob-subjects .ob-sub{gap:8px}
+/* second action = plain accent text (v3 retires the second button face) */
+#obScanBtn{background:none;border:0;color:#3b6cf6;font-weight:700;font-size:1rem;cursor:pointer;padding:12px;width:100%;font-family:inherit;min-height:44px}
+#obAddSubject{width:100%;margin-top:8px;background:#f4f5f7;border:0;border-radius:16px;padding:13px;font-weight:600;font-size:1rem;color:#62676d;cursor:pointer;font-family:inherit;min-height:48px}
+.ob-aps{margin-top:16px;font-family:Comfortaa;font-weight: 700;font-size:1.0625rem}
+.ob-aps span{color:#3b6cf6}
+#obScanBox{background:#f4f5f7;border:0;border-radius:16px;padding:14px;margin-bottom:12px}
+/* committing action: yellow face, hard shadow, press collapses */
+.lx-shell{padding-bottom:4px}
+#obNext{flex:2;background:#ffd60a;color:#111418;border:0;border-radius:14px;padding:14px 24px;font-family:Comfortaa;font-weight: 700;font-size:1rem;cursor:pointer;box-shadow:0 4px 0 #e6b800;min-height:48px}
+#obNext:active{transform:translateY(4px);box-shadow:none}
+#obNext:disabled{opacity:.6}
+#obBack{flex:1;background:#fff;border:2px solid #e8eaec;border-radius:14px;padding:14px 24px;font-weight:600;font-size:1rem;color:#17191c;cursor:pointer;font-family:inherit;min-height:48px}
+#obSkip{background:none;border:0;color:#9aa1a7;font-size:.8125rem;margin-top:12px;cursor:pointer;width:100%;font-family:inherit;min-height:44px}
+#ob-error{background:#fdecec;color:#e5484d;font-size:.9375rem;padding:12px 16px;border-radius:12px;display:none;margin-bottom:16px}
+</style>
+</head>
+<body>
+
+<div class="lx-screen">
+<h1 class="lx-title" id="obTitle">Welcome! Let's set you up</h1>
+<img src="illustrations/back-to-school.svg" alt="Students heading to campus" style="width:150px;height:auto;display:block;margin:24px auto 8px;" />
+<div class="ob-steps" id="obSteps"><div class="ob-step"></div><div class="ob-step"></div><div class="ob-step"></div><div class="ob-step"></div><div class="ob-step"></div></div>
+
+<!-- 1 Personal Information (mirrors Profile → Personal Information) -->
+<div class="ob-pane active" data-pane="0">
+<h3>1. Personal information</h3>
+<p class="ob-hint">Exactly as it appears on your ID.</p>
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-firstname">Name/s</label><input class="lx-in" id="ob-firstname" placeholder="Thandi" autocomplete="given-name" /></div>
+<div><label class="lx-label" for="ob-surname">Surname</label><input class="lx-in" id="ob-surname" placeholder="Mokoena" autocomplete="family-name" /></div>
+</div>
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-id">ID number (13 digits)</label><input class="lx-in" id="ob-id" inputmode="numeric" maxlength="16" placeholder="990101 0000 000" /></div>
+<div><label class="lx-label" for="ob-dob">Date of birth</label><input class="lx-in" id="ob-dob" type="date" /></div>
+</div>
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-gender">Gender</label><select class="input" id="ob-gender"><option value="">Select…</option><option>Male</option><option>Female</option><option>Other</option></select></div>
+<div><label class="lx-label" for="ob-language">Home language</label><select class="input" id="ob-language"><option value="">Select…</option><option>Afrikaans</option><option>English</option><option>isiNdebele</option><option>isiXhosa</option><option>isiZulu</option><option>Sepedi</option><option>Sesotho</option><option>Setswana</option><option>siSwati</option><option>Tshivenda</option><option>Xitsonga</option><option>Other</option></select></div>
+</div>
+</div>
+
+<!-- 2 Address (mirrors Profile → Address) -->
+<div class="ob-pane" data-pane="1">
+<h3>2. Address</h3>
+<p class="ob-hint">Where can institutions reach you?</p>
+<label class="lx-label" for="ob-address">Street name &amp; number</label><input class="lx-in" id="ob-address" placeholder="Street and township" />
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-suburb">Suburb</label><input class="lx-in" id="ob-suburb" placeholder="Suburb" /></div>
+<div><label class="lx-label" for="ob-city">City / Town</label><input class="lx-in" id="ob-city" placeholder="Durban" /></div>
+</div>
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-province">Province</label><select class="input" id="ob-province"><option value="">Province…</option><option>Eastern Cape</option><option>Free State</option><option>Gauteng</option><option>KwaZulu-Natal</option><option>Limpopo</option><option>Mpumalanga</option><option>Northern Cape</option><option>North West</option><option>Western Cape</option></select></div>
+<div><label class="lx-label" for="ob-postal">Postal code</label><input class="lx-in" id="ob-postal" inputmode="numeric" maxlength="4" placeholder="4001" /></div>
+</div>
+<h3 style="font-size:1rem;margin:16px 0 8px;">Parent / Guardian</h3>
+<p class="ob-hint">Who institutions can contact in your family.</p>
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-nok-first">First name</label><input class="lx-in" id="ob-nok-first" placeholder="Parent name" autocomplete="off" /></div>
+<div><label class="lx-label" for="ob-nok-last">Surname</label><input class="lx-in" id="ob-nok-last" placeholder="Parent surname" autocomplete="off" /></div>
+</div>
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-nok-rel">Relationship</label><select class="input" id="ob-nok-rel"><option value="">Select…</option><option>Mother</option><option>Father</option><option>Guardian</option><option>Other</option></select></div>
+<div><label class="lx-label" for="ob-nok-phone">Phone number</label><input class="lx-in" id="ob-nok-phone" inputmode="tel" maxlength="10" placeholder="063 000 0000" autocomplete="off" /></div>
+</div>
+<div class="ob-2col">
+<div><label class="lx-label" for="ob-nok-id">ID number (optional)</label><input class="lx-in" id="ob-nok-id" inputmode="numeric" maxlength="13" placeholder="13-digit ID" autocomplete="off" /></div>
+<div><label class="lx-label" for="ob-nok-email">Email (optional)</label><input class="lx-in" id="ob-nok-email" type="email" placeholder="parent@example.com" autocomplete="off" /></div>
+</div>
+</div>
+
+<!-- 3 Education (mirrors Profile → Education) -->
+<div class="ob-pane" data-pane="2">
+<h3>3. Education</h3>
+<p class="ob-hint">Where you stand right now.</p>
+<label class="lx-label" for="ob-grade">Highest grade / NQF level</label>
+<select class="input" id="ob-grade"><option value="">Select…</option><option value="9">Grade 9 / NQF 1</option><option value="10">Grade 10 / NQF 2</option><option value="11">Grade 11 / NQF 3</option><option value="12" selected>Grade 12 (Matric) / NQF 4</option><option value="13">Higher Certificate / NQF 5</option><option value="14">Diploma / NQF 6</option><option value="15">Bachelor's Degree / NQF 7</option><option value="16">Honours / NQF 8</option><option value="17">Master's / NQF 9</option><option value="18">Doctorate / NQF 10</option></select>
+<div class="ob-2col" style="margin-top:4px;">
+<div><label class="lx-label" for="ob-school">School / College</label><input class="lx-in" id="ob-school" placeholder="School name" /></div>
+<div><label class="lx-label" for="ob-status">Current status</label><select class="input" id="ob-status"><option value="">Select…</option><option value="stillSchooling">Still schooling</option><option value="completed">Completed</option><option value="upgrading">Upgrading</option><option value="rewriting">Rewriting</option></select></div>
+</div>
+<div class="ob-2col" style="margin-top:4px;">
+<div><label class="lx-label" for="ob-year-started">Year started</label><input class="lx-in" id="ob-year-started" inputmode="numeric" maxlength="4" placeholder="2021" /></div>
+<div><label class="lx-label" for="ob-year">Final year</label><input class="lx-in" id="ob-year" inputmode="numeric" maxlength="4" placeholder="2025" /></div>
+</div>
+</div>
+
+<!-- 4 Marks -->
+<div class="ob-pane" data-pane="3">
+<h3>4. Your marks</h3>
+<p class="ob-hint">Type them in or snap your report.</p>
+<div class="chip-grid" style="margin-bottom:12px;">
+<button type="button" class="chip sel" id="obModeManual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg> Type manually</button>
+<button type="button" class="chip" id="obModeScan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg> Scan report photo</button>
+</div>
+<div id="obScanBox" style="display:none;">
+<label class="lx-label">Take a picture of your report / results</label>
+<input type="file" id="obReportImg" accept="image/*" capture="environment" class="lx-in" />
+<img id="obPreview" style="display:none;max-width:100%;border-radius:16px;margin-top:10px;" alt="Report preview" />
+<button type="button" id="obScanBtn">Scan report, copy marks</button>
+<p id="obScanStatus" style="font-size:.8125rem;color:#62676d;margin-top:8px;"></p>
+<div id="obScanSkel" style="display:none;margin-top:10px;">
+<div class="skel" style="height:48px;border-radius:14px;margin-bottom:8px;"></div>
+<div class="skel" style="height:48px;border-radius:14px;margin-bottom:8px;"></div>
+<div class="skel" style="height:48px;border-radius:14px;"></div>
+</div>
+<details id="obRawWrap" style="display:none;margin-top:8px;"><summary style="font-size:.75rem;cursor:pointer;color:#62676d;">Scanned text (tap to check)</summary><pre id="obRaw" style="font-size:.75rem;white-space:pre-wrap;background:#f4f5f7;padding:10px;border-radius:12px;max-height:160px;overflow:auto;"></pre></details>
+<p style="font-size:.75rem;color:#9aa1a7;margin-top:8px;">Tip: good light, flat page, all subjects visible. Fix anything after scanning.</p>
+</div>
+<div id="ob-subjects" style="display:grid;gap:10px;"></div>
+<datalist id="obSubjectList"></datalist>
+<button type="button" id="obAddSubject">+ Add subject</button>
+<p class="ob-aps">Estimated APS: <span id="obAps">0</span></p>
+</div>
+
+<!-- 5 Documents -->
+<div class="ob-pane" data-pane="4">
+<h3>5. Documents</h3>
+<p class="ob-hint">Tick what you have ready or upload a file.</p>
+<div class="chip-grid" id="obDocs" style="display:grid;gap:10px;">
+<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;"><div class="chip" data-doc="ID"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>SA ID / Passport</div><button type="button" class="ob-upbtn" data-doc="ID" style="font-size:1rem;padding:8px 14px;border-radius:99px;border:1px solid var(--border,#e6e8ec);background:#fff;cursor:pointer;font-weight:700;color:#62676d;min-height:44px;">Upload</button><input type="file" accept="image/*,application/pdf,.heic,.heif" style="display:none" data-doc="ID"></div>
+<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;"><div class="chip" data-doc="results"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Matric results</div><button type="button" class="ob-upbtn" data-doc="results" style="font-size:1rem;padding:8px 14px;border-radius:99px;border:1px solid var(--border,#e6e8ec);background:#fff;cursor:pointer;font-weight:700;color:#62676d;min-height:44px;">Upload</button><input type="file" accept="image/*,application/pdf,.heic,.heif" style="display:none" data-doc="results"></div>
+<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;"><div class="chip" data-doc="residence"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Proof of residence</div><button type="button" class="ob-upbtn" data-doc="residence" style="font-size:1rem;padding:8px 14px;border-radius:99px;border:1px solid var(--border,#e6e8ec);background:#fff;cursor:pointer;font-weight:700;color:#62676d;min-height:44px;">Upload</button><input type="file" accept="image/*,application/pdf,.heic,.heif" style="display:none" data-doc="residence"></div>
+<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;"><div class="chip" data-doc="photo"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>ID photo</div><button type="button" class="ob-upbtn" data-doc="photo" style="font-size:1rem;padding:8px 14px;border-radius:99px;border:1px solid var(--border,#e6e8ec);background:#fff;cursor:pointer;font-weight:700;color:#62676d;min-height:44px;">Upload</button><input type="file" accept="image/*,application/pdf,.heic,.heif" style="display:none" data-doc="photo"></div>
+</div>
+</div>
+
+<p id="ob-error"></p>
+<div class="lx-shell" style="display:flex;gap:10px;margin-top:18px;">
+<button id="obBack">Back</button>
+<button id="obNext">Continue</button>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="firebase-config.js?v=3"></script>
+<script>
+(function(){
+function getUid(){try{var s=(typeof getSession==='function')?getSession():null;return s&&(s.uid||s.id);}catch(e){return null;}}
+var uid=getUid();
+// Hard auth guard: only a live Supabase session may use onboarding.
+(function guardOnboarding(){
+    var done = false, waited = 0;
+    function stay(u) {
+        if (done) return; done = true;
+        var liveUid = u && (u.id || u.uid);
+        if (uid && liveUid && uid !== liveUid) { bounce(); return; }
+        if (liveUid && !uid) {
+            uid = liveUid;
+        }
+    }
+    function bounce() {
+        if (done) return; done = true;
+        location.replace('login.html');
+    }
+    function poll() {
+        if (done) return;
+        // 1) wrapper memory (set by its auth listener)
+        try { if (window.auth && auth.currentUser) { stay(auth.currentUser); return; } } catch (e) {}
+        // 2) direct Supabase session read - the wrapper listener can lag behind it
+        try {
+            if (window.supabaseClient && supabaseClient.auth && supabaseClient.auth.getSession) {
+                supabaseClient.auth.getSession().then(function(res) {
+                    if (done) return;
+                    var s = res && res.data && res.data.session;
+                    if (s && s.user) stay(s.user); else schedule();
+                }).catch(function() { schedule(); });
+                return;
+            }
+        } catch (e) {}
+        schedule();
+    }
+    function schedule() {
+        if (done) return;
+        waited += 500;
+        // Bounce only after a real wait with no session - never on slow scripts.
+        if (waited >= 6000) bounce(); else setTimeout(poll, 500);
+    }
+    // Give slow CDN scripts a beat before the first check.
+    setTimeout(poll, 400);
+})();
+// bfcache: browser may restore this page from back-cache after logout.
+window.addEventListener('pageshow', function(event){
+    if(!event.persisted) return;
+    var authed=false;
+    try{ authed=!!(window.auth&&auth.currentUser); }catch(e){}
+    if(!authed) location.replace('login.html');
+});
+var step=0, panes=document.querySelectorAll('.ob-pane'), bars=document.querySelectorAll('.ob-step'), LAST=panes.length-1;
+function render(){panes.forEach(function(p,i){p.classList.toggle('active',i===step);});bars.forEach(function(b,i){b.classList.toggle('done',i<=step);});document.getElementById('obBack').style.display=step===0?'none':'';document.getElementById('obNext').textContent=step===LAST?'Go to portal':'Continue';var w=step===0;document.getElementById('obTitle').style.display=w?'':'none';var sub=document.querySelector('.lx-screen > .lx-sub');if(sub)sub.style.display=w?'':'none';var illus=document.querySelector('.lx-screen > img');if(illus)illus.style.display=w?'':'none';}
+// Portal APS formula (same as portal.html updateMarksSummary): excludes Life Orientation, 7-point scale
+function aps(mark){mark=+mark;if(!mark)return 0;if(mark>=80)return 7;if(mark>=70)return 6;if(mark>=60)return 5;if(mark>=50)return 4;if(mark>=40)return 3;if(mark>=30)return 2;return 1;}
+function percentToLevel(p){p=+p||0;if(p>=80)return 7;if(p>=70)return 6;if(p>=60)return 5;if(p>=50)return 4;if(p>=40)return 3;if(p>=30)return 2;return 1;}
+function subjects(){return Array.from(document.querySelectorAll('#ob-subjects .ob-sub')).map(function(r){return{name:r.querySelector('.s-name').value.trim(),mark:+r.querySelector('.s-mark').value||0};});}
+function calcAps(){var scores=subjects().filter(function(s){return s.name&&!/life orientation/i.test(s.name)&&!/^lo$/i.test(s.name)&&(+s.mark>0);}).map(function(s){return aps(s.mark);}).sort(function(a,b){return b-a;});var t=scores.slice(0,6).reduce(function(a,v){return a+v;},0);document.getElementById('obAps').textContent=t;return t;}
+function escAttr(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
+var sugBox=null;
+var SUB_ALIAS={maths:'mathematics',mathslit:'mathematicalliteracy',bio:'lifesciences',physics:'physicalsciences',chem:'physicalsciences',accounting:'accounting',business:'businessstudies',eco:'economics',hist:'history',geo:'geography',eng:'english',it:'informationtechnology',cat:'computerapplications',egd:'engineeringgraphics',lo:'lifeorientation',tourism:'tourism',zulu:'isizulu',xhosa:'isixhosa',sotho:'sesotho',pedi:'sepedi',tswana:'setswana',venda:'tshivenda',swati:'siswati',tsonga:'xitsonga',ndebele:'isindebele',afrikaans:'afrikaans'};
+function subjectMatches(q){
+q=String(q==null?'':q).toLowerCase().replace(/[^a-z]/g,'');
+if(!q)return OB_SUBJECTS.slice(0,8);
+var out=[];
+OB_SUBJECTS.forEach(function(s){
+var k=s.toLowerCase().replace(/[^a-z]/g,'');
+if(k.indexOf(q)!==-1||(SUB_ALIAS[q]&&k.indexOf(SUB_ALIAS[q])!==-1))out.push(s);
+});
+return out.slice(0,8);
+}
+function hideSug(){if(sugBox&&sugBox.parentNode){sugBox.parentNode.removeChild(sugBox);}sugBox=null;}
+function showSug(inp){
+hideSug();
+var list=subjectMatches(inp.value);
+if(!list.length)return;
+sugBox=document.createElement('div');
+var r=inp.getBoundingClientRect();
+sugBox.style.cssText='position:absolute;z-index:50;background:#fff;border:1px solid #e8eaec;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:220px;overflow:auto;min-width:'+Math.max(r.width,200)+'px;';
+list.forEach(function(s){
+var b=document.createElement('button');
+b.type='button';b.textContent=s;
+b.style.cssText='display:block;width:100%;text-align:left;background:none;border:0;padding:11px 14px;font-size:.875rem;color:#17191c;cursor:pointer;font-family:inherit;';
+b.onmousedown=function(e){e.preventDefault();inp.value=s;hideSug();calcAps();};
+b.onmouseenter=function(){b.style.background='#f4f5f7';};
+b.onmouseleave=function(){b.style.background='none';};
+sugBox.appendChild(b);
+});
+document.body.appendChild(sugBox);
+sugBox.style.top=(r.bottom+window.scrollY+4)+'px';
+sugBox.style.left=(r.left+window.scrollX)+'px';
+}
+document.addEventListener('click',function(e){if(sugBox&&!sugBox.contains(e.target))hideSug();});
+function addSubject(n,m){
+var nm=String(n||'').trim();
+if(nm){var dup=Array.from(document.querySelectorAll('#ob-subjects .s-name')).some(function(i){return i.value.trim().toLowerCase()===nm.toLowerCase();});if(dup)return;}
+var d=document.createElement('div');d.className='ob-sub';d.style.cssText='display:grid;grid-template-columns:1fr 90px 40px;gap:8px;align-items:center;';d.innerHTML='<input class="input s-name" placeholder="Subject (e.g. Mathematics)" autocomplete="off" value="'+escAttr(n||'')+'"><input class="input s-mark" type="number" min="0" max="100" placeholder="%" value="'+escAttr(m==null?'':m)+'"><button type="button" class="s-del" aria-label="Remove subject" style="background:#f4f5f7;border:0;border-radius:12px;width:44px;height:48px;font-size:1.125rem;line-height:1;color:#9aa1a7;cursor:pointer;">×</button>';var nameIn=d.querySelector('.s-name');nameIn.addEventListener('input',function(){showSug(nameIn);});nameIn.addEventListener('focus',function(){showSug(nameIn);});nameIn.addEventListener('blur',function(){setTimeout(hideSug,200);});d.querySelector('.s-mark').oninput=calcAps;d.querySelector('.s-del').onclick=function(){d.remove();calcAps();};document.getElementById('ob-subjects').appendChild(d);}
+// Canonical subject names - same source as the portal (data-loader / ensureSubjects).
+// Built-in fallback so suggestions work instantly even if the online list fails to load.
+var OB_SUBJECTS=['Accounting','Afrikaans First Additional Language','Afrikaans Home Language','Agricultural Sciences','Agricultural Technology','Business Studies','Civil Technology','Computer Applications Technology','Consumer Studies','Dance Studies','Design','Dramatic Arts','Economics','Electrical Technology','Engineering Graphics and Design','English First Additional Language','English Home Language','Geography','History','Hospitality Studies','Information Technology','IsiNdebele','IsiXhosa','IsiZulu','Life Orientation','Life Sciences','Marine Sciences','Mathematical Literacy','Mathematics','Mechanical Technology','Music','Physical Sciences','Religion Studies','Sepedi','Sesotho','Setswana','SiSwati','Technical Mathematics','Technical Sciences','Tourism','Tshivenda','Visual Arts','Xitsonga'];
+document.getElementById('obSubjectList').innerHTML=OB_SUBJECTS.map(function(s){return '<option value="'+escAttr(s)+'">';}).join('');
+function normalizeSubject(name){
+if(!name)return '';
+if(OB_SUBJECTS&&OB_SUBJECTS.length){
+var low=String(name).toLowerCase().trim();
+var exact=OB_SUBJECTS.find(function(s){return s.toLowerCase()===low;});
+if(exact)return exact;
+var hit=OB_SUBJECTS.find(function(s){return s.toLowerCase().indexOf(low)!==-1||low.indexOf(s.toLowerCase())!==-1;});
+if(hit)return hit;
+}
+return name;
+}
+fetch('/api/all-subjects',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+var flat=[];(d.categories||[]).forEach(function(cat){(cat.subjects||[]).forEach(function(s){if(s&&s.name)flat.push(s.name);});});
+if(flat.length){var seen={};var merged=flat.concat(OB_SUBJECTS).filter(function(s){var k=String(s).toLowerCase();if(seen[k])return false;seen[k]=1;return true;});OB_SUBJECTS=merged;document.getElementById('obSubjectList').innerHTML=merged.map(function(s){return '<option value="'+escAttr(s)+'">';}).join('');}
+}).catch(function(){});
+document.getElementById('obAddSubject').onclick=function(){addSubject();};
+// Seed defaults immediately so the form is never empty (prefill replaces them when profile loads)
+['Mathematics','English','Life Sciences','Geography','History','Life Orientation'].forEach(function(s){addSubject(s,'');});calcAps();
+function setVal(id,v){var el=document.getElementById(id);if(el&&v!==undefined&&v!==null&&v!==''&&v!==0&&v!=='0')el.value=v;}
+// SA ID → date of birth autofill: first 6 ID digits are YYMMDD.
+(function(){
+var idEl=document.getElementById('ob-id'),dobEl=document.getElementById('ob-dob'),genderEl=document.getElementById('ob-gender');
+if(!idEl||!dobEl)return;
+dobEl.addEventListener('input',function(){dobEl.dataset.manual='1';});
+dobEl.addEventListener('change',function(){dobEl.dataset.manual='1';});
+genderEl.addEventListener('change',function(){genderEl.dataset.manual='1';});
+idEl.addEventListener('input',function(){
+var digits=idEl.value.replace(/\D/g,'');
+if(digits.length<7)return;
+// DOB: first 6 digits = YYMMDD
+if(!(dobEl.value&&dobEl.dataset.manual==='1')){
+var yy=+digits.slice(0,2),mm=+digits.slice(2,4),dd=+digits.slice(4,6);
+if(mm>=1&&mm<=12&&dd>=1&&dd<=31){
+var now=new Date(),curYY=now.getFullYear()%100;
+var fullYear=yy>curYY?1900+yy:2000+yy;
+var d=new Date(fullYear,mm-1,dd);
+if(d.getFullYear()===fullYear&&d.getMonth()===mm-1&&d.getDate()===dd&&d<=now){
+dobEl.value=fullYear+'-'+String(mm).padStart(2,'0')+'-'+String(dd).padStart(2,'0');
+dobEl.dataset.manual='';
+}
+}
+}
+// Gender: 7th digit (index 6) — 0-4 = Female, 5-9 = Male
+if(!(genderEl.value&&genderEl.dataset.manual==='1')){
+var g=+digits.charAt(6);
+if(g<=4)genderEl.value='Female';
+else if(g<=9)genderEl.value='Male';
+}
+});
+})();
+function selectChips(containerId,values,attr){if(!values||!values.length)return;document.querySelectorAll('#'+containerId+' .chip').forEach(function(c){var has=values.indexOf(c.dataset[attr])!==-1;c.classList.toggle('sel',has);});}
+function collectPrefs(){try{return{docsReady:Array.from(document.querySelectorAll('#obDocs .chip.sel')).map(function(c){return c.dataset.doc;})};}catch(e){return null;}}
+// Prefill from register + portal profile (same users doc both read/write)
+function prefill(p){
+if(!p)return;
+var first=(p.name||p.first_name||'').trim();
+var sur=(p.surname||p.last_name||'').trim();
+if(!sur&&first&&first.indexOf(' ')!==-1){var parts=first.split(' ');sur=parts.pop();first=parts.join(' ');}
+if(first){document.getElementById('obTitle').textContent='Hi '+first.split(' ')[0]+' let\u2019s set you up';}
+setVal('ob-firstname',p.first_name||first||p.name);setVal('ob-surname',sur);
+setVal('ob-id',p.idNumber);setVal('ob-dob',p.dob);setVal('ob-gender',p.gender);setVal('ob-language',p.homeLanguage);
+setVal('ob-address',p.street||p.address);setVal('ob-suburb',p.suburb);setVal('ob-city',p.city);setVal('ob-province',p.province);setVal('ob-postal',p.postalCode);
+setVal('ob-nok-first',p.nokFirstName);setVal('ob-nok-last',p.nokLastName);setVal('ob-nok-rel',p.nokRelationship);setVal('ob-nok-phone',p.nokPhone);setVal('ob-nok-id',p.nokIdNumber);setVal('ob-nok-email',p.nokEmail);
+setVal('ob-grade',p.grade||p.highestGrade);setVal('ob-school',p.school);setVal('ob-year-started',p.startYear);setVal('ob-year',p.completedYear||p.finalYear);setVal('ob-status',p.currentStatus);
+document.getElementById('ob-subjects').innerHTML='';
+var srcMarks=(p.marks&&p.marks.length)?p.marks:((p.qualifyMarks&&p.qualifyMarks.length)?p.qualifyMarks:null);
+var marks=srcMarks?srcMarks.map(function(s){return{name:s.name,mark:(s.percent!==undefined&&s.percent!==null&&s.percent!=='')?s.percent:(s.mark||'')};}):['Mathematics','English','Life Sciences','Geography','History','Life Orientation'].map(function(s){return{name:s,mark:''};});
+marks.slice(0,9).forEach(function(s){addSubject(s.name,s.mark);});
+selectChips('obDocs',p.docsReady,'doc');
+calcAps();
+}
+if(uid&&window.db&&db.collection){
+db.collection('users').doc(uid).get().then(function(doc){
+if(!doc.exists)return;
+var p=doc.data()||{};
+// Profile already complete (this or another device)? Go straight to the portal.
+if(p.idNumber&&p.dob&&p.gender&&p.school&&p.currentStatus&&p.marks&&p.marks.length){location.replace('portal.html');return;}
+prefill(p);
+}).catch(function(){calcAps();});
+}else{
+// No session/profile yet: start from defaults. Nothing is read from the device.
+calcAps();
+}
+// Mode toggle: manual vs scan
+var manualBtn=document.getElementById('obModeManual'),scanBtn2=document.getElementById('obModeScan'),scanBox=document.getElementById('obScanBox');
+function setMode(scan){scanBox.style.display=scan?'block':'none';manualBtn.classList.toggle('sel',!scan);scanBtn2.classList.toggle('sel',scan);}
+manualBtn.onclick=function(){setMode(false);};scanBtn2.onclick=function(){setMode(true);};
+// Report photo -> preview
+var reportFile=null;
+document.getElementById('obReportImg').addEventListener('change',function(e){
+reportFile=e.target.files&&e.target.files[0];
+var pv=document.getElementById('obPreview');
+if(reportFile){pv.src=URL.createObjectURL(reportFile);pv.style.display='block';document.getElementById('obScanStatus').textContent='Photo ready tap Scan.';}
+});
+// OCR: scan image, copy subjects + marks
+var KNOWN_SUBJECTS=['Mathematics','Mathematical Literacy','Maths Lit','English Home Language','English First Additional Language','English','Afrikaans','IsiZulu','IsiXhosa','Xitsonga','Sepedi','Sesotho','Setswana','Tshivenda','SiSwati','IsiNdebele','Life Sciences','Physical Sciences','Physics','Chemistry','Geography','History','Accounting','Business Studies','Economics','Life Orientation','Tourism','CAT','Computer Applications Technology','Information Technology','Engineering Graphics and Design','EGD','Agricultural Sciences','Mathematical Sciences','Technical Mathematics','Technical Sciences'];
+function levelToMark(l){return {7:85,6:75,5:65,4:55,3:45,2:35,1:15}[l]||null;}
+// Match a subject name as WHOLE words only, so short aliases like CAT/EGD never
+// match inside another word (e.g. "CAT" inside "eduCATion").
+function subjectInLine(line,subject){
+var needle=subject.toLowerCase();
+var idx=line.toLowerCase().indexOf(needle);
+while(idx!==-1){
+var before=idx===0?'':line.charAt(idx-1);
+var afterIdx=idx+needle.length;
+var after=afterIdx>=line.length?'':line.charAt(afterIdx);
+if(!/[a-z0-9]/i.test(before)&&!/[a-z0-9]/i.test(after))return true;
+idx=line.toLowerCase().indexOf(needle,idx+1);
+}
+return false;
+}
+function parseReportText(text){
+var lines=text.split(/\n+/).map(function(x){return x.trim();}).filter(Boolean);
+// Longest names first so "Mathematical Literacy" wins over "Mathematics",
+// "English Home Language" over "English", "Computer Applications Technology"
+// over "CAT", etc.
+var bySpecificity=KNOWN_SUBJECTS.slice().sort(function(a,b){return b.length-a.length;});
+var found=[];
+lines.forEach(function(line){
+var subj=bySpecificity.find(function(s){return subjectInLine(line,s);});
+if(!subj)return;
+// prefer a 0-100 number on the same line
+var nums=(line.match(/\d{1,3}(?:[.,]\d)?/g)||[]).map(function(n){return parseFloat(String(n).replace(',','.'));}).filter(function(n){return n>=0&&n<=100;});
+var mark=null;
+if(nums.length){mark=Math.max.apply(null,nums);if(mark<7&&/level/i.test(line)){mark=levelToMark(Math.round(mark));}}
+else{var lv=line.match(/level\s*([1-7])/i);if(lv){mark=levelToMark(+lv[1]);}}
+if(mark===null||isNaN(mark))return;
+if(subj==='Maths Lit')subj='Mathematical Literacy';
+if(subj==='EGD')subj='Engineering Graphics and Design';
+if(subj==='CAT')subj='Computer Applications Technology';
+if(subj==='Physics'||subj==='Chemistry')subj='Physical Sciences';
+subj=normalizeSubject(subj);
+if(found.some(function(f){return f.name===subj;}))return;
+found.push({name:subj,mark:Math.round(mark)});
+});
+return found.slice(0,9);
+}
+function fillSubjects(list){
+if(!list.length)return false;
+document.getElementById('ob-subjects').innerHTML='';
+list.forEach(function(s){addSubject(s.name,s.mark);});
+calcAps();return true;
+}
+document.getElementById('obScanBtn').onclick=async function(){
+var st=document.getElementById('obScanStatus'),btn=this;
+if(!reportFile){st.textContent='Choose or take a photo first.';return;}
+if(!window.Tesseract){st.textContent='Scanner still loading check connection and retry.';return;}
+btn.disabled=true;
+btn.classList.add('btn-shimmer');
+var skel=document.getElementById('obScanSkel');if(skel)skel.style.display='block';
+function shrinkImage(file){
+return new Promise(function(resolve){
+var url=URL.createObjectURL(file);
+var img=new Image();
+img.onload=function(){
+try{
+var w=img.naturalWidth||img.width,h=img.naturalHeight||img.height;
+var scale=Math.min(1,1800/Math.max(w,h));
+if(scale>=1){URL.revokeObjectURL(url);resolve(file);return;}
+var c=document.createElement('canvas');
+c.width=Math.round(w*scale);c.height=Math.round(h*scale);
+c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+URL.revokeObjectURL(url);
+if(c.toBlob){c.toBlob(function(b){resolve(b||file);},'image/jpeg',0.85);}
+else{resolve(file);}
+}catch(e){try{URL.revokeObjectURL(url);}catch(_){}resolve(file);}
+};
+img.onerror=function(){try{URL.revokeObjectURL(url);}catch(_){}resolve(file);};
+img.src=url;
+});
+}
+st.textContent='Preparing photo…';
+try{
+var scanImg=await shrinkImage(reportFile);
+st.textContent='Scanning… (first scan downloads the reader, then 10–20s)';
+var res=await Tesseract.recognize(scanImg,'eng',{logger:function(m){if(m&&m.status==='recognizing text'&&typeof m.progress==='number'){st.textContent='Scanning… '+Math.round(m.progress*100)+'%';}}});
+var text=(res&&res.data&&res.data.text)||'';
+document.getElementById('obRaw').textContent=text;
+document.getElementById('obRawWrap').style.display='block';
+var parsed=parseReportText(text);
+if(fillSubjects(parsed)){st.textContent='Copied '+parsed.length+' subjects. Check them, then continue.';}
+else{st.textContent='Photo scanned but no subjects found. Retake with good light and all subjects visible, or type them in the rows below.';}
+}catch(err){
+var msg=String((err&&err.message)||err||'').toLowerCase();
+if(msg.indexOf('fetch')!==-1||msg.indexOf('network')!==-1||msg.indexOf('load')!==-1){st.textContent='Connection interrupted while loading the reader. Reconnect and tap Scan again.';}
+else{st.textContent='Scan failed ('+String((err&&err.message)||'unknown error')+'). Try a smaller photo or type manually.';}
+}
+btn.disabled=false;
+btn.classList.remove('btn-shimmer');
+if(skel)skel.style.display='none';
+};
+document.querySelectorAll('#obDocs .chip').forEach(function(c){c.onclick=function(){c.classList.toggle('sel');};});
+document.querySelectorAll('#obDocs .ob-upbtn').forEach(function(btn){btn.onclick=function(){var inp=document.querySelector('#obDocs input[type=file][data-doc="'+btn.dataset.doc+'"]');if(inp)inp.click();};});
+document.querySelectorAll('#obDocs input[type=file]').forEach(function(inp){inp.onchange=function(){
+  var file=inp.files[0];if(!file)return;
+  var docId=inp.dataset.doc;
+  var btn=document.querySelector('#obDocs .ob-upbtn[data-doc="'+docId+'"]');
+  var chip=document.querySelector('#obDocs .chip[data-doc="'+docId+'"]');
+  if(file.size>10*1024*1024){if(btn)btn.textContent='Too large (max 10MB)';inp.value='';return;}
+  if(!uid||!window.db||!db.collection){if(btn)btn.textContent='Sign in first';inp.value='';return;}
+  if(btn){btn.textContent='Uploading…';btn.disabled=true;btn.classList.add('btn-shimmer');}
+  uploadToCloudinary(file,'documents/'+uid+'/'+docId).then(function(url){
+    var payload={userId:uid,type:docId,fileName:file.name,url:url,uploadedAt:Date.now()};
+    return db.collection('documents').where('userId','==',uid).where('type','==',docId).get().then(function(snap){
+      if(snap&&!snap.empty){return db.collection('documents').doc(snap.docs[0].id).set(payload,{merge:true});}
+      return db.collection('documents').add(payload);
+    }).then(function(){
+      if(btn){btn.textContent='Uploaded ✓';btn.disabled=false;btn.classList.remove('btn-shimmer');}
+      if(chip){chip.classList.add('sel');}
+    });
+  }).catch(function(e){
+    if(btn){btn.textContent='Try upload again';btn.disabled=false;btn.classList.remove('btn-shimmer');}
+    alert('Upload failed: '+(e&&e.message||'check your connection'));
+  });
+};});
+document.getElementById('obBack').onclick=function(){if(step>0){step--;render();}};
+document.getElementById('obNext').onclick=function(){
+var err=document.getElementById('ob-error');err.style.display='none';
+if(step===0){
+var fn0=document.getElementById('ob-firstname').value.trim();
+var sn0=document.getElementById('ob-surname').value.trim();
+if(!fn0||!sn0){err.textContent='Please enter your name/s and surname.';err.style.display='block';return;}
+var id0=document.getElementById('ob-id').value.replace(/\D/g,'');
+if(!id0||id0.length!==13){err.textContent='Please enter your 13-digit ID number.';err.style.display='block';return;}
+if(!document.getElementById('ob-dob').value){err.textContent='Please enter your date of birth.';err.style.display='block';return;}
+if(!document.getElementById('ob-gender').value){err.textContent='Please select your gender.';err.style.display='block';return;}
+}
+if(step===2){
+var sc2=document.getElementById('ob-school').value.trim();
+var st2=document.getElementById('ob-status').value;
+if(!sc2){err.textContent='Please enter your school / college.';err.style.display='block';return;}
+if(!st2){err.textContent='Please select your current status.';err.style.display='block';return;}
+}
+if(step===3){
+var m3=subjects().filter(function(s){return s.name&&+s.mark>0;});
+if(!m3.length){err.textContent='Please add at least one subject mark.';err.style.display='block';return;}
+}
+if(step<LAST){step++;render();window.scrollTo(0,0);return;}
+// Final step: every field the portal/profile requires must be present before we
+// mark onboarding complete - otherwise the flag would lie and strand the user.
+var idFinal=document.getElementById('ob-id').value.trim();
+var dobFinal=document.getElementById('ob-dob').value;
+var genderFinal=document.getElementById('ob-gender').value;
+var schoolFinal=document.getElementById('ob-school').value.trim();
+var statusFinal=document.getElementById('ob-status').value;
+var fnFinal=document.getElementById('ob-firstname').value.trim();
+var snFinal=document.getElementById('ob-surname').value.trim();
+var rawMarks=subjects().filter(function(s){return s.name;}).map(function(s){s.name=normalizeSubject(s.name);return s;});
+var portalMarks=rawMarks.map(function(s){return{name:s.name,percent:s.mark,level:percentToLevel(s.mark)};});
+if(!fnFinal||!snFinal){step=0;render();err.textContent='Please enter your name/s and surname.';err.style.display='block';window.scrollTo(0,0);return;}
+var cleanId=idFinal.replace(/\D/g,'');
+if(!cleanId||cleanId.length!==13){step=0;render();err.textContent='Please enter your 13-digit ID number.';err.style.display='block';window.scrollTo(0,0);return;}
+if(!dobFinal){step=0;render();err.textContent='Please enter your date of birth.';err.style.display='block';window.scrollTo(0,0);return;}
+if(!genderFinal){step=0;render();err.textContent='Please select your gender.';err.style.display='block';window.scrollTo(0,0);return;}
+if(!schoolFinal){step=2;render();err.textContent='Please enter your school / college.';err.style.display='block';window.scrollTo(0,0);return;}
+if(!statusFinal){step=2;render();err.textContent='Please select your current status.';err.style.display='block';window.scrollTo(0,0);return;}
+if(!portalMarks.length){step=3;render();err.textContent='Please add at least one subject mark.';err.style.display='block';window.scrollTo(0,0);return;}
+var prefs=collectPrefs()||{};
+var data={name:fnFinal,surname:snFinal,full_name:(fnFinal+' '+snFinal).trim(),idNumber:cleanId,dob:dobFinal,gender:genderFinal,homeLanguage:document.getElementById('ob-language').value,street:document.getElementById('ob-address').value.trim(),suburb:document.getElementById('ob-suburb').value.trim(),city:document.getElementById('ob-city').value.trim(),province:document.getElementById('ob-province').value,postalCode:document.getElementById('ob-postal').value.trim(),nokFirstName:document.getElementById('ob-nok-first').value.trim(),nokLastName:document.getElementById('ob-nok-last').value.trim(),nokRelationship:document.getElementById('ob-nok-rel').value,nokPhone:document.getElementById('ob-nok-phone').value.trim(),nokIdNumber:document.getElementById('ob-nok-id').value.trim(),nokEmail:document.getElementById('ob-nok-email').value.trim(),grade:parseInt(document.getElementById('ob-grade').value,10)||12,school:schoolFinal,startYear:parseInt(document.getElementById('ob-year-started').value,10)||null,completedYear:parseInt(document.getElementById('ob-year').value,10)||null,currentStatus:statusFinal,marks:portalMarks,qualifyMarks:[],qualifyCourses:[],qualifyAps:0,docsReady:prefs.docsReady||[],onboardingComplete:true,updatedAt:Date.now()};
+// users.email is NOT NULL with no default. Onboarding never collects it, so a
+// first-time INSERT fails with 23502. Backfill from the live session.
+if(!data.email){var _se=(typeof getSession==='function')?getSession():null;data.email=(_se&&_se.email)||'';}
+var btn=document.getElementById('obNext');var btnLabel=btn.textContent;btn.disabled=true;btn.classList.add('btn-shimmer');btn.textContent='Saving…';
+function goPortal(){setTimeout(function(){location.replace('portal.html');},150);}
+// Resolve the uid at save time. The in-memory session is populated
+// asynchronously, so ask Supabase directly if it is not there yet.
+function resolveUid(){
+  if(uid) return Promise.resolve(uid);
+  return new Promise(function(res){
+    try{
+      if(window.supabaseClient&&supabaseClient.auth&&supabaseClient.auth.getSession){
+        supabaseClient.auth.getSession().then(function(r){
+          var s=r&&r.data&&r.data.session;
+          if(s&&s.user){var id=s.user.id||s.user.uid;uid=id;try{saveSession({role:(s.user.user_metadata&&s.user.user_metadata.role)||'applicant',email:s.user.email||'',uid:id});}catch(e){}res(id);}
+          else res(null);
+        }).catch(function(){res(null);});
+      }else if(window.auth&&auth.currentUser){var u=auth.currentUser;uid=u.id||u.uid;res(uid);}
+      else res(null);
+    }catch(e){res(null);}
+  });
+}
+function saveToServer(){return db.collection('users').doc(uid).set(data,{merge:true});}
+resolveUid().then(function(){
+if(uid&&window.db&&db.collection){
+  // Wait for the write to confirm BEFORE leaving - redirecting early strands
+  // users in a portal <-> onboarding loop with their profile empty.
+  saveToServer().catch(function(){
+    return new Promise(function(r){setTimeout(r,1200);}).then(saveToServer);
+  }).then(function(){
+    goPortal();
+  }).catch(function(saveErr){
+    console.warn('[Onboarding] Save failed:', saveErr);
+    // Nothing is kept on the device. Stay on this step so the user can retry.
+    var errEl=document.getElementById('ob-error');
+    if(errEl){errEl.textContent='Could not save your profile ('+(saveErr&&(saveErr.message||saveErr.error_description)||'unknown')+'). Check your connection and tap the button again to retry.';errEl.style.display='block';}
+    if(btn){btn.disabled=false;btn.classList.remove('btn-shimmer');btn.textContent=btnLabel;}
+  });
+}else{
+  // No session: nothing is written anywhere. Send the user to sign in.
+  var errNoSession=document.getElementById('ob-error');
+  if(errNoSession){errNoSession.textContent='Your session expired before saving. Please sign in again \u2014 nothing is kept on this device.';errNoSession.style.display='block';}
+  if(btn){btn.disabled=false;btn.classList.remove('btn-shimmer');btn.textContent='Sign in again';}
+  setTimeout(function(){location.replace('login.html');},2500);
+}
+});
+};
+render();
+})();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"1b8c47c38d024055b93c8f2b4a1c22b9","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script src="app-suggest.js" defer></script>
+<script src="id-validate.js" defer></script>
+<script src="offline-loader.js" defer></script>
+</body>
+</html>
